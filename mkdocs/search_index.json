@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "\ube57\uc790\ub8e8\ub124\n\n\n\uac8c\uc784 \uc81c\uc791 \uae30\uc220 \ube14\ub85c\uadf8\uc785\ub2c8\ub2e4\n\n\n\n\n\ube57\uc790\ub8e8\ub137 \ub530\ub77c\ud558\uae30", 
+            "title": "home"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "\uac8c\uc784 \uc81c\uc791 \uae30\uc220 \ube14\ub85c\uadf8\uc785\ub2c8\ub2e4   \ube57\uc790\ub8e8\ub137 \ub530\ub77c\ud558\uae30", 
+            "title": "\ube57\uc790\ub8e8\ub124"
+        }, 
+        {
+            "location": "/myevan_site_tutorial/", 
+            "text": "\ube57\uc790\ub8e8\ub137 \ub530\ub77c\ud558\uae30\n\n\n\ud658\uacbd\n\n\n\n\nmacOS Sierra 10.12.1 \n\n\npython-2.7 + virtualenvwrapper\n\n\n\n\n\uc900\ube44\n\n\n$ mkvirtualenv myevan_site\n\n(\nmyevan_site\n)\n$ pip install mkdocs\n\n(\nmyevan_site\n)\n$ pip install pygments\n\n(\nmyevan_site\n)\n$ pip install pymdown-extensions\n\n(\nmyevan_site\n)\n$ pip install mkdocs-material", 
+            "title": "myevan site"
+        }, 
+        {
+            "location": "/myevan_site_tutorial/#_1", 
+            "text": "", 
+            "title": "\ube57\uc790\ub8e8\ub137 \ub530\ub77c\ud558\uae30"
+        }, 
+        {
+            "location": "/myevan_site_tutorial/#_2", 
+            "text": "macOS Sierra 10.12.1   python-2.7 + virtualenvwrapper", 
+            "title": "\ud658\uacbd"
+        }, 
+        {
+            "location": "/myevan_site_tutorial/#_3", 
+            "text": "$ mkvirtualenv myevan_site ( myevan_site ) $ pip install mkdocs ( myevan_site ) $ pip install pygments ( myevan_site ) $ pip install pymdown-extensions ( myevan_site ) $ pip install mkdocs-material", 
+            "title": "\uc900\ube44"
+        }
+    ]
+}
