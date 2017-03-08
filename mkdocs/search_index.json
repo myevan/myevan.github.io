@@ -74,6 +74,46 @@
             "location": "/myevan_site_tutorial/#custom-domain", 
             "text": "https://help.github.com/articles/using-a-custom-domain-with-github-pages/   \ub3c4\uba54\uc778\uc744 \uad6c\uc785\ud569\ub2c8\ub2e4.  https://www.cafe24.com/?controller=domain_search  GitHub \ud398\uc774\uc9c0 \uc124\uc815\uc5d0\uc11c \ucee4\uc2a4\ud140 \ub3c4\uba54\uc778\uc744 \uc785\ub825\ud569\ub2c8\ub2e4.  https://github.com/myevan/myevan.github.io/settings  \ub3c4\uba54\uc778 \uad00\ub9ac \ud398\uc774\uc9c0\uc5d0\uc11c A \ub808\ucf54\ub4dc\ub97c \ucd94\uac00\ud569\ub2c8\ub2e4  myevan.net: 192.30.252.153  myevan.net: 192.30.252.154  www.myevan.net: 192.30.252.153  www.myevan.net: 192.30.252.154", 
             "title": "\ucee4\uc2a4\ud140 \ub3c4\uba54\uc778 Custom Domain"
+        }, 
+        {
+            "location": "/unreal_engine_tutorial/", 
+            "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ub530\ub77c\ud558\uae30\n\n\nGitHub \uc5f0\ub3d9 Connecting\n\n\n\n\nGitHub \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778 \n \n\uac1c\uc778 \uc815\ubcf4\n \n GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825 \n\n\nGitHub \ub85c\uadf8\uc778 \ud6c4 \n\uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c\n \uc774\ub3d9\n\n\n\n\nGit \uc708\ub3c4\uc6b0 \ubbf8\ub7ec WindowsMirror\n\n\nGitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4\n\n\nmd\n C:\\Repositories\\git\n\ncd\n C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine\n\n\n\n\n\n\uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4\n\n\ngit clone --mirror C:\\UnrealEngine C:\\Repositories\\git\n\n\n\n\n\nC:\\Repositories\\git\\UnrealEngine\\config \n\n\n[remote \norigin\n]\n\n-    url = C:/UnrealEngine\n\n\n+    url = https://github.com/EpicGames/UnrealEngine\n\nfetch = +refs/*:refs/*\nmirror = true\n\n\n\n\n\n\ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4\n\n\ncd\n C:\\Repositories\\git\\UnrealEngine\ngit remote update\n\n\n\n\n\n\ubbf8\ub7ec \ud638\uc2a4\ud305\n\ud558\uba74 \uc678\ubd80\uc5d0\uc11c\ub3c4 \uc811\uadfc \uac00\ub2a5\ud569\ub2c8\ub2e4", 
+            "title": "unreal engine"
+        }, 
+        {
+            "location": "/unreal_engine_tutorial/#_1", 
+            "text": "", 
+            "title": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ub530\ub77c\ud558\uae30"
+        }, 
+        {
+            "location": "/unreal_engine_tutorial/#github-connecting", 
+            "text": "GitHub \uacc4\uc815 \uc0dd\uc131  \uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131  \uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778    \uac1c\uc778 \uc815\ubcf4    GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825   GitHub \ub85c\uadf8\uc778 \ud6c4  \uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c  \uc774\ub3d9", 
+            "title": "GitHub \uc5f0\ub3d9 Connecting"
+        }, 
+        {
+            "location": "/unreal_engine_tutorial/#git-windowsmirror", 
+            "text": "GitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4  md  C:\\Repositories\\git cd  C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine  \uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4  git clone --mirror C:\\UnrealEngine C:\\Repositories\\git  C:\\Repositories\\git\\UnrealEngine\\config   [remote  origin ] -    url = C:/UnrealEngine  +    url = https://github.com/EpicGames/UnrealEngine \nfetch = +refs/*:refs/*\nmirror = true  \ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4  cd  C:\\Repositories\\git\\UnrealEngine\ngit remote update  \ubbf8\ub7ec \ud638\uc2a4\ud305 \ud558\uba74 \uc678\ubd80\uc5d0\uc11c\ub3c4 \uc811\uadfc \uac00\ub2a5\ud569\ub2c8\ub2e4", 
+            "title": "Git \uc708\ub3c4\uc6b0 \ubbf8\ub7ec WindowsMirror"
+        }, 
+        {
+            "location": "/windows_git_hosting/", 
+            "text": "\uc708\ub3c4\uc6b0 Git \ud638\uc2a4\ud305\n\n\nhttp://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/\n\n\n\ub370\ubaac Daemon\n\n\nC:\\Repositories\\git\\gitd.bat\n\n\n@\necho\n off\n\nC:\\Program Files\\Git\\bin\\git.exe\n daemon --reuseaddr --base-path=\n%~dp0\n --export-all --enable=receive-pack\n\n\n\n\n\n\ub85c\uceec \ud14c\uc2a4\ud2b8\n\n\ngit clone git://localhost/\uc800\uc7a5\uc18c\n\n\n\n\n\n\uc11c\ube44\uc2a4 Service\n\n\n\uc11c\ube44\uc2a4 \ub4f1\ub85d \uc571\n\uc744 \ube4c\ub4dc\ud55c \ub2e4\uc74c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc791\uc131\ud569\ub2c8\ub2e4.\n\n\nC:\\Repositories\\git\\gitd_service_create.bat\n\n\n@\necho\n off\nsc.exe create \nGitDaemon\n binpath=\n%~dp0\n\\ServiceRunner.exe \n%~dp0\n\\gitd.bat\n start=auto\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_start.bat\n\n\n@\necho\n off\nsc.exe start \nGitDaemon\n\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_stop.bat\n\n\n@\necho\n off\nsc.exe stop \nGitDaemon\n\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_delete.bat\n\n\n@\necho\n off\nsc.exe delete \nGitDaemon\n\n\npause\n\n\n\n\n\n\n\uad00\ub9ac\uc790 \uad8c\ud55c\uc73c\ub85c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc2e4\ud589\ud569\ub2c8\ub2e4.", 
+            "title": "git hosting"
+        }, 
+        {
+            "location": "/windows_git_hosting/#git", 
+            "text": "http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/", 
+            "title": "\uc708\ub3c4\uc6b0 Git \ud638\uc2a4\ud305"
+        }, 
+        {
+            "location": "/windows_git_hosting/#daemon", 
+            "text": "C:\\Repositories\\git\\gitd.bat  @ echo  off C:\\Program Files\\Git\\bin\\git.exe  daemon --reuseaddr --base-path= %~dp0  --export-all --enable=receive-pack  \ub85c\uceec \ud14c\uc2a4\ud2b8  git clone git://localhost/\uc800\uc7a5\uc18c", 
+            "title": "\ub370\ubaac Daemon"
+        }, 
+        {
+            "location": "/windows_git_hosting/#service", 
+            "text": "\uc11c\ube44\uc2a4 \ub4f1\ub85d \uc571 \uc744 \ube4c\ub4dc\ud55c \ub2e4\uc74c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc791\uc131\ud569\ub2c8\ub2e4.  C:\\Repositories\\git\\gitd_service_create.bat  @ echo  off\nsc.exe create  GitDaemon  binpath= %~dp0 \\ServiceRunner.exe  %~dp0 \\gitd.bat  start=auto pause   C:\\Repositories\\git\\gitd_service_start.bat  @ echo  off\nsc.exe start  GitDaemon  pause   C:\\Repositories\\git\\gitd_service_stop.bat  @ echo  off\nsc.exe stop  GitDaemon  pause   C:\\Repositories\\git\\gitd_service_delete.bat  @ echo  off\nsc.exe delete  GitDaemon  pause   \uad00\ub9ac\uc790 \uad8c\ud55c\uc73c\ub85c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc2e4\ud589\ud569\ub2c8\ub2e4.", 
+            "title": "\uc11c\ube44\uc2a4 Service"
         }
     ]
 }
