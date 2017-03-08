@@ -76,44 +76,134 @@
             "title": "\ucee4\uc2a4\ud140 \ub3c4\uba54\uc778 Custom Domain"
         }, 
         {
-            "location": "/unreal_engine_tutorial/", 
-            "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ub530\ub77c\ud558\uae30\n\n\nGitHub \uc5f0\ub3d9 Connecting\n\n\n\n\nGitHub \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778 \n \n\uac1c\uc778 \uc815\ubcf4\n \n GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825 \n\n\nGitHub \ub85c\uadf8\uc778 \ud6c4 \n\uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c\n \uc774\ub3d9\n\n\n\n\nGit \uc708\ub3c4\uc6b0 \ubbf8\ub7ec WindowsMirror\n\n\nGitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4\n\n\nmd\n C:\\Repositories\\git\n\ncd\n C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine\n\n\n\n\n\n\uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4\n\n\ngit clone --mirror C:\\UnrealEngine C:\\Repositories\\git\n\n\n\n\n\nC:\\Repositories\\git\\UnrealEngine\\config \n\n\n[remote \norigin\n]\n\n-    url = C:/UnrealEngine\n\n\n+    url = https://github.com/EpicGames/UnrealEngine\n\nfetch = +refs/*:refs/*\nmirror = true\n\n\n\n\n\n\ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4\n\n\ncd\n C:\\Repositories\\git\\UnrealEngine\ngit remote update\n\n\n\n\n\n\ubbf8\ub7ec \ud638\uc2a4\ud305\n\ud558\uba74 \uc678\ubd80\uc5d0\uc11c\ub3c4 \uc811\uadfc \uac00\ub2a5\ud569\ub2c8\ub2e4", 
-            "title": "unreal engine"
+            "location": "/ue4_build_tutorial/", 
+            "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ube4c\ub4dc \ub530\ub77c\ud558\uae30\n\n\n\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc0ac\uc6a9\uc790 \uc815\uc758 \uc124\uce58 VisualStudioCustomInstallation\n\n\n\n\nVisual C++\n\n\nVisual C#\n\n\nAndroid SDK\n\n\nGit for Windows\n\n\n\n\nGitHub Extension for VisualStudio \ub294 \n.gitignore \ubc84\uadf8\n\uac00 \uc788\uc74c\n\n\n\uae43\ud5c8\ube0c \uc5f0\ub3d9 GitHubConnecting\n\n\n\n\nGitHub \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778 \n \n\uac1c\uc778 \uc815\ubcf4\n \n GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825 \n\n\nGitHub \ub85c\uadf8\uc778 \ud6c4 \n\uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c\n \uc774\ub3d9\n\n\n\n\n\uae43\ud5c8\ube0c \ud074\ub860 GitHubCloning\n\n\ngit clone https://github.com/EpicGames/UnrealEngine C:\\UnrealEngine\n\n\n\n\n\n\uae43\ud5c8\ube0c \ubbf8\ub7ec GitHubMirroring\n\n\nGitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4\n\n\nmd\n C:\\Repositories\\git\n\ncd\n C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine\n\n\n\n\n\n\uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4\n\n\ngit clone --mirror C:\\UnrealEngine C:\\Repositories\\git\n\n\n\n\n\nC:\\Repositories\\git\\UnrealEngine\\config \n\n\n[remote \norigin\n]\n\n-    url = C:/UnrealEngine\n\n\n+    url = https://github.com/EpicGames/UnrealEngine\n\nfetch = +refs/*:refs/*\nmirror = true\n\n\n\n\n\n\ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4\n\n\ncd\n C:\\Repositories\\git\\UnrealEngine\ngit remote update\n\n\n\n\n\n\ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \uc0ac\uc6a9\ud574 \nGit \ud638\uc2a4\ud305\n\uc744 \uad6c\ucd95\ud558\uba74 git \ud504\ub85c\ud1a0\ucf5c\uc744 \uc0ac\uc6a9\ud574 \ub124\ud2b8\uc6cc\ud06c \uc811\uadfc\uc774 \uac00\ub2a5\ud569\ub2c8\ub2e4.\n\n\ngit clone git://localhost/UnrealEngine C:\\UnrealEngine\n\n\n\n\n\n\uc708\ub3c4\uc6b0 \ud504\ub85c\uc81d\ud2b8 \uc0dd\uc131 WindowsProjectGenerating\n\n\n\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \uc14b\uc5c5\n \ud6c4 \ud504\ub85c\uc81d\ud2b8 \ud30c\uc77c\uc744 \uc0dd\uc131\ud55c\ub2e4.\n\n\ncd\n C:\\UnrealEngine\nSetup.bat \nGenerateProjectFiles.bat\n\n\n\n\n\n\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc14b\uc5c5 VisualStudioSetup\n\n\nhttps://docs.unrealengine.com/latest/KOR/Programming/Development/VisualStudioSetup/index.html\n\n\n\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ube4c\ub4dc VisualStudioBuilding\n\n\nhttps://docs.unrealengine.com/latest/KOR/Programming/Development/BuildingUnrealEngine/index.html\n\n\n\ub85c\uceec \ube4c\ub4dc LocalBuild\n\n\nhttps://docs.unrealengine.com/latest/KOR/Programming/Development/InstalledBuildReference/index.html", 
+            "title": "ue4 build"
         }, 
         {
-            "location": "/unreal_engine_tutorial/#_1", 
+            "location": "/ue4_build_tutorial/#_1", 
             "text": "", 
-            "title": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ub530\ub77c\ud558\uae30"
+            "title": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ube4c\ub4dc \ub530\ub77c\ud558\uae30"
         }, 
         {
-            "location": "/unreal_engine_tutorial/#github-connecting", 
+            "location": "/ue4_build_tutorial/#visualstudiocustominstallation", 
+            "text": "Visual C++  Visual C#  Android SDK  Git for Windows   GitHub Extension for VisualStudio \ub294  .gitignore \ubc84\uadf8 \uac00 \uc788\uc74c", 
+            "title": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc0ac\uc6a9\uc790 \uc815\uc758 \uc124\uce58 VisualStudioCustomInstallation"
+        }, 
+        {
+            "location": "/ue4_build_tutorial/#githubconnecting", 
             "text": "GitHub \uacc4\uc815 \uc0dd\uc131  \uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131  \uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778    \uac1c\uc778 \uc815\ubcf4    GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825   GitHub \ub85c\uadf8\uc778 \ud6c4  \uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c  \uc774\ub3d9", 
-            "title": "GitHub \uc5f0\ub3d9 Connecting"
+            "title": "\uae43\ud5c8\ube0c \uc5f0\ub3d9 GitHubConnecting"
         }, 
         {
-            "location": "/unreal_engine_tutorial/#git-windowsmirror", 
-            "text": "GitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4  md  C:\\Repositories\\git cd  C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine  \uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4  git clone --mirror C:\\UnrealEngine C:\\Repositories\\git  C:\\Repositories\\git\\UnrealEngine\\config   [remote  origin ] -    url = C:/UnrealEngine  +    url = https://github.com/EpicGames/UnrealEngine \nfetch = +refs/*:refs/*\nmirror = true  \ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4  cd  C:\\Repositories\\git\\UnrealEngine\ngit remote update  \ubbf8\ub7ec \ud638\uc2a4\ud305 \ud558\uba74 \uc678\ubd80\uc5d0\uc11c\ub3c4 \uc811\uadfc \uac00\ub2a5\ud569\ub2c8\ub2e4", 
-            "title": "Git \uc708\ub3c4\uc6b0 \ubbf8\ub7ec WindowsMirror"
+            "location": "/ue4_build_tutorial/#githubcloning", 
+            "text": "git clone https://github.com/EpicGames/UnrealEngine C:\\UnrealEngine", 
+            "title": "\uae43\ud5c8\ube0c \ud074\ub860 GitHubCloning"
         }, 
         {
-            "location": "/windows_git_hosting/", 
+            "location": "/ue4_build_tutorial/#githubmirroring", 
+            "text": "GitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4  md  C:\\Repositories\\git cd  C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine  \uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4  git clone --mirror C:\\UnrealEngine C:\\Repositories\\git  C:\\Repositories\\git\\UnrealEngine\\config   [remote  origin ] -    url = C:/UnrealEngine  +    url = https://github.com/EpicGames/UnrealEngine \nfetch = +refs/*:refs/*\nmirror = true  \ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4  cd  C:\\Repositories\\git\\UnrealEngine\ngit remote update  \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \uc0ac\uc6a9\ud574  Git \ud638\uc2a4\ud305 \uc744 \uad6c\ucd95\ud558\uba74 git \ud504\ub85c\ud1a0\ucf5c\uc744 \uc0ac\uc6a9\ud574 \ub124\ud2b8\uc6cc\ud06c \uc811\uadfc\uc774 \uac00\ub2a5\ud569\ub2c8\ub2e4.  git clone git://localhost/UnrealEngine C:\\UnrealEngine", 
+            "title": "\uae43\ud5c8\ube0c \ubbf8\ub7ec GitHubMirroring"
+        }, 
+        {
+            "location": "/ue4_build_tutorial/#windowsprojectgenerating", 
+            "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \uc14b\uc5c5  \ud6c4 \ud504\ub85c\uc81d\ud2b8 \ud30c\uc77c\uc744 \uc0dd\uc131\ud55c\ub2e4.  cd  C:\\UnrealEngine\nSetup.bat \nGenerateProjectFiles.bat", 
+            "title": "\uc708\ub3c4\uc6b0 \ud504\ub85c\uc81d\ud2b8 \uc0dd\uc131 WindowsProjectGenerating"
+        }, 
+        {
+            "location": "/ue4_build_tutorial/#visualstudiosetup", 
+            "text": "https://docs.unrealengine.com/latest/KOR/Programming/Development/VisualStudioSetup/index.html", 
+            "title": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc14b\uc5c5 VisualStudioSetup"
+        }, 
+        {
+            "location": "/ue4_build_tutorial/#visualstudiobuilding", 
+            "text": "https://docs.unrealengine.com/latest/KOR/Programming/Development/BuildingUnrealEngine/index.html", 
+            "title": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ube4c\ub4dc VisualStudioBuilding"
+        }, 
+        {
+            "location": "/ue4_build_tutorial/#localbuild", 
+            "text": "https://docs.unrealengine.com/latest/KOR/Programming/Development/InstalledBuildReference/index.html", 
+            "title": "\ub85c\uceec \ube4c\ub4dc LocalBuild"
+        }, 
+        {
+            "location": "/windows_git_hosting_digest/", 
             "text": "\uc708\ub3c4\uc6b0 Git \ud638\uc2a4\ud305\n\n\nhttp://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/\n\n\n\ub370\ubaac Daemon\n\n\nC:\\Repositories\\git\\gitd.bat\n\n\n@\necho\n off\n\nC:\\Program Files\\Git\\bin\\git.exe\n daemon --reuseaddr --base-path=\n%~dp0\n --export-all --enable=receive-pack\n\n\n\n\n\n\ub85c\uceec \ud14c\uc2a4\ud2b8\n\n\ngit clone git://localhost/\uc800\uc7a5\uc18c\n\n\n\n\n\n\uc11c\ube44\uc2a4 Service\n\n\n\uc11c\ube44\uc2a4 \ub4f1\ub85d \uc571\n\uc744 \ube4c\ub4dc\ud55c \ub2e4\uc74c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc791\uc131\ud569\ub2c8\ub2e4.\n\n\nC:\\Repositories\\git\\gitd_service_create.bat\n\n\n@\necho\n off\nsc.exe create \nGitDaemon\n binpath=\n%~dp0\n\\ServiceRunner.exe \n%~dp0\n\\gitd.bat\n start=auto\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_start.bat\n\n\n@\necho\n off\nsc.exe start \nGitDaemon\n\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_stop.bat\n\n\n@\necho\n off\nsc.exe stop \nGitDaemon\n\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_delete.bat\n\n\n@\necho\n off\nsc.exe delete \nGitDaemon\n\n\npause\n\n\n\n\n\n\n\uad00\ub9ac\uc790 \uad8c\ud55c\uc73c\ub85c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc2e4\ud589\ud569\ub2c8\ub2e4.", 
             "title": "git hosting"
         }, 
         {
-            "location": "/windows_git_hosting/#git", 
+            "location": "/windows_git_hosting_digest/#git", 
             "text": "http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/", 
             "title": "\uc708\ub3c4\uc6b0 Git \ud638\uc2a4\ud305"
         }, 
         {
-            "location": "/windows_git_hosting/#daemon", 
+            "location": "/windows_git_hosting_digest/#daemon", 
             "text": "C:\\Repositories\\git\\gitd.bat  @ echo  off C:\\Program Files\\Git\\bin\\git.exe  daemon --reuseaddr --base-path= %~dp0  --export-all --enable=receive-pack  \ub85c\uceec \ud14c\uc2a4\ud2b8  git clone git://localhost/\uc800\uc7a5\uc18c", 
             "title": "\ub370\ubaac Daemon"
         }, 
         {
-            "location": "/windows_git_hosting/#service", 
+            "location": "/windows_git_hosting_digest/#service", 
             "text": "\uc11c\ube44\uc2a4 \ub4f1\ub85d \uc571 \uc744 \ube4c\ub4dc\ud55c \ub2e4\uc74c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc791\uc131\ud569\ub2c8\ub2e4.  C:\\Repositories\\git\\gitd_service_create.bat  @ echo  off\nsc.exe create  GitDaemon  binpath= %~dp0 \\ServiceRunner.exe  %~dp0 \\gitd.bat  start=auto pause   C:\\Repositories\\git\\gitd_service_start.bat  @ echo  off\nsc.exe start  GitDaemon  pause   C:\\Repositories\\git\\gitd_service_stop.bat  @ echo  off\nsc.exe stop  GitDaemon  pause   C:\\Repositories\\git\\gitd_service_delete.bat  @ echo  off\nsc.exe delete  GitDaemon  pause   \uad00\ub9ac\uc790 \uad8c\ud55c\uc73c\ub85c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc2e4\ud589\ud569\ub2c8\ub2e4.", 
             "title": "\uc11c\ube44\uc2a4 Service"
+        }, 
+        {
+            "location": "/ue4_setup_digest/", 
+            "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \uc14b\uc5c5\n\n\nhttps://github.com/EpicGames/UnrealEngine/blob/release/Setup.bat\n \n\n\n\uae30\ub2a5\n\n\n\n\ngit \uc800\uc7a5\uc18c\uc5d0 \ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \ubc14\uc774\ub108\ub9ac \ud30c\uc77c \ub2e4\uc6b4\ub85c\ub4dc\n\n\ngit \ud6c4\ud0b9 \uc124\uc815\n\n\n\ud544\uc218 \uad6c\uc131 \uc694\uc18c \uc124\uce58\n\n\n\ub808\uc9c0\uc2a4\ud2b8\ub9ac\uc5d0 \uc5f0\uc9c4 \uacbd\ub85c \ub4f1\ub85d\n\n\n\n\n\uc635\uc158\n\n\n\n\n\uc81c\uc678(\n--exclude\n): \ud2b9\uc815 \ud50c\ub7ab\ud3fc \ubc14\uc774\ub108\ub9ac \uc81c\uc678\n\n\n\ubd88\ud544\uc694\ud55c \ud50c\ub7ab\ud3fc \ubc14\uc774\ub108\ub9ac\ub97c \ubc1b\uc9c0 \uc54a\uc73c\ubbc0\ub85c \uc14b\uc5c5 \uc2dc\uac04 \ubc0f \ub85c\uceec \uc6a9\ub7c9 \ub2e8\ucd95\ub428\n\n\n\ud558\uc9c0\ub9cc 4.15.0 \uae30\uc900 \uad6c\ud604\uc740 \uadf8\ub0e5 \uc81c\uc678 \uacbd\ub85c \ud544\ud130\uc778\uc9c0 Win64 \ud50c\ub7ab\ud3fc\ub9cc \ubc1b\uae30 \uc704\ud574  Win32, IOS \ub4f1\uc744 \uc81c\uc678\ud558\uba74 \ube4c\ub4dc\uc5d0 \uc2e4\ud328\ud568", 
+            "title": "setup"
+        }, 
+        {
+            "location": "/ue4_setup_digest/#_1", 
+            "text": "https://github.com/EpicGames/UnrealEngine/blob/release/Setup.bat", 
+            "title": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \uc14b\uc5c5"
+        }, 
+        {
+            "location": "/ue4_setup_digest/#_2", 
+            "text": "git \uc800\uc7a5\uc18c\uc5d0 \ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \ubc14\uc774\ub108\ub9ac \ud30c\uc77c \ub2e4\uc6b4\ub85c\ub4dc  git \ud6c4\ud0b9 \uc124\uc815  \ud544\uc218 \uad6c\uc131 \uc694\uc18c \uc124\uce58  \ub808\uc9c0\uc2a4\ud2b8\ub9ac\uc5d0 \uc5f0\uc9c4 \uacbd\ub85c \ub4f1\ub85d", 
+            "title": "\uae30\ub2a5"
+        }, 
+        {
+            "location": "/ue4_setup_digest/#_3", 
+            "text": "\uc81c\uc678( --exclude ): \ud2b9\uc815 \ud50c\ub7ab\ud3fc \ubc14\uc774\ub108\ub9ac \uc81c\uc678  \ubd88\ud544\uc694\ud55c \ud50c\ub7ab\ud3fc \ubc14\uc774\ub108\ub9ac\ub97c \ubc1b\uc9c0 \uc54a\uc73c\ubbc0\ub85c \uc14b\uc5c5 \uc2dc\uac04 \ubc0f \ub85c\uceec \uc6a9\ub7c9 \ub2e8\ucd95\ub428  \ud558\uc9c0\ub9cc 4.15.0 \uae30\uc900 \uad6c\ud604\uc740 \uadf8\ub0e5 \uc81c\uc678 \uacbd\ub85c \ud544\ud130\uc778\uc9c0 Win64 \ud50c\ub7ab\ud3fc\ub9cc \ubc1b\uae30 \uc704\ud574  Win32, IOS \ub4f1\uc744 \uc81c\uc678\ud558\uba74 \ube4c\ub4dc\uc5d0 \uc2e4\ud328\ud568", 
+            "title": "\uc635\uc158"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/", 
+            "text": "GitHub Extension for VisualStudio: UnrealEngine .gitignore \ubc84\uadf8\n\n\n\ud658\uacbd\n\n\n\n\nVisualStudio Community 2015 14.0.25431.01 Update 3\n\n\nWindows 10 Pro 64bit\n\n\nUnrealEngine-4.15.0\n\n\n\n\n\uc7ac\ud604\n\n\n\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 Git \ub85c\uceec \uc800\uc7a5\uc18c\ub97c \uc624\ud508\ud55c \ub2e4\uc74c \ud300 \ud0d0\uc0c9\uae30\ub97c \ud1b5\ud574 \ucee4\ubc0b\uc744 \uc2dc\ub3c4\ud569\ub2c8\ub2e4.\n\n\n\uc0c1\ud669\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ubcc0\uacbd \ub0b4\uc6a9 (15781\uac1c)\n\n\n.suo [\ucd94\uac00]\nAgentInterface.dll [\ucd94\uac00]\nAllDesktop.Automation.dll [\ucd94\uac00]\nAllDesktop.Automation.pdb [\ucd94\uac00]\n...\n\n\n\n\n\n\uc6d0\uc778\n\n\n\uc5b8\ub9ac\uc5bc\uc5d0\uc11c\ub294 \ubc84\uc804 \uad00\ub9ac \ub300\uc0c1 \ud30c\uc77c\uc744 \ube14\ub799 \ub9ac\uc2a4\ud2b8 \ub300\uc2e0 \ud654\uc774\ud2b8 \ub9ac\uc2a4\ud2b8 \uad00\ub9ac\ud569\ub2c8\ub2e4.\n\n\n\ubd84\uc11d\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ud504\ub85c\uc81d\ud2b8 \n \uc124\uc815 \n Git \n \ub9ac\ud3ec\uc9c0\ud1a0\ub9ac \uc124\uc815 \n \ubb34\uc2dc \ubc0f \ud2b9\uc131 \ud30c\uc77c \n \ubb34\uc2dc \ud30c\uc77c \ud3b8\uc9d1\n\n\n# Ignore all files by default, but scan all directories\n\n*\n!*/\n\n\n\n\n\n!*/\n \ubb38\uad6c\ub97c \uc81c\ub300\ub85c \ucc98\ub9ac\ud558\uc9c0 \ubabb\ud568\n\n\n\ud574\uacb0\n\n\n\n\nGit \ucf58\uc194 \uc0ac\uc6a9\n\n\nGit GUI \ud074\ub77c\uc774\uc5b8\ud2b8 \uc0ac\uc6a9(SmartGit, SourceTree)\n\n\n\ub2e4\ub978 Git \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uad50\uccb4(\ud655\uc778\uc911)", 
+            "title": "vs gitignore"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#github-extension-for-visualstudio-unrealengine-gitignore", 
+            "text": "", 
+            "title": "GitHub Extension for VisualStudio: UnrealEngine .gitignore \ubc84\uadf8"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_1", 
+            "text": "VisualStudio Community 2015 14.0.25431.01 Update 3  Windows 10 Pro 64bit  UnrealEngine-4.15.0", 
+            "title": "\ud658\uacbd"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_2", 
+            "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 Git \ub85c\uceec \uc800\uc7a5\uc18c\ub97c \uc624\ud508\ud55c \ub2e4\uc74c \ud300 \ud0d0\uc0c9\uae30\ub97c \ud1b5\ud574 \ucee4\ubc0b\uc744 \uc2dc\ub3c4\ud569\ub2c8\ub2e4.", 
+            "title": "\uc7ac\ud604"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_3", 
+            "text": "\ud300 \ud0d0\uc0c9\uae30   \ubcc0\uacbd \ub0b4\uc6a9 (15781\uac1c)  .suo [\ucd94\uac00]\nAgentInterface.dll [\ucd94\uac00]\nAllDesktop.Automation.dll [\ucd94\uac00]\nAllDesktop.Automation.pdb [\ucd94\uac00]\n...", 
+            "title": "\uc0c1\ud669"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_4", 
+            "text": "\uc5b8\ub9ac\uc5bc\uc5d0\uc11c\ub294 \ubc84\uc804 \uad00\ub9ac \ub300\uc0c1 \ud30c\uc77c\uc744 \ube14\ub799 \ub9ac\uc2a4\ud2b8 \ub300\uc2e0 \ud654\uc774\ud2b8 \ub9ac\uc2a4\ud2b8 \uad00\ub9ac\ud569\ub2c8\ub2e4.", 
+            "title": "\uc6d0\uc778"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_5", 
+            "text": "\ud300 \ud0d0\uc0c9\uae30   \ud504\ub85c\uc81d\ud2b8   \uc124\uc815   Git   \ub9ac\ud3ec\uc9c0\ud1a0\ub9ac \uc124\uc815   \ubb34\uc2dc \ubc0f \ud2b9\uc131 \ud30c\uc77c   \ubb34\uc2dc \ud30c\uc77c \ud3b8\uc9d1  # Ignore all files by default, but scan all directories \n*\n!*/  !*/  \ubb38\uad6c\ub97c \uc81c\ub300\ub85c \ucc98\ub9ac\ud558\uc9c0 \ubabb\ud568", 
+            "title": "\ubd84\uc11d"
+        }, 
+        {
+            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_6", 
+            "text": "Git \ucf58\uc194 \uc0ac\uc6a9  Git GUI \ud074\ub77c\uc774\uc5b8\ud2b8 \uc0ac\uc6a9(SmartGit, SourceTree)  \ub2e4\ub978 Git \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uad50\uccb4(\ud655\uc778\uc911)", 
+            "title": "\ud574\uacb0"
         }
     ]
 }
