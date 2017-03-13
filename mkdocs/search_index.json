@@ -191,6 +191,31 @@
             "title": "\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8-\uc784\ud3ec\ud2b8"
         }, 
         {
+            "location": "/vscode_plugin_vim_digest/", 
+            "text": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ucf54\ub4dc \ud50c\ub7ec\uadf8\uc778: vim \uc694\uc57d\n\n\nhttps://github.com/VSCodeVim/Vim\n\n\n\uc124\uc815\n\n\n\uc18d\uc131\n\n\n\n\nvim.useCtrlKeys\n: \ucee8\ud2b8\ub864 \uae30\ubc18 \ub2e8\ucd95\ud0a4 \uc9c0\uc6d0 \n\n\nvim.useSystemClipboard\n: \uc2dc\uc2a4\ud15c \ud074\ub9bd\ubcf4\ub4dc \uc5f0\ub3d9 \n\n\neditor.cursorStyle\n: \uae30\ubcf8 \ucee4\uc11c \ubaa8\uc591 \uc124\uc815 (vim \ud50c\ub7ec\uadf8\uc778 \ud65c\uc131\ud654-\ube44\ud65c\uc131\ud654 \uad6c\ubd84)\n\n\n\n\n\uc608\uc2dc\n\n\n{\n    \nvim.useCtrlKeys\n: \ntrue\n,\n    \nvim.useSystemClipboard\n: \ntrue\n,\n    \neditor.cursorStyle\n: \nunderline\n\n}", 
+            "title": "vim"
+        }, 
+        {
+            "location": "/vscode_plugin_vim_digest/#vim", 
+            "text": "https://github.com/VSCodeVim/Vim", 
+            "title": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ucf54\ub4dc \ud50c\ub7ec\uadf8\uc778: vim \uc694\uc57d"
+        }, 
+        {
+            "location": "/vscode_plugin_vim_digest/#_1", 
+            "text": "", 
+            "title": "\uc124\uc815"
+        }, 
+        {
+            "location": "/vscode_plugin_vim_digest/#_2", 
+            "text": "vim.useCtrlKeys : \ucee8\ud2b8\ub864 \uae30\ubc18 \ub2e8\ucd95\ud0a4 \uc9c0\uc6d0   vim.useSystemClipboard : \uc2dc\uc2a4\ud15c \ud074\ub9bd\ubcf4\ub4dc \uc5f0\ub3d9   editor.cursorStyle : \uae30\ubcf8 \ucee4\uc11c \ubaa8\uc591 \uc124\uc815 (vim \ud50c\ub7ec\uadf8\uc778 \ud65c\uc131\ud654-\ube44\ud65c\uc131\ud654 \uad6c\ubd84)", 
+            "title": "\uc18d\uc131"
+        }, 
+        {
+            "location": "/vscode_plugin_vim_digest/#_3", 
+            "text": "{\n     vim.useCtrlKeys :  true ,\n     vim.useSystemClipboard :  true ,\n     editor.cursorStyle :  underline \n}", 
+            "title": "\uc608\uc2dc"
+        }, 
+        {
             "location": "/github_ext_for_vs_ue4_gitignore_issue/", 
             "text": "GitHub Extension for VisualStudio: UnrealEngine .gitignore \ubc84\uadf8\n\n\n\ud658\uacbd\n\n\n\n\nVisualStudio Community 2015 14.0.25431.01 Update 3\n\n\nWindows 10 Pro 64bit\n\n\nUnrealEngine-4.15.0\n\n\n\n\n\uc7ac\ud604\n\n\n\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 Git \ub85c\uceec \uc800\uc7a5\uc18c\ub97c \uc624\ud508\ud55c \ub2e4\uc74c \ud300 \ud0d0\uc0c9\uae30\ub97c \ud1b5\ud574 \ucee4\ubc0b\uc744 \uc2dc\ub3c4\ud569\ub2c8\ub2e4.\n\n\n\uc0c1\ud669\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ubcc0\uacbd \ub0b4\uc6a9 (15781\uac1c)\n\n\n.suo [\ucd94\uac00]\nAgentInterface.dll [\ucd94\uac00]\nAllDesktop.Automation.dll [\ucd94\uac00]\nAllDesktop.Automation.pdb [\ucd94\uac00]\n...\n\n\n\n\n\n\uc6d0\uc778\n\n\n\uc5b8\ub9ac\uc5bc\uc5d0\uc11c\ub294 \ubc84\uc804 \uad00\ub9ac \ub300\uc0c1 \ud30c\uc77c\uc744 \ube14\ub799 \ub9ac\uc2a4\ud2b8 \ub300\uc2e0 \ud654\uc774\ud2b8 \ub9ac\uc2a4\ud2b8 \uad00\ub9ac\ud569\ub2c8\ub2e4.\n\n\n\ubd84\uc11d\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ud504\ub85c\uc81d\ud2b8 \n \uc124\uc815 \n Git \n \ub9ac\ud3ec\uc9c0\ud1a0\ub9ac \uc124\uc815 \n \ubb34\uc2dc \ubc0f \ud2b9\uc131 \ud30c\uc77c \n \ubb34\uc2dc \ud30c\uc77c \ud3b8\uc9d1\n\n\n# Ignore all files by default, but scan all directories\n\n*\n!*/\n\n\n\n\n\n!*/\n \ubb38\uad6c\ub97c \uc81c\ub300\ub85c \ucc98\ub9ac\ud558\uc9c0 \ubabb\ud568\n\n\n\ud574\uacb0\n\n\n\n\nGit \ucf58\uc194 \uc0ac\uc6a9\n\n\nGit GUI \ud074\ub77c\uc774\uc5b8\ud2b8 \uc0ac\uc6a9(SmartGit, SourceTree)\n\n\n\ub2e4\ub978 Git \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uad50\uccb4(\ud655\uc778\uc911)", 
             "title": "vs gitignore"
