@@ -161,6 +161,36 @@
             "title": "\uc635\uc158"
         }, 
         {
+            "location": "/vs2015_setup_digest/", 
+            "text": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 2015 \uc14b\uc5c5 \uc694\uc57d\n\n\n\ub2e4\uc6b4\ub85c\ub4dc\n\n\n\ucee4\ubba4\ub2c8\ud2f0 \ubc84\uc804\n\n\n\n\n\uc601\uc5b4 \nhttps://www.microsoft.com/en-US/download/details.aspx?id=48146\n\n\n\ud55c\uad6d\uc5b4 \nhttps://www.microsoft.com/ko-kr/download/details.aspx?id=48146\n\n\n\n\n\uc5b8\uc5b4 \ud329: \ud55c\uad6d\uc5b4 -\n \uc601\uc5b4\n\n\n\n\n\ub3c4\uad6c \n \uc635\uc158 \n \ud658\uacbd \n \uad6d\uac00\ubcc4 \uc124\uc815 \n \ucd94\uac00 \uc5b8\uc5b4 \uac00\uc838\uc624\uae30 \ub9c1\ud06c \ud074\ub9ad\n\n\nMicrosoft Visual Studio 2015 \uc5b8\uc5b4 \ud329 \ud398\uc774\uc9c0 \n\uc5b8\uc5b4 \uc120\ud0dd\n\uc5d0\uc11c \ud55c\uad6d\uc5b4\ub97c \uc601\uc5b4\ub85c \ubcc0\uacbd \ud6c4 \n\uc7a0\uc2dc \ub300\uae30\n \nhttps://www.microsoft.com/ko-KR/download/details.aspx?id=48157\n\n\nMicrosoft Visual Studio 2015 Language Pack \ud398\uc774\uc9c0\ub85c \ubc14\ub00c\uba74 \n\ub2e4\uc6b4\ub85c\ub4dc\n \ubc84\ud2bc \ud074\ub9ad \nhttps://www.microsoft.com/en-US/download/details.aspx?id=48157\n \n\n\n\n\n\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8-\uc784\ud3ec\ud2b8\n\n\n\n\nTools \n Import And Export Settings Wizard \uba54\ub274 \ud074\ub9ad\n\n\nExport selected environment settings: \uc775\uc2a4\ud3ec\ud2b8\n\n\nImport selected environment settings: \uc784\ud3ec\ud2b8\n\n\n\n\n\n\n\uc124\uc815 \uacbd\ub85c: \n%USERPROFILE%\\Documents\\Visual Studio 2015\\Settings", 
+            "title": "setup"
+        }, 
+        {
+            "location": "/vs2015_setup_digest/#2015", 
+            "text": "", 
+            "title": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 2015 \uc14b\uc5c5 \uc694\uc57d"
+        }, 
+        {
+            "location": "/vs2015_setup_digest/#_1", 
+            "text": "", 
+            "title": "\ub2e4\uc6b4\ub85c\ub4dc"
+        }, 
+        {
+            "location": "/vs2015_setup_digest/#_2", 
+            "text": "\uc601\uc5b4  https://www.microsoft.com/en-US/download/details.aspx?id=48146  \ud55c\uad6d\uc5b4  https://www.microsoft.com/ko-kr/download/details.aspx?id=48146", 
+            "title": "\ucee4\ubba4\ub2c8\ud2f0 \ubc84\uc804"
+        }, 
+        {
+            "location": "/vs2015_setup_digest/#-", 
+            "text": "\ub3c4\uad6c   \uc635\uc158   \ud658\uacbd   \uad6d\uac00\ubcc4 \uc124\uc815   \ucd94\uac00 \uc5b8\uc5b4 \uac00\uc838\uc624\uae30 \ub9c1\ud06c \ud074\ub9ad  Microsoft Visual Studio 2015 \uc5b8\uc5b4 \ud329 \ud398\uc774\uc9c0  \uc5b8\uc5b4 \uc120\ud0dd \uc5d0\uc11c \ud55c\uad6d\uc5b4\ub97c \uc601\uc5b4\ub85c \ubcc0\uacbd \ud6c4  \uc7a0\uc2dc \ub300\uae30   https://www.microsoft.com/ko-KR/download/details.aspx?id=48157  Microsoft Visual Studio 2015 Language Pack \ud398\uc774\uc9c0\ub85c \ubc14\ub00c\uba74  \ub2e4\uc6b4\ub85c\ub4dc  \ubc84\ud2bc \ud074\ub9ad  https://www.microsoft.com/en-US/download/details.aspx?id=48157", 
+            "title": "\uc5b8\uc5b4 \ud329: \ud55c\uad6d\uc5b4 -&gt; \uc601\uc5b4"
+        }, 
+        {
+            "location": "/vs2015_setup_digest/#-_1", 
+            "text": "Tools   Import And Export Settings Wizard \uba54\ub274 \ud074\ub9ad  Export selected environment settings: \uc775\uc2a4\ud3ec\ud2b8  Import selected environment settings: \uc784\ud3ec\ud2b8    \uc124\uc815 \uacbd\ub85c:  %USERPROFILE%\\Documents\\Visual Studio 2015\\Settings", 
+            "title": "\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8-\uc784\ud3ec\ud2b8"
+        }, 
+        {
             "location": "/github_ext_for_vs_ue4_gitignore_issue/", 
             "text": "GitHub Extension for VisualStudio: UnrealEngine .gitignore \ubc84\uadf8\n\n\n\ud658\uacbd\n\n\n\n\nVisualStudio Community 2015 14.0.25431.01 Update 3\n\n\nWindows 10 Pro 64bit\n\n\nUnrealEngine-4.15.0\n\n\n\n\n\uc7ac\ud604\n\n\n\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 Git \ub85c\uceec \uc800\uc7a5\uc18c\ub97c \uc624\ud508\ud55c \ub2e4\uc74c \ud300 \ud0d0\uc0c9\uae30\ub97c \ud1b5\ud574 \ucee4\ubc0b\uc744 \uc2dc\ub3c4\ud569\ub2c8\ub2e4.\n\n\n\uc0c1\ud669\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ubcc0\uacbd \ub0b4\uc6a9 (15781\uac1c)\n\n\n.suo [\ucd94\uac00]\nAgentInterface.dll [\ucd94\uac00]\nAllDesktop.Automation.dll [\ucd94\uac00]\nAllDesktop.Automation.pdb [\ucd94\uac00]\n...\n\n\n\n\n\n\uc6d0\uc778\n\n\n\uc5b8\ub9ac\uc5bc\uc5d0\uc11c\ub294 \ubc84\uc804 \uad00\ub9ac \ub300\uc0c1 \ud30c\uc77c\uc744 \ube14\ub799 \ub9ac\uc2a4\ud2b8 \ub300\uc2e0 \ud654\uc774\ud2b8 \ub9ac\uc2a4\ud2b8 \uad00\ub9ac\ud569\ub2c8\ub2e4.\n\n\n\ubd84\uc11d\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ud504\ub85c\uc81d\ud2b8 \n \uc124\uc815 \n Git \n \ub9ac\ud3ec\uc9c0\ud1a0\ub9ac \uc124\uc815 \n \ubb34\uc2dc \ubc0f \ud2b9\uc131 \ud30c\uc77c \n \ubb34\uc2dc \ud30c\uc77c \ud3b8\uc9d1\n\n\n# Ignore all files by default, but scan all directories\n\n*\n!*/\n\n\n\n\n\n!*/\n \ubb38\uad6c\ub97c \uc81c\ub300\ub85c \ucc98\ub9ac\ud558\uc9c0 \ubabb\ud568\n\n\n\ud574\uacb0\n\n\n\n\nGit \ucf58\uc194 \uc0ac\uc6a9\n\n\nGit GUI \ud074\ub77c\uc774\uc5b8\ud2b8 \uc0ac\uc6a9(SmartGit, SourceTree)\n\n\n\ub2e4\ub978 Git \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uad50\uccb4(\ud655\uc778\uc911)", 
             "title": "vs gitignore"
