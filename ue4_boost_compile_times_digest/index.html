@@ -365,11 +365,24 @@
     커스텀 빌드 설정
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="코어 활용" class="md-nav__link">
+    코어 활용
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" title="모든 코어 활용" class="md-nav__link">
-    모든 코어 활용
+  <a href="#_4" title="커스텀 모듈 설정" class="md-nav__link">
+    커스텀 모듈 설정
   </a>
   
 </li>
@@ -607,10 +620,58 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2" type="checkbox" id="nav-5-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2">
+      build tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-2">
+        build tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../ue4_processor_count_multiplier_analysis/" title="processor count multiplier" class="md-nav__link">
       processor count multiplier
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ue4_faster_without_unity_analysis/" title="faster without unity" class="md-nav__link">
+      faster without unity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ue4_min_files_using_precompiled_header_analysis/" title="min files using precompiled header" class="md-nav__link">
+      min files using precompiled header
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -649,11 +710,24 @@
     커스텀 빌드 설정
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="코어 활용" class="md-nav__link">
+    코어 활용
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" title="모든 코어 활용" class="md-nav__link">
-    모든 코어 활용
+  <a href="#_4" title="커스텀 모듈 설정" class="md-nav__link">
+    커스텀 모듈 설정
   </a>
   
 </li>
@@ -675,9 +749,25 @@
 <p><a href="https://wiki.unrealengine.com/Boost_Compile_Times">https://wiki.unrealengine.com/Boost_Compile_Times</a></p>
 <h2 id="_2">커스텀 빌드 설정<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><code>C:\UnrealEngine\Engine\Programs\UnrealBuildTool\BuildConfiguration.xml</code>을 <code>%USERPROFILE%\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml</code>로 복사</p>
-<h2 id="_3">모든 코어 활용<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>CPU 가 하이퍼 쓰레드를 지원한다면 <a href="../ue4_processor_count_multiplier_analysis/">ProcessorCountMultipier</a> 을 2 로 설정합니다.</p>
+<h3 id="_3">코어 활용<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>언리얼은 기본적으로 코어당 하나의 액션만 수행합니다. <a href="../ue4_processor_count_multiplier_analysis/">ProcessorCountMultipier</a> 값을 크게하면 약간의 빌드 속도 향상을 얻을 수 있습니다. 다만 컴파일 하는 도중 컴퓨터 반응성이 매우 나빠질 수 있습니다. CPU 가 하이퍼 쓰레드를 지원한다면 2 를 설정합니다.</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;ProcessorCountMultiplier&gt;</span>2<span class="nt">&lt;/ProcessorCountMultiplier&gt;</span>
+</pre></div>
+
+
+<h2 id="_4">커스텀 모듈 설정<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>언리얼 엔진 빌드는 기본적으로 유니티 빌드를 사용합니다. 유니티 빌드는 빌드 시간을 대폭 감소시켜주지만, 소스 변경이 잦은 모듈에는 적합하지 않습니다.  작업중인 모듈이라면 <a href="../ue4_faster_without_unity_analysis/">bFasterWithoutUnity</a> 을 true 로 <a href="../ue4_min_files_using_precompiled_header_analysis/">MinFilesUsingPrecompiledHeader</a> 을 1로 설정해 해당 모듈을 유니티 빌드에서 제외해주는 것이 좋습니다. </p>
+<p>WorkingModule.Build.cs</p>
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">WorkingModule</span> <span class="p">:</span> <span class="n">ModuleRules</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nf">Working</span><span class="p">(</span><span class="n">TargetInfo</span> <span class="n">Target</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// ...</span>
+        <span class="n">bFasterWithoutUnity</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+        <span class="n">MinFilesUsingPrecompiledHeader</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
 </pre></div>
               
               

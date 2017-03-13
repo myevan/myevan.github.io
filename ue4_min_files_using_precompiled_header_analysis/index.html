@@ -15,7 +15,7 @@
     
     
       
-        <title>processor count multiplier - myevan.net</title>
+        <title>min files using precompiled header - myevan.net</title>
       
     
     
@@ -80,7 +80,7 @@
                 </span>
               
             
-            processor count multiplier
+            min files using precompiled header
           
         </span>
       </div>
@@ -584,6 +584,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../ue4_processor_count_multiplier_analysis/" title="processor count multiplier" class="md-nav__link">
+      processor count multiplier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ue4_faster_without_unity_analysis/" title="faster without unity" class="md-nav__link">
+      faster without unity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -595,11 +619,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        processor count multiplier
+        min files using precompiled header
       </label>
     
-    <a href="./" title="processor count multiplier" class="md-nav__link md-nav__link--active">
-      processor count multiplier
+    <a href="./" title="min files using precompiled header" class="md-nav__link md-nav__link--active">
+      min files using precompiled header
     </a>
     
       
@@ -630,30 +654,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ue4_faster_without_unity_analysis/" title="faster without unity" class="md-nav__link">
-      faster without unity
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ue4_min_files_using_precompiled_header_analysis/" title="min files using precompiled header" class="md-nav__link">
-      min files using precompiled header
-    </a>
   </li>
 
         
@@ -719,57 +719,67 @@
                
               
                 
-                <h1 id="_1">언리얼 엔진 프로세서 카운트 멀티플라이어 분석<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">언리얼 엔진 프리컴파일드 헤더를 사용하는 최소 파일 개수<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">기능<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>소스 파일들을 지정한 개수 단위로 묶어서 프리컴파일 헤더를 생성합니다.</p>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Windows_Management_Instrumentation">WMI(Windows Management Instrumentation)</a>을 사용해 물리 코어 개수를 알아냄</li>
-<li>mono 인 경우는 WMI 쿼리를 사용할 수 없어 논리 프로세서 개수 사용</li>
-<li>하이퍼 쓰레드가 활성화된 경우(물리 코어 개수보다 논리 코어 개수가 많음)<ul>
-<li>BuildConfigruation.ProcessorCountMultiplier 값이 설정되어 있다면 물리 코어 개수에 지정한 숫자 배수로 액션 수행</li>
-<li>물리 코어 개수가 5개 이상부터 물리 코어 개수와 논리 코어 개수 평균 개수로 액션 수행</li>
-</ul>
-</li>
-<li>하이퍼 쓰레드가 비활성화된 경우 물리 코어 개수만큼 액션 수행</li>
+<li>빌드 설정값(BuildConfigruation.MinFilesUsingPrecompiledHeader)을 기본으로 사용합니다.</li>
+<li>모듈 설정값(Rules.MinFilesUsingPrecompiledHeaderOverride)이 존재할 경우 우선 사용합니다.</li>
+<li>게임 모듈(엔진이나 플러그인이 아닌 모듈)이고 BuildConfiguration.bForcePrecompiledHeaderForGameModules 가 설정되어 있을 경우 무조건 1 을 사용합니다.</li>
 </ul>
 <h2 id="_3">코드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/EpicGames/UnrealEngine/blob/76085d1106078d8988e4404391428252ba1eb9a7/Engine/Source/Programs/UnrealBuildTool/System/LocalExecutor.cs">https://github.com/EpicGames/UnrealEngine/blob/76085d1106078d8988e4404391428252ba1eb9a7/Engine/Source/Programs/UnrealBuildTool/System/LocalExecutor.cs</a></p>
-<div class="codehilite"><pre><span></span><span class="k">namespace</span> <span class="n">UnrealBuildTool</span>
+<p><a href="https://github.com/EpicGames/UnrealEngine/blob/76085d1106078d8988e4404391428252ba1eb9a7/Engine/Source/Programs/UnrealBuildTool/Configuration/UEBuildModule.cs">https://github.com/EpicGames/UnrealEngine/blob/76085d1106078d8988e4404391428252ba1eb9a7/Engine/Source/Programs/UnrealBuildTool/Configuration/UEBuildModule.cs</a></p>
+<div class="codehilite"><pre><span></span><span class="k">namespace</span> <span class="nn">UnrealBuildTool</span>
 <span class="p">{</span>
-    <span class="k">class</span> <span class="nc">ActionThread</span>
+    <span class="k">class</span> <span class="nc">UEBuildExternalModule</span> <span class="p">:</span> <span class="n">UEBuildModule</span>
     <span class="p">{</span>
-        <span class="c1">// ...</span>
-        <span class="k">public</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">ExecuteActions</span><span class="p">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Action</span><span class="o">&gt;</span> <span class="n">Actions</span><span class="p">)</span>
+        <span class="k">public</span> <span class="k">override</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">FileItem</span><span class="p">&gt;</span> <span class="n">Compile</span><span class="p">(</span><span class="n">UEBuildTarget</span> <span class="n">Target</span><span class="p">,</span> <span class="n">UEToolChain</span> <span class="n">ToolChain</span><span class="p">,</span> <span class="n">CPPEnvironment</span> <span class="n">CompileEnvironment</span><span class="p">,</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">PrecompiledHeaderTemplate</span><span class="p">&gt;</span> <span class="n">SharedPCHs</span><span class="p">,</span> <span class="n">ActionGraph</span> <span class="n">ActionGraph</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="c1">// Time to sleep after each iteration of the loop in order to not busy wait.</span>
-            <span class="k">const</span> <span class="kt">float</span> <span class="n">LoopSleepTime</span> <span class="o">=</span> <span class="mf">0.1f</span><span class="p">;</span>
+            <span class="c1">// ...</span>
 
-            <span class="c1">// Use WMI to figure out physical cores, excluding hyper threading.</span>
-            <span class="kt">int</span> <span class="n">NumCores</span> <span class="o">=</span> <span class="n">Utils</span><span class="p">.</span><span class="n">GetPhysicalProcessorCount</span><span class="p">();</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">NumCores</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="c1">// Check to see if this is an Engine module (including program or plugin modules).  That is, the module is located under the &quot;Engine&quot; folder</span>
+            <span class="kt">bool</span> <span class="n">IsPluginModule</span> <span class="p">=</span> <span class="n">ModuleDirectory</span><span class="p">.</span><span class="n">IsUnderDirectory</span><span class="p">(</span><span class="n">DirectoryReference</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">Target</span><span class="p">.</span><span class="n">ProjectDirectory</span><span class="p">,</span> <span class="s">&quot;Plugins&quot;</span><span class="p">));</span>
+            <span class="kt">bool</span> <span class="n">IsGameModule</span> <span class="p">=</span> <span class="p">!</span><span class="n">IsPluginModule</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">ModuleDirectory</span><span class="p">.</span><span class="n">IsUnderDirectory</span><span class="p">(</span><span class="n">UnrealBuildTool</span><span class="p">.</span><span class="n">EngineDirectory</span><span class="p">);</span>
+
+            <span class="c1">// Should we force a precompiled header to be generated for this module?  Usually, we only bother with a</span>
+            <span class="c1">// precompiled header if there are at least several source files in the module (after combining them for unity</span>
+            <span class="c1">// builds.)  But for game modules, it can be convenient to always have a precompiled header to single-file</span>
+            <span class="c1">// changes to code is really quick to compile.</span>
+            <span class="kt">int</span> <span class="n">MinFilesUsingPrecompiledHeader</span> <span class="p">=</span> <span class="n">BuildConfiguration</span><span class="p">.</span><span class="n">MinFilesUsingPrecompiledHeader</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">Rules</span><span class="p">.</span><span class="n">MinFilesUsingPrecompiledHeaderOverride</span> <span class="p">!=</span> <span class="m">0</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="n">NumCores</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Environment</span><span class="p">.</span><span class="n">ProcessorCount</span><span class="p">;</span>
+                <span class="n">MinFilesUsingPrecompiledHeader</span> <span class="p">=</span> <span class="n">Rules</span><span class="p">.</span><span class="n">MinFilesUsingPrecompiledHeaderOverride</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="c1">// The number of actions to execute in parallel is trying to keep the CPU busy enough in presence of I/O stalls.</span>
-            <span class="kt">int</span> <span class="n">MaxActionsToExecuteInParallel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">NumCores</span> <span class="o">&lt;</span> <span class="n">System</span><span class="p">.</span><span class="n">Environment</span><span class="p">.</span><span class="n">ProcessorCount</span> <span class="o">&amp;&amp;</span> <span class="n">BuildConfiguration</span><span class="p">.</span><span class="n">ProcessorCountMultiplier</span> <span class="o">!=</span> <span class="mf">1.0</span><span class="p">)</span>
+            <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">IsGameModule</span> <span class="p">&amp;&amp;</span> <span class="n">BuildConfiguration</span><span class="p">.</span><span class="n">bForcePrecompiledHeaderForGameModules</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="c1">// The CPU has more logical cores than physical ones, aka uses hyper-threading. </span>
-                <span class="c1">// Use multiplier if provided</span>
-                <span class="n">MaxActionsToExecuteInParallel</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">NumCores</span> <span class="o">*</span> <span class="n">BuildConfiguration</span><span class="p">.</span><span class="n">ProcessorCountMultiplier</span><span class="p">);</span>
-            <span class="p">}</span>
-            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">NumCores</span> <span class="o">&lt;</span> <span class="n">System</span><span class="p">.</span><span class="n">Environment</span><span class="p">.</span><span class="n">ProcessorCount</span> <span class="o">&amp;&amp;</span> <span class="n">NumCores</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)</span>
-            <span class="p">{</span>
-                <span class="c1">// The CPU has more logical cores than physical ones, aka uses hyper-threading. </span>
-                <span class="c1">// Use average of logical and physical if we have &quot;lots of cores&quot;</span>
-                <span class="n">MaxActionsToExecuteInParallel</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">NumCores</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="n">Environment</span><span class="p">.</span><span class="n">ProcessorCount</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="c1">// No hyper-threading. Only kicking off a task per CPU to keep machine responsive.</span>
-            <span class="k">else</span>
-            <span class="p">{</span>
-                <span class="n">MaxActionsToExecuteInParallel</span> <span class="o">=</span> <span class="n">NumCores</span><span class="p">;</span>
+                <span class="c1">// This is a game module with only a small number of source files, so go ahead and force a precompiled header</span>
+                <span class="c1">// to be generated to make incremental changes to source files as fast as possible for small projects.</span>
+                <span class="n">MinFilesUsingPrecompiledHeader</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
             <span class="p">}</span>
 
             <span class="c1">// ...</span>
+
+            <span class="c1">// Set up the environment with which to compile the CPP files</span>
+            <span class="n">CPPEnvironment</span> <span class="n">CPPCompileEnvironment</span> <span class="p">=</span> <span class="n">ModuleCompileEnvironment</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">BuildPlatform</span><span class="p">.</span><span class="n">ShouldUsePCHFiles</span><span class="p">(</span><span class="n">CompileEnvironment</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">Platform</span><span class="p">,</span> <span class="n">CompileEnvironment</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">Configuration</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="c1">// ...</span>
+
+                <span class="c1">// If there was one header that was included first by enough C++ files, use it as the precompiled header. Only use precompiled headers for projects with enough files to make the PCH creation worthwhile.</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">CPPCompileEnvironment</span><span class="p">.</span><span class="n">PrecompiledHeaderFile</span> <span class="p">==</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">SourceFilesToBuild</span><span class="p">.</span><span class="n">CPPFiles</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;=</span> <span class="n">MinFilesUsingPrecompiledHeader</span> <span class="p">&amp;&amp;</span> <span class="n">ProcessedDependencies</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">PrecompiledHeaderInstance</span> <span class="n">Instance</span> <span class="p">=</span> <span class="n">CreatePrivatePCH</span><span class="p">(</span><span class="n">ToolChain</span><span class="p">,</span> <span class="n">ProcessedDependencies</span><span class="p">.</span><span class="n">UniquePCHHeaderFile</span><span class="p">,</span> <span class="n">CPPCompileEnvironment</span><span class="p">,</span> <span class="n">ActionGraph</span><span class="p">);</span>
+
+                    <span class="n">CPPCompileEnvironment</span> <span class="p">=</span> <span class="n">CPPCompileEnvironment</span><span class="p">.</span><span class="n">DeepCopy</span><span class="p">();</span>
+                    <span class="n">CPPCompileEnvironment</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">Definitions</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+                    <span class="n">CPPCompileEnvironment</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">PrecompiledHeaderAction</span> <span class="p">=</span> <span class="n">PrecompiledHeaderAction</span><span class="p">.</span><span class="n">Include</span><span class="p">;</span>
+                    <span class="n">CPPCompileEnvironment</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">PrecompiledHeaderIncludeFilename</span> <span class="p">=</span> <span class="n">Instance</span><span class="p">.</span><span class="n">HeaderFile</span><span class="p">.</span><span class="n">Reference</span><span class="p">;</span>
+                    <span class="n">CPPCompileEnvironment</span><span class="p">.</span><span class="n">PrecompiledHeaderFile</span> <span class="p">=</span> <span class="n">Instance</span><span class="p">.</span><span class="n">Output</span><span class="p">.</span><span class="n">PrecompiledHeaderFile</span><span class="p">;</span>
+
+                    <span class="n">LinkInputFiles</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="n">Instance</span><span class="p">.</span><span class="n">Output</span><span class="p">.</span><span class="n">ObjectFiles</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="c1">// ...</span>
+            <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -787,7 +797,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ue4_setup_script_analysis/" title="setup script" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ue4_faster_without_unity_analysis/" title="faster without unity" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -796,25 +806,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                setup script
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../ue4_faster_without_unity_analysis/" title="faster without unity" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 faster without unity
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
