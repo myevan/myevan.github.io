@@ -162,7 +162,7 @@
         }, 
         {
             "location": "/vs2015_setup_digest/", 
-            "text": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 2015 \uc14b\uc5c5 \uc694\uc57d\n\n\n\ub2e4\uc6b4\ub85c\ub4dc\n\n\n\ucee4\ubba4\ub2c8\ud2f0 \ubc84\uc804\n\n\n\n\n\uc601\uc5b4 \nhttps://www.microsoft.com/en-US/download/details.aspx?id=48146\n\n\n\ud55c\uad6d\uc5b4 \nhttps://www.microsoft.com/ko-kr/download/details.aspx?id=48146\n\n\n\n\n\uc5b8\uc5b4 \ud329: \ud55c\uad6d\uc5b4 -\n \uc601\uc5b4\n\n\n\n\n\ub3c4\uad6c \n \uc635\uc158 \n \ud658\uacbd \n \uad6d\uac00\ubcc4 \uc124\uc815 \n \ucd94\uac00 \uc5b8\uc5b4 \uac00\uc838\uc624\uae30 \ub9c1\ud06c \ud074\ub9ad\n\n\nMicrosoft Visual Studio 2015 \uc5b8\uc5b4 \ud329 \ud398\uc774\uc9c0 \n\uc5b8\uc5b4 \uc120\ud0dd\n\uc5d0\uc11c \ud55c\uad6d\uc5b4\ub97c \uc601\uc5b4\ub85c \ubcc0\uacbd \ud6c4 \n\uc7a0\uc2dc \ub300\uae30\n \nhttps://www.microsoft.com/ko-KR/download/details.aspx?id=48157\n\n\nMicrosoft Visual Studio 2015 Language Pack \ud398\uc774\uc9c0\ub85c \ubc14\ub00c\uba74 \n\ub2e4\uc6b4\ub85c\ub4dc\n \ubc84\ud2bc \ud074\ub9ad \nhttps://www.microsoft.com/en-US/download/details.aspx?id=48157\n \n\n\n\n\n\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8-\uc784\ud3ec\ud2b8\n\n\n\n\nTools \n Import And Export Settings Wizard \uba54\ub274 \ud074\ub9ad\n\n\nExport selected environment settings: \uc775\uc2a4\ud3ec\ud2b8\n\n\nImport selected environment settings: \uc784\ud3ec\ud2b8\n\n\n\n\n\n\n\uc124\uc815 \uacbd\ub85c: \n%USERPROFILE%\\Documents\\Visual Studio 2015\\Settings", 
+            "text": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 2015 \uc14b\uc5c5 \uc694\uc57d\n\n\n\ub2e4\uc6b4\ub85c\ub4dc\n\n\n\ucee4\ubba4\ub2c8\ud2f0 \ubc84\uc804\n\n\n\n\n\uc601\uc5b4 \ubc84\uc804\n\n\n\ud55c\uad6d\uc5b4 \ubc84\uc804\n\n\n\n\n\uc5b8\uc5b4 \ud329: \ud55c\uad6d\uc5b4 -\n \uc601\uc5b4\n\n\n\n\n\ub3c4\uad6c \n \uc635\uc158 \n \ud658\uacbd \n \uad6d\uac00\ubcc4 \uc124\uc815 \n \ucd94\uac00 \uc5b8\uc5b4 \uac00\uc838\uc624\uae30 \ub9c1\ud06c \ud074\ub9ad\n\n\nMicrosoft Visual Studio 2015 \uc5b8\uc5b4 \ud329\n \ud398\uc774\uc9c0 \uc5f4\ub9bc\n\n\n\uc5b8\uc5b4 \uc120\ud0dd\n\uc5d0\uc11c \ud55c\uad6d\uc5b4\ub97c \uc601\uc5b4\ub85c \ubcc0\uacbd \ud6c4 \n\uc7a0\uc2dc \ub300\uae30\n \n\n\nMicrosoft Visual Studio 2015 Language Pack\n  \ud398\uc774\uc9c0\ub85c \ubc14\ub01c\n\n\n\ub2e4\uc6b4\ub85c\ub4dc\n \ubc84\ud2bc \ud074\ub9ad \n\n\n\n\n\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8-\uc784\ud3ec\ud2b8\n\n\n\n\nTools \n Import And Export Settings Wizard \uba54\ub274 \ud074\ub9ad\n\n\nExport selected environment settings: \uc775\uc2a4\ud3ec\ud2b8\n\n\nImport selected environment settings: \uc784\ud3ec\ud2b8\n\n\n\n\n\n\n\uc124\uc815 \uacbd\ub85c: \n%USERPROFILE%\\Documents\\Visual Studio 2015\\Settings", 
             "title": "setup"
         }, 
         {
@@ -177,12 +177,12 @@
         }, 
         {
             "location": "/vs2015_setup_digest/#_2", 
-            "text": "\uc601\uc5b4  https://www.microsoft.com/en-US/download/details.aspx?id=48146  \ud55c\uad6d\uc5b4  https://www.microsoft.com/ko-kr/download/details.aspx?id=48146", 
+            "text": "\uc601\uc5b4 \ubc84\uc804  \ud55c\uad6d\uc5b4 \ubc84\uc804", 
             "title": "\ucee4\ubba4\ub2c8\ud2f0 \ubc84\uc804"
         }, 
         {
             "location": "/vs2015_setup_digest/#-", 
-            "text": "\ub3c4\uad6c   \uc635\uc158   \ud658\uacbd   \uad6d\uac00\ubcc4 \uc124\uc815   \ucd94\uac00 \uc5b8\uc5b4 \uac00\uc838\uc624\uae30 \ub9c1\ud06c \ud074\ub9ad  Microsoft Visual Studio 2015 \uc5b8\uc5b4 \ud329 \ud398\uc774\uc9c0  \uc5b8\uc5b4 \uc120\ud0dd \uc5d0\uc11c \ud55c\uad6d\uc5b4\ub97c \uc601\uc5b4\ub85c \ubcc0\uacbd \ud6c4  \uc7a0\uc2dc \ub300\uae30   https://www.microsoft.com/ko-KR/download/details.aspx?id=48157  Microsoft Visual Studio 2015 Language Pack \ud398\uc774\uc9c0\ub85c \ubc14\ub00c\uba74  \ub2e4\uc6b4\ub85c\ub4dc  \ubc84\ud2bc \ud074\ub9ad  https://www.microsoft.com/en-US/download/details.aspx?id=48157", 
+            "text": "\ub3c4\uad6c   \uc635\uc158   \ud658\uacbd   \uad6d\uac00\ubcc4 \uc124\uc815   \ucd94\uac00 \uc5b8\uc5b4 \uac00\uc838\uc624\uae30 \ub9c1\ud06c \ud074\ub9ad  Microsoft Visual Studio 2015 \uc5b8\uc5b4 \ud329  \ud398\uc774\uc9c0 \uc5f4\ub9bc  \uc5b8\uc5b4 \uc120\ud0dd \uc5d0\uc11c \ud55c\uad6d\uc5b4\ub97c \uc601\uc5b4\ub85c \ubcc0\uacbd \ud6c4  \uc7a0\uc2dc \ub300\uae30    Microsoft Visual Studio 2015 Language Pack   \ud398\uc774\uc9c0\ub85c \ubc14\ub01c  \ub2e4\uc6b4\ub85c\ub4dc  \ubc84\ud2bc \ud074\ub9ad", 
             "title": "\uc5b8\uc5b4 \ud329: \ud55c\uad6d\uc5b4 -&gt; \uc601\uc5b4"
         }, 
         {
