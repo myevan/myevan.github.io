@@ -15,7 +15,7 @@
     
     
       
-        <title>git hosting - myevan.net</title>
+        <title>port forwarding - myevan.net</title>
       
     
     
@@ -76,11 +76,11 @@
                 </span>
               
                 <span class="md-header-nav__parent">
-                  git
+                  vmware
                 </span>
               
             
-            git hosting
+            port forwarding
           
         </span>
       </div>
@@ -278,12 +278,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       git
@@ -299,52 +297,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        git hosting
-      </label>
-    
-    <a href="./" title="git hosting" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../windows_git_hosting_digest/" title="git hosting" class="md-nav__link">
       git hosting
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#daemon" title="데몬 Daemon" class="md-nav__link">
-    데몬 Daemon
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#service" title="서비스 Service" class="md-nav__link">
-    서비스 Service
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -561,10 +518,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" checked>
     
     <label class="md-nav__link" for="nav-3-5">
       vmware
@@ -592,11 +551,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../vmware_fusion_8_port_forwarding_digest/" title="port forwarding" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="port forwarding" class="md-nav__link md-nav__link--active">
       port forwarding
     </a>
+    
   </li>
 
         
@@ -807,25 +775,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#daemon" title="데몬 Daemon" class="md-nav__link">
-    데몬 Daemon
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#service" title="서비스 Service" class="md-nav__link">
-    서비스 Service
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -837,51 +786,31 @@
                
               
                 
-                <h1 id="git">윈도우 Git 호스팅 요약<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
-<p><a href="http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/">http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/</a></p>
-<h3 id="daemon">데몬 Daemon<a class="headerlink" href="#daemon" title="Permanent link">&para;</a></h3>
-<p>C:\Repositories\git\gitd.bat</p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-<span class="s2">&quot;C:\Program Files\Git\bin\git.exe&quot;</span> daemon --reuseaddr --base-path=<span class="nv">%~dp0</span> --export-all --enable=receive-pack
+                <h1 id="vm-8-ip">VM 웨어 퓨전 8 정적 IP 설정<a class="headerlink" href="#vm-8-ip" title="Permanent link">&para;</a></h1>
+<p><a href="https://medium.com/@tuweizhong/how-to-setup-port-forward-at-vmware-fusion-8-for-os-x-742ad6ca1344#.8761w21h2">https://medium.com/@tuweizhong/how-to-setup-port-forward-at-vmware-fusion-8-for-os-x-742ad6ca1344#.8761w21h2</a></p>
+<p>NAT 설정 파일을 편집합니다</p>
+<div class="codehilite"><pre><span></span>$ sudo vi /Library/Preferences/VMware<span class="se">\ </span>Fusion/vmnet8/nat.conf
 </pre></div>
 
 
-<p>로컬 테스트</p>
-<div class="codehilite"><pre><span></span>git clone git://localhost/저장소
+<p><code>[incomingtcp]</code>을 찾은 다음 외부-내부 포트 맵핑을 추가합니다.</p>
+<div class="codehilite"><pre><span></span>[incomingtcp]
+# Use these with care — anyone can enter into your VM through these…
+# The format and example are as follows:
+#&lt;external port number&gt; = &lt;VM’s IP address&gt;:&lt;VM’s port number&gt;
+#8080 = 172.16.3.128:80
+<span class="gi">+8010 = 192.168.149.10:80</span>
+<span class="gi">+2010 = 192.168.149.10:22</span>
 </pre></div>
 
 
-<h3 id="service">서비스 Service<a class="headerlink" href="#service" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/derekgreer/serviceRunner">서비스 등록 앱</a>을 빌드한 다음 서비스 관리 배치 파일을 작성합니다.</p>
-<p><code>C:\Repositories\git\gitd_service_create.bat</code></p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-sc.exe create <span class="s2">&quot;GitDaemon&quot;</span> binpath=<span class="s2">&quot;</span><span class="nv">%~dp0</span><span class="s2">\ServiceRunner.exe </span><span class="nv">%~dp0</span><span class="s2">\gitd.bat&quot;</span> start=auto
-<span class="k">pause</span>
+<p>VM 웨어 퓨전 네트워크 서비스를 재시작합니다.</p>
+<div class="codehilite"><pre><span></span>$ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library/vmnet-cli --stop
+$ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library/vmnet-cli --start
 </pre></div>
 
 
-<p><code>C:\Repositories\git\gitd_service_start.bat</code></p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-sc.exe start <span class="s2">&quot;GitDaemon&quot;</span>
-<span class="k">pause</span>
-</pre></div>
-
-
-<p><code>C:\Repositories\git\gitd_service_stop.bat</code></p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-sc.exe stop <span class="s2">&quot;GitDaemon&quot;</span>
-<span class="k">pause</span>
-</pre></div>
-
-
-<p><code>C:\Repositories\git\gitd_service_delete.bat</code></p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-sc.exe delete <span class="s2">&quot;GitDaemon&quot;</span>
-<span class="k">pause</span>
-</pre></div>
-
-
-<p>관리자 권한으로 서비스 관리 배치 파일을 실행합니다.</p>
+<p>VM 웨어 퓨전 설정 파일은 업그레이드될때마다 리셋되므로 백업해놓는 것이 좋습니다.</p>
               
               
             </article>
@@ -895,7 +824,7 @@ sc.exe delete <span class="s2">&quot;GitDaemon&quot;</span>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../gitswarm_installation_ubuntu_tutorial/" title="installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../vmware_fusion_8_static_ip_digest/" title="static ip" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -904,19 +833,19 @@ sc.exe delete <span class="s2">&quot;GitDaemon&quot;</span>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                installation
+                static ip
               </span>
             </div>
           </a>
         
         
-          <a href="../gitswarm_requirements_digest/" title="requirements" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../github_ext_for_vs_ue4_gitignore_issue/" title="vs gitignore" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                requirements
+                vs gitignore
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
