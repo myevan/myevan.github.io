@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-03-15</lastmod>
+     <lastmod>2017-03-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>/myevan_site_tutorial/</loc>
-     <lastmod>2017-03-15</lastmod>
+     <lastmod>2017-03-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -66,6 +66,12 @@
     
 
     
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
         
     <url>
      <loc></loc>
