@@ -228,13 +228,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mirrorgithub" title="깃허브 미러 MirrorGitHub" class="md-nav__link">
-    깃허브 미러 MirrorGitHub
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#prepareproject" title="프로젝트 준비 PrepareProject" class="md-nav__link">
     프로젝트 준비 PrepareProject
   </a>
@@ -837,13 +830,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mirrorgithub" title="깃허브 미러 MirrorGitHub" class="md-nav__link">
-    깃허브 미러 MirrorGitHub
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#prepareproject" title="프로젝트 준비 PrepareProject" class="md-nav__link">
     프로젝트 준비 PrepareProject
   </a>
@@ -895,39 +881,6 @@
 </ul>
 <h2 id="clonegithub">깃허브 클론 CloneGitHub<a class="headerlink" href="#clonegithub" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>git clone https://github.com/EpicGames/UnrealEngine C:\UnrealEngine
-</pre></div>
-
-
-<h2 id="mirrorgithub">깃허브 미러 MirrorGitHub<a class="headerlink" href="#mirrorgithub" title="Permanent link">&para;</a></h2>
-<p>GitHub 에서 저장소 클론하는 것은 시간이 오래걸리므로 미러 저장소를 만들어 둡니다</p>
-<div class="codehilite"><pre><span></span><span class="k">md</span> C:\Repositories\git
-<span class="k">cd</span> C:\Repositories\git
-git clone --mirror https://github.com/EpicGames/UnrealEngine
-</pre></div>
-
-
-<p>기존에 이미 받아놓은 로컬 저장소가 있다면 미러 클론 후 설정을 변경합니다</p>
-<div class="codehilite"><pre><span></span>git clone --mirror C:\UnrealEngine C:\Repositories\git
-</pre></div>
-
-
-<p>C:\Repositories\git\UnrealEngine\config </p>
-<div class="codehilite"><pre><span></span>[remote &quot;origin&quot;]
-<span class="gd">-    url = C:/UnrealEngine</span>
-<span class="gi">+    url = https://github.com/EpicGames/UnrealEngine</span>
-fetch = +refs/*:refs/*
-mirror = true
-</pre></div>
-
-
-<p>미러는 주기적으로 최신으로 업데이트해줍니다</p>
-<div class="codehilite"><pre><span></span><span class="k">cd</span> C:\Repositories\git\UnrealEngine
-git remote update
-</pre></div>
-
-
-<p>미러 저장소를 사용해 <a href="../git_windows_hosting_digest/">Git 호스팅</a>을 구축하면 git 프로토콜을 사용해 네트워크 접근이 가능합니다.</p>
-<div class="codehilite"><pre><span></span>git clone git://localhost/UnrealEngine C:\UnrealEngine
 </pre></div>
 
 

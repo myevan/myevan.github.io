@@ -304,16 +304,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mirror" title="미러 Mirror" class="md-nav__link">
+    미러 Mirror
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#daemon" title="데몬 Daemon" class="md-nav__link">
     데몬 Daemon
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#service" title="서비스 Service" class="md-nav__link">
     서비스 Service
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -787,16 +800,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mirror" title="미러 Mirror" class="md-nav__link">
+    미러 Mirror
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#daemon" title="데몬 Daemon" class="md-nav__link">
     데몬 Daemon
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#service" title="서비스 Service" class="md-nav__link">
     서비스 Service
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -815,6 +841,38 @@
                 
                 <h1 id="git">윈도우 Git 호스팅 요약<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
 <p><a href="http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/">http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/</a></p>
+<p>GitHub 에서 매번 클론하는 것은 시간이 오래걸립니다. 미러 저장소를 한번 만들어두면 빠르게 클론할 수 있습니다.</p>
+<h2 id="mirror">미러 Mirror<a class="headerlink" href="#mirror" title="Permanent link">&para;</a></h2>
+<p>GitHub 에서 저장소를 미러로 클론합니다.
+    :::bat
+    md C:\Repositories\git
+    cd C:\Repositories\git
+    git clone --mirror https://github.com/소유자/프로젝트</p>
+<p>기존에 이미 받아놓은 로컬 저장소가 있다면 미러 클론 후 설정을 변경합니다</p>
+<div class="codehilite"><pre><span></span>git clone --mirror C:\기존_프로젝트 C:\Repositories\git
+</pre></div>
+
+
+<p>C:\Repositories\git\프로젝트\config </p>
+<div class="codehilite"><pre><span></span>[remote &quot;origin&quot;]
+<span class="gd">-    url = C:/기존_프로젝트</span>
+<span class="gi">+    url = https://github.com/소유자/프로젝트</span>
+fetch = +refs/*:refs/*
+mirror = true
+</pre></div>
+
+
+<p>미러는 주기적으로 최신으로 업데이트해줍니다</p>
+<div class="codehilite"><pre><span></span><span class="k">cd</span> C:\Repositories\git\프로젝트
+git remote update
+</pre></div>
+
+
+<p>미러 저장소를 사용해 <a href="./">Git 호스팅</a>을 구축하면 git 프로토콜을 사용해 네트워크 접근이 가능합니다.</p>
+<div class="codehilite"><pre><span></span>git clone git://localhost/프로젝트 C:\프로젝트
+</pre></div>
+
+
 <h3 id="daemon">데몬 Daemon<a class="headerlink" href="#daemon" title="Permanent link">&para;</a></h3>
 <p>C:\Repositories\git\gitd.bat</p>
 <div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
