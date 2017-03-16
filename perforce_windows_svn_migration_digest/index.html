@@ -15,7 +15,7 @@
     
     
       
-        <title>vs setup - myevan.net</title>
+        <title>svn migration - myevan.net</title>
       
     
     
@@ -72,15 +72,15 @@
             
               
                 <span class="md-header-nav__parent">
-                  digests
+                  vcs
                 </span>
               
                 <span class="md-header-nav__parent">
-                  ue4
+                  perforce
                 </span>
               
             
-            vs setup
+            svn migration
           
         </span>
       </div>
@@ -254,10 +254,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
     <label class="md-nav__link" for="nav-3-1">
       vcs
@@ -357,10 +359,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2" checked>
     
     <label class="md-nav__link" for="nav-3-1-2">
       perforce
@@ -368,49 +372,6 @@
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-3-1-2">
         perforce
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../perforce_windows_svn_migration_digest/" title="svn migration" class="md-nav__link">
-      svn migration
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
-    
-    <label class="md-nav__link" for="nav-3-2">
-      ue4
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-2">
-        ue4
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -430,11 +391,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        vs setup
+        svn migration
       </label>
     
-    <a href="./" title="vs setup" class="md-nav__link md-nav__link--active">
-      vs setup
+    <a href="./" title="svn migration" class="md-nav__link md-nav__link--active">
+      svn migration
     </a>
     
       
@@ -448,44 +409,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#settings" title="설정 Settings" class="md-nav__link">
-    설정 Settings
+  <a href="#_2" title="준비 작업" class="md-nav__link">
+    준비 작업
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extendwidthofsolutionconfigurations" title="솔류션 구성 폭 넓히기 ExtendWidthOfSolutionConfigurations" class="md-nav__link">
-    솔류션 구성 폭 넓히기 ExtendWidthOfSolutionConfigurations
+  <a href="#_3" title="다운로드" class="md-nav__link">
+    다운로드
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hide-error-list" title="오류 목록 감추기 Hide Error List" class="md-nav__link">
-    오류 목록 감추기 Hide Error List
+  <a href="#_4" title="모드 결정" class="md-nav__link">
+    모드 결정
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hide-extern-dependencies-folder" title="외부 의존성 폴더 감추기 Hide Extern Dependencies Folder" class="md-nav__link">
-    외부 의존성 폴더 감추기 Hide Extern Dependencies Folder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#intellisense" title="인텔리센스 Intellisense" class="md-nav__link">
-    인텔리센스 Intellisense
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#disable-debugging-edit-and-continue" title="편집 후 디버깅 끄기 Disable Debugging Edit and Continue" class="md-nav__link">
-    편집 후 디버깅 끄기 Disable Debugging Edit and Continue
+  <a href="#_5" title="요구 사항" class="md-nav__link">
+    요구 사항
   </a>
   
 </li>
@@ -496,16 +443,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#export-settings" title="설정 익스포트 Export Settings" class="md-nav__link">
-    설정 익스포트 Export Settings
+  <a href="#_6" title="이전 작업" class="md-nav__link">
+    이전 작업
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="요구 사항" class="md-nav__link">
+    요구 사항
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#settings-file" title="설정 파일 Settings File" class="md-nav__link">
-    설정 파일 Settings File
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="로컬 백업" class="md-nav__link">
+    로컬 백업
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="덤프 생성" class="md-nav__link">
+    덤프 생성
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="변환 설정" class="md-nav__link">
+    변환 설정
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="변환 시작" class="md-nav__link">
+    변환 시작
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -513,6 +494,47 @@
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      ue4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        ue4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ue4_windows_vs_setup_digest/" title="vs setup" class="md-nav__link">
+      vs setup
+    </a>
   </li>
 
         
@@ -895,44 +917,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#settings" title="설정 Settings" class="md-nav__link">
-    설정 Settings
+  <a href="#_2" title="준비 작업" class="md-nav__link">
+    준비 작업
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extendwidthofsolutionconfigurations" title="솔류션 구성 폭 넓히기 ExtendWidthOfSolutionConfigurations" class="md-nav__link">
-    솔류션 구성 폭 넓히기 ExtendWidthOfSolutionConfigurations
+  <a href="#_3" title="다운로드" class="md-nav__link">
+    다운로드
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hide-error-list" title="오류 목록 감추기 Hide Error List" class="md-nav__link">
-    오류 목록 감추기 Hide Error List
+  <a href="#_4" title="모드 결정" class="md-nav__link">
+    모드 결정
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hide-extern-dependencies-folder" title="외부 의존성 폴더 감추기 Hide Extern Dependencies Folder" class="md-nav__link">
-    외부 의존성 폴더 감추기 Hide Extern Dependencies Folder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#intellisense" title="인텔리센스 Intellisense" class="md-nav__link">
-    인텔리센스 Intellisense
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#disable-debugging-edit-and-continue" title="편집 후 디버깅 끄기 Disable Debugging Edit and Continue" class="md-nav__link">
-    편집 후 디버깅 끄기 Disable Debugging Edit and Continue
+  <a href="#_5" title="요구 사항" class="md-nav__link">
+    요구 사항
   </a>
   
 </li>
@@ -943,16 +951,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#export-settings" title="설정 익스포트 Export Settings" class="md-nav__link">
-    설정 익스포트 Export Settings
+  <a href="#_6" title="이전 작업" class="md-nav__link">
+    이전 작업
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="요구 사항" class="md-nav__link">
+    요구 사항
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#settings-file" title="설정 파일 Settings File" class="md-nav__link">
-    설정 파일 Settings File
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="로컬 백업" class="md-nav__link">
+    로컬 백업
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="덤프 생성" class="md-nav__link">
+    덤프 생성
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="변환 설정" class="md-nav__link">
+    변환 설정
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="변환 시작" class="md-nav__link">
+    변환 시작
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -969,114 +1011,88 @@
                
               
                 
-                <h1 id="_1">언리얼 엔진 비주얼 스튜디오 설정 요약<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p><a href="https://docs.unrealengine.com/latest/KOR/Programming/Development/VisualStudioSetup/index.html">https://docs.unrealengine.com/latest/KOR/Programming/Development/VisualStudioSetup/index.html</a></p>
-<h2 id="settings">설정 Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
-<h3 id="extendwidthofsolutionconfigurations">솔류션 구성 폭 넓히기 ExtendWidthOfSolutionConfigurations<a class="headerlink" href="#extendwidthofsolutionconfigurations" title="Permanent link">&para;</a></h3>
+                <h1 id="_1">퍼포스 윈도우 서브버전 마이그레이션 요약<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">준비 작업<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">다운로드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Tools &gt; Customize... 메뉴 클릭</li>
-<li>Customize 다이얼로그 Commands 탭 클릭</li>
-<li>Toolbar 라디오 버튼 선택 &gt; 콤보 상자 Standard 선택</li>
-<li>Controls: Solution Configurations 선택</li>
-<li>Modify Selection 버튼 클릭<ul>
-<li>Width: 150 변경</li>
+<li>매뉴얼 <a href="ftp://ftp.perforce.com/perforce/tools/p4convert/p4convert.pdf">ftp://ftp.perforce.com/perforce/tools/p4convert/p4convert.pdf</a></li>
+<li>패키지 <a href="ftp://ftp.perforce.com/perforce/tools/p4convert/p4convert.tgz">ftp://ftp.perforce.com/perforce/tools/p4convert/p4convert.tgz</a></li>
 </ul>
-</li>
-</ul>
-<h3 id="hide-error-list">오류 목록 감추기 Hide Error List<a class="headerlink" href="#hide-error-list" title="Permanent link">&para;</a></h3>
+<h3 id="_4">모드 결정<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Tools &gt; Options... 메뉴 클릭</li>
-<li>Options 다이얼로그 Projects and Solutions 카테고리 선택</li>
-<li>Always show error list if build finishes with error: <strong>체크 해제</strong></li>
+<li>임포트 모드: 리비전 단위로 이전합니다.</li>
+<li>컨버트 모드: 저장소 전체를 이전합니다.</li>
+<li>점진적 갱신 모드: 임포트 모드로만 가능하며 서브버전의 새로운 리비전들을 퍼포스로 임포트합니다.</li>
 </ul>
-<h3 id="hide-extern-dependencies-folder">외부 의존성 폴더 감추기 Hide Extern Dependencies Folder<a class="headerlink" href="#hide-extern-dependencies-folder" title="Permanent link">&para;</a></h3>
+<h3 id="_5">요구 사항<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Tools &gt; Options... 메뉴 클릭</li>
-<li>Options 다이얼로그 Text Editor &gt; C/C++ &gt; Advanced 카테고리 선택 </li>
-<li>Browsing/Navigation 그룹<ul>
-<li>Disable Extenal Dependencies Folder: <strong>False</strong> 설정</li>
+<li>SVN 덤프 파일 (--delta 플래그 없이 생성해야 합니다.)</li>
+<li>Java SE Runtime 1.7 </li>
+<li>p4d 2010.2 이상 </li>
+<li>임포트 모드는 작동중인 퍼포스 서버가 필요합니다. 가능하면 비어있는 저장소로 작업 중인 내용이 없어야 합니다.</li>
 </ul>
-</li>
-</ul>
-<h3 id="intellisense">인텔리센스 Intellisense<a class="headerlink" href="#intellisense" title="Permanent link">&para;</a></h3>
+<h2 id="_6">이전 작업<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">요구 사항<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Tools &gt; Options... 메뉴 클릭</li>
-<li>Options 다이얼로그 Text Editor &gt; C/C++ &gt; Advanced 카테고리 선택 </li>
-<li>IntelliSense 그룹 <ul>
-<li>Auto Quick Info: <strong>True</strong> 설정</li>
-<li>Disable InteliSense: <strong>False</strong> 설정</li>
-<li>Disable Auto Updating: <strong>False</strong> 설정</li>
-<li>Disable Error Reporting: <strong>False</strong> 설정</li>
-<li>Disable Squiggles: <strong>False</strong> 설정</li>
+<li>TortoiseSVN</li>
+<li>관리자 권한 커맨드 라인 콘솔 </li>
 </ul>
-</li>
-</ul>
-<h3 id="disable-debugging-edit-and-continue">편집 후 디버깅 끄기 Disable Debugging Edit and Continue<a class="headerlink" href="#disable-debugging-edit-and-continue" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Tools &gt; Options... 메뉴 클릭</li>
-<li>Options 다이얼로그 Debugging 카테고리 선택 </li>
-<li>Enable Edit and Continue: <strong>체크 해제</strong></li>
-</ul>
-<h2 id="export-settings">설정 익스포트 Export Settings<a class="headerlink" href="#export-settings" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Tools &gt; Import and Export Settings... 메뉴 클릭</li>
-<li>Import and Export Setting Wizard 다이얼로그 Export selected environment settings 선택</li>
-<li>Choose Settings to Export<ul>
-<li>AllSettings <ul>
-<li>General Settings<ul>
-<li>Menu and Command Bar Customizations</li>
-</ul>
-</li>
-<li>Options<ul>
-<li>Debugging</li>
-<li>Environment<ul>
-<li>Projects and Solutions</li>
-</ul>
-</li>
-<li>Text Editor<ul>
-<li>C/C++ Editor</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="settings-file">설정 파일 Settings File<a class="headerlink" href="#settings-file" title="Permanent link">&para;</a></h2>
-<p><code>%USERPROFILE%\Documents\Visual Studio 2015\Settings\Exported-YYYY-mm-dd.vssettings</code></p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;UserSettings&gt;</span>
-    <span class="nt">&lt;ToolOptions&gt;</span>
-        <span class="nt">&lt;ToolOptionsCategory</span> <span class="na">name=</span><span class="s">&quot;Environment&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ToolsOptionsSubCategory</span> <span class="na">name=</span><span class="s">&quot;ProjectsAndSolution&quot;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;ShowTaskListAfterBuild&quot;</span><span class="nt">&gt;</span>false<span class="nt">&lt;/PropertyValue&gt;</span>
-            <span class="nt">&lt;/ToolsOptionsSubCategory&gt;</span> 
-        <span class="nt">&lt;/ToolOptionsCategory&gt;</span>
-        <span class="nt">&lt;ToolsOptionsCategory</span> <span class="na">name=</span><span class="s">&quot;TextEditor&quot;</span> <span class="na">RegisteredName=</span><span class="s">&quot;TextEditor&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;ToolsOptionsSubCategory</span> <span class="na">name=</span><span class="s">&quot;C/C++ Specific&quot;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;DisableExternalDependenciesFolders&quot;</span><span class="nt">&gt;</span>false<span class="nt">&lt;/PropertyValue&gt;</span>
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;EnableQuickInfoToolTips&quot;</span><span class="nt">&gt;</span>true<span class="nt">&lt;/PropertyValue&gt;</span>
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;DisableSharedIntelliSense&quot;</span><span class="nt">&gt;</span>false<span class="nt">&lt;/PropertyValue&gt;</span>
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;DisableIntelliSenseUpdating&quot;</span><span class="nt">&gt;</span>false<span class="err">&lt;</span>/PropertyValue
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;DisableErrorReporting&quot;</span><span class="nt">&gt;</span>false<span class="nt">&lt;/PropertyValue&gt;</span>
-                <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;DisableSquiggles&quot;</span><span class="nt">&gt;</span>false<span class="nt">&lt;/PropertyValue&gt;</span>
-            <span class="nt">&lt;/ToolsOptionsSubCategory&gt;</span> 
-        <span class="nt">&lt;/ToolOptionsCategory&gt;</span>
-    <span class="nt">&lt;/ToolOptions&gt;</span>
-    <span class="nt">&lt;Category</span> <span class="na">name=</span><span class="s">&quot;Environment Group&quot;</span><span class="nt">&gt;</span> 
-        <span class="nt">&lt;Category</span> <span class="na">name=</span><span class="s">&quot;Environment_CommandBars&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;CommandBars&gt;</span>
-                <span class="nt">&lt;UserCustomizations&gt;</span>
-                    <span class="nt">&lt;modify</span> <span class="na">Cmd=</span><span class="s">&quot;{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000002ac&quot;</span> <span class="na">CmdPri=</span><span class="s">&quot;03000000&quot;</span> <span class="na">Group=</span><span class="s">&quot;{D309F791-903F-11D0-9EFC-00A0C911004F}:00000174&quot;</span> <span class="na">GroupPri=</span><span class="s">&quot;09000000&quot;</span> <span class="na">Menu=</span><span class="s">&quot;{D309F791-903F-11D0-9EFC-00A0C911004F}:00000001&quot;</span> <span class="na">Width=</span><span class="s">&quot;150&quot;</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;/UserCustomizations&gt;</span>
-            <span class="nt">&lt;/CommandBars&gt;</span>
-        <span class="nt">&lt;/Category&gt;</span>
-    <span class="nt">&lt;/Category&gt;</span>
-    <span class="nt">&lt;Category</span> <span class="na">name=</span><span class="s">&quot;Debugger&quot;</span><span class="nt">&gt;</span> 
-        <span class="nt">&lt;PropertyValue</span> <span class="na">name=</span><span class="s">&quot;ENCEnable&quot;</span><span class="nt">&gt;</span>0<span class="nt">&lt;/PropertyValue&gt;</span>
-    <span class="nt">&lt;/Category&gt;</span>
-<span class="nt">&lt;/UserSettings&gt;</span>
+<h3 id="_8">로컬 백업<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>SVN 관리자 권한이 없는 경우에는 로컬에 저장소를 동기화합니다.</p>
+<p>로컬에 비어있는 저장소를 생성합니다.</p>
+<div class="codehilite"><pre><span></span><span class="k">mkdir</span> SVNBackups
+<span class="k">cd</span> SVNBackups
+svnadmin create LOCAL_REPO_NAME
+</pre></div>
+
+
+<p>서브버전 후킹 배치 파일을 작성합니다.</p>
+<div class="codehilite"><pre><span></span>notepad.exe LOCAL_REPO_NAME\hooks\pre-revprop-change.bat
+<span class="p">@</span><span class="k">ECHO</span> OFF
+<span class="k">exit</span> 0
+</pre></div>
+
+
+<p>동기화를 시작합니다.</p>
+<div class="codehilite"><pre><span></span>svnsync init file:///d:/SVNBackups/LOCAL_REPO_NAME svn://REMOTE_REPO_HOST/PATH  
+svnsync sync file:///d:/SVNBackups/LOCAL_REPO_NAME
+</pre></div>
+
+
+<h3 id="_9">덤프 생성<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>svnsync sync file:///d:/SVNBackups/LOCAL_REPO_NAME
+svnadmin dump LOCAL_REPO_NAME <span class="p">&gt;</span> LOCAL_REPO_NAME.dmp
+</pre></div>
+
+
+<h3 id="_10">변환 설정<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>디폴트 설정 파일을 생성합니다.</p>
+<div class="codehilite"><pre><span></span>java -jar p4convert.jar --type=SVN --default
+<span class="k">ren</span> default.cfg LOCAL_REPO_NAME.cfg
+</pre></div>
+
+
+<p>현재 상황에 맞도록 설정 파일을 변경합니다.</p>
+<div class="codehilite"><pre><span></span>notepad.exe LOCAL_REPO_NAME.cfg
+com.p4convert.svn.dumpFile=D:\\SVNBackups\\LOCAL_REPO_NAME.dmp
+
+com.p4convert.p4.caseMode=First
+com.p4convert.p4.charset=utf8
+com.p4convert.p4.client=USER_HOST
+com.p4convert.p4.clientRoot=D:\\PerforceWorkspaces\\USER_HOST
+com.p4convert.p4.depotPath=depot
+
+com.p4convert.p4.port=PERFORCE_HOST:PORT
+com.p4convert.p4.root=
+
+com.p4convert.p4.subPath=REMOTE_REPO_PATH
+com.p4convert.p4.unicode=true
+com.p4convert.p4.user=USER
+</pre></div>
+
+
+<h3 id="_11">변환 시작<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>java -jar p4convert.jar --config=LOCAL_REPO_NAME.cfg
 </pre></div>
               
               
@@ -1091,7 +1107,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../perforce_windows_svn_migration_digest/" title="svn migration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gitswarm_administration_digest/" title="administration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1100,19 +1116,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                svn migration
+                administration
               </span>
             </div>
           </a>
         
         
-          <a href="../ue4_boost_compile_times_digest/" title="boost compile time" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ue4_windows_vs_setup_digest/" title="vs setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                boost compile time
+                vs setup
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
