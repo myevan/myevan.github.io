@@ -66,47 +66,47 @@
             "title": "\ucee4\uc2a4\ud140 \ub3c4\uba54\uc778 Custom Domain"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/", 
+            "location": "/ue4_windows_build_tutorial/", 
             "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ube4c\ub4dc \ub530\ub77c\ud558\uae30\n\n\n\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc124\uce58 InstallVisualStudio\n\n\nVisual Studio 2015 \ub97c \ub2e4\uc6b4\ub85c\ub4dc\n\ubc1b\uc740 \ud6c4 \uc0ac\uc6a9\uc790 \uc815\uc758 \uc124\uce58\ub97c \uc9c4\ud589\ud569\ub2c8\ub2e4.\n\n\n\n\nVisual C++\n\n\nVisual C#\n\n\nAndroid SDK\n\n\nGit for Windows\n\n\n\n\n\uae43\ud5c8\ube0c \uc5f0\ub3d9 ConnectGitHub\n\n\n\n\nGitHub \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131\n\n\n\uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778 \n \n\uac1c\uc778 \uc815\ubcf4\n \n GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825 \n\n\nGitHub \ub85c\uadf8\uc778 \ud6c4 \n\uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c\n \uc774\ub3d9\n\n\n\n\n\uae43\ud5c8\ube0c \ud074\ub860 CloneGitHub\n\n\ngit clone https://github.com/EpicGames/UnrealEngine C:\\UnrealEngine\n\n\n\n\n\n\uae43\ud5c8\ube0c \ubbf8\ub7ec MirrorGitHub\n\n\nGitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4\n\n\nmd\n C:\\Repositories\\git\n\ncd\n C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine\n\n\n\n\n\n\uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4\n\n\ngit clone --mirror C:\\UnrealEngine C:\\Repositories\\git\n\n\n\n\n\nC:\\Repositories\\git\\UnrealEngine\\config \n\n\n[remote \norigin\n]\n\n-    url = C:/UnrealEngine\n\n\n+    url = https://github.com/EpicGames/UnrealEngine\n\nfetch = +refs/*:refs/*\nmirror = true\n\n\n\n\n\n\ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4\n\n\ncd\n C:\\Repositories\\git\\UnrealEngine\ngit remote update\n\n\n\n\n\n\ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \uc0ac\uc6a9\ud574 \nGit \ud638\uc2a4\ud305\n\uc744 \uad6c\ucd95\ud558\uba74 git \ud504\ub85c\ud1a0\ucf5c\uc744 \uc0ac\uc6a9\ud574 \ub124\ud2b8\uc6cc\ud06c \uc811\uadfc\uc774 \uac00\ub2a5\ud569\ub2c8\ub2e4.\n\n\ngit clone git://localhost/UnrealEngine C:\\UnrealEngine\n\n\n\n\n\n\ud504\ub85c\uc81d\ud2b8 \uc900\ube44 PrepareProject\n\n\n\n\n\uc5b8\ub9ac\uc5bc \ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc14b\uc5c5\n \n\n\n\n\n\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \uc14b\uc5c5 \uc2a4\ud06c\ub9bd\ud2b8\n \uc2e4\ud589\n\n\n:::bat\ncd C:\\UnrealEngine\nSetup.bat\n\n\n\n\n\n\n\ud504\ub85c\uc81d\ud2b8 \ube4c\ub4dc BuildProject\n\n\nhttps://docs.unrealengine.com/latest/KOR/Programming/Development/BuildingUnrealEngine/index.html\n\n\n\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ud504\ub85c\uc81d\ud2b8\ub97c \uc0dd\uc131\ud569\ub2c8\ub2e4.\n\n\ncd\n C:\\UnrealEngine\nGenerateProjectFiles.bat\n\n\n\n\n\nUE4.sln \uc744 \ub354\ube14 \ud074\ub9ad\ud569\ub2c8\ub2e4.\n\n\n\ub85c\uceec \ube4c\ub4dc LocalBuild\n\n\nhttps://docs.unrealengine.com/latest/KOR/Programming/Development/InstalledBuildReference/index.html", 
-            "title": "windows"
+            "title": "ue4 build"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#_1", 
+            "location": "/ue4_windows_build_tutorial/#_1", 
             "text": "", 
             "title": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ube4c\ub4dc \ub530\ub77c\ud558\uae30"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#installvisualstudio", 
+            "location": "/ue4_windows_build_tutorial/#installvisualstudio", 
             "text": "Visual Studio 2015 \ub97c \ub2e4\uc6b4\ub85c\ub4dc \ubc1b\uc740 \ud6c4 \uc0ac\uc6a9\uc790 \uc815\uc758 \uc124\uce58\ub97c \uc9c4\ud589\ud569\ub2c8\ub2e4.   Visual C++  Visual C#  Android SDK  Git for Windows", 
             "title": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc124\uce58 InstallVisualStudio"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#connectgithub", 
+            "location": "/ue4_windows_build_tutorial/#connectgithub", 
             "text": "GitHub \uacc4\uc815 \uc0dd\uc131  \uc5d0\ud53d \uac8c\uc784\uc988 \uacc4\uc815 \uc0dd\uc131  \uc5d0\ud53d \uac8c\uc784\uc988 \uac1c\uc778    \uac1c\uc778 \uc815\ubcf4    GITHUB \uacc4\uc815 \uc774\ub984 (\uc774\uba54\uc77c \ub9d0\uace0)\uc5d0 GitHub \uacc4\uc815 \uc785\ub825   GitHub \ub85c\uadf8\uc778 \ud6c4  \uc5d0\ud53d \uac8c\uc784\uc988 \uc5b8\ub9ac\uc5bc \uc800\uc7a5\uc18c  \uc774\ub3d9", 
             "title": "\uae43\ud5c8\ube0c \uc5f0\ub3d9 ConnectGitHub"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#clonegithub", 
+            "location": "/ue4_windows_build_tutorial/#clonegithub", 
             "text": "git clone https://github.com/EpicGames/UnrealEngine C:\\UnrealEngine", 
             "title": "\uae43\ud5c8\ube0c \ud074\ub860 CloneGitHub"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#mirrorgithub", 
+            "location": "/ue4_windows_build_tutorial/#mirrorgithub", 
             "text": "GitHub \uc5d0\uc11c \uc800\uc7a5\uc18c \ud074\ub860\ud558\ub294 \uac83\uc740 \uc2dc\uac04\uc774 \uc624\ub798\uac78\ub9ac\ubbc0\ub85c \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \ub9cc\ub4e4\uc5b4 \ub461\ub2c8\ub2e4  md  C:\\Repositories\\git cd  C:\\Repositories\\git\ngit clone --mirror https://github.com/EpicGames/UnrealEngine  \uae30\uc874\uc5d0 \uc774\ubbf8 \ubc1b\uc544\ub193\uc740 \ub85c\uceec \uc800\uc7a5\uc18c\uac00 \uc788\ub2e4\uba74 \ubbf8\ub7ec \ud074\ub860 \ud6c4 \uc124\uc815\uc744 \ubcc0\uacbd\ud569\ub2c8\ub2e4  git clone --mirror C:\\UnrealEngine C:\\Repositories\\git  C:\\Repositories\\git\\UnrealEngine\\config   [remote  origin ] -    url = C:/UnrealEngine  +    url = https://github.com/EpicGames/UnrealEngine \nfetch = +refs/*:refs/*\nmirror = true  \ubbf8\ub7ec\ub294 \uc8fc\uae30\uc801\uc73c\ub85c \ucd5c\uc2e0\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ud574\uc90d\ub2c8\ub2e4  cd  C:\\Repositories\\git\\UnrealEngine\ngit remote update  \ubbf8\ub7ec \uc800\uc7a5\uc18c\ub97c \uc0ac\uc6a9\ud574  Git \ud638\uc2a4\ud305 \uc744 \uad6c\ucd95\ud558\uba74 git \ud504\ub85c\ud1a0\ucf5c\uc744 \uc0ac\uc6a9\ud574 \ub124\ud2b8\uc6cc\ud06c \uc811\uadfc\uc774 \uac00\ub2a5\ud569\ub2c8\ub2e4.  git clone git://localhost/UnrealEngine C:\\UnrealEngine", 
             "title": "\uae43\ud5c8\ube0c \ubbf8\ub7ec MirrorGitHub"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#prepareproject", 
+            "location": "/ue4_windows_build_tutorial/#prepareproject", 
             "text": "\uc5b8\ub9ac\uc5bc \ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc14b\uc5c5     \uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \uc14b\uc5c5 \uc2a4\ud06c\ub9bd\ud2b8  \uc2e4\ud589  :::bat\ncd C:\\UnrealEngine\nSetup.bat", 
             "title": "\ud504\ub85c\uc81d\ud2b8 \uc900\ube44 PrepareProject"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#buildproject", 
+            "location": "/ue4_windows_build_tutorial/#buildproject", 
             "text": "https://docs.unrealengine.com/latest/KOR/Programming/Development/BuildingUnrealEngine/index.html  \ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ud504\ub85c\uc81d\ud2b8\ub97c \uc0dd\uc131\ud569\ub2c8\ub2e4.  cd  C:\\UnrealEngine\nGenerateProjectFiles.bat  UE4.sln \uc744 \ub354\ube14 \ud074\ub9ad\ud569\ub2c8\ub2e4.", 
             "title": "\ud504\ub85c\uc81d\ud2b8 \ube4c\ub4dc BuildProject"
         }, 
         {
-            "location": "/windows_ue4_build_tutorial/#localbuild", 
+            "location": "/ue4_windows_build_tutorial/#localbuild", 
             "text": "https://docs.unrealengine.com/latest/KOR/Programming/Development/InstalledBuildReference/index.html", 
             "title": "\ub85c\uceec \ube4c\ub4dc LocalBuild"
         }, 
@@ -121,22 +121,22 @@
             "title": "\uc6b0\ubd84\ud22c \uae43 \uc2a4\uc6dc \uc124\uce58 \ub530\ub77c\ud558\uae30 GitSwarm Installation Ubuntu"
         }, 
         {
-            "location": "/windows_git_hosting_digest/", 
+            "location": "/git_windows_hosting_digest/", 
             "text": "\uc708\ub3c4\uc6b0 Git \ud638\uc2a4\ud305 \uc694\uc57d\n\n\nhttp://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/\n\n\n\ub370\ubaac Daemon\n\n\nC:\\Repositories\\git\\gitd.bat\n\n\n@\necho\n off\n\nC:\\Program Files\\Git\\bin\\git.exe\n daemon --reuseaddr --base-path=\n%~dp0\n --export-all --enable=receive-pack\n\n\n\n\n\n\ub85c\uceec \ud14c\uc2a4\ud2b8\n\n\ngit clone git://localhost/\uc800\uc7a5\uc18c\n\n\n\n\n\n\uc11c\ube44\uc2a4 Service\n\n\n\uc11c\ube44\uc2a4 \ub4f1\ub85d \uc571\n\uc744 \ube4c\ub4dc\ud55c \ub2e4\uc74c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc791\uc131\ud569\ub2c8\ub2e4.\n\n\nC:\\Repositories\\git\\gitd_service_create.bat\n\n\n@\necho\n off\nsc.exe create \nGitDaemon\n binpath=\n%~dp0\n\\ServiceRunner.exe \n%~dp0\n\\gitd.bat\n start=auto\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_start.bat\n\n\n@\necho\n off\nsc.exe start \nGitDaemon\n\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_stop.bat\n\n\n@\necho\n off\nsc.exe stop \nGitDaemon\n\n\npause\n\n\n\n\n\n\nC:\\Repositories\\git\\gitd_service_delete.bat\n\n\n@\necho\n off\nsc.exe delete \nGitDaemon\n\n\npause\n\n\n\n\n\n\n\uad00\ub9ac\uc790 \uad8c\ud55c\uc73c\ub85c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc2e4\ud589\ud569\ub2c8\ub2e4.", 
             "title": "git hosting"
         }, 
         {
-            "location": "/windows_git_hosting_digest/#git", 
+            "location": "/git_windows_hosting_digest/#git", 
             "text": "http://aspiringcraftsman.com/2012/02/20/hosting-a-git-repository-in-windows/", 
             "title": "\uc708\ub3c4\uc6b0 Git \ud638\uc2a4\ud305 \uc694\uc57d"
         }, 
         {
-            "location": "/windows_git_hosting_digest/#daemon", 
+            "location": "/git_windows_hosting_digest/#daemon", 
             "text": "C:\\Repositories\\git\\gitd.bat  @ echo  off C:\\Program Files\\Git\\bin\\git.exe  daemon --reuseaddr --base-path= %~dp0  --export-all --enable=receive-pack  \ub85c\uceec \ud14c\uc2a4\ud2b8  git clone git://localhost/\uc800\uc7a5\uc18c", 
             "title": "\ub370\ubaac Daemon"
         }, 
         {
-            "location": "/windows_git_hosting_digest/#service", 
+            "location": "/git_windows_hosting_digest/#service", 
             "text": "\uc11c\ube44\uc2a4 \ub4f1\ub85d \uc571 \uc744 \ube4c\ub4dc\ud55c \ub2e4\uc74c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc791\uc131\ud569\ub2c8\ub2e4.  C:\\Repositories\\git\\gitd_service_create.bat  @ echo  off\nsc.exe create  GitDaemon  binpath= %~dp0 \\ServiceRunner.exe  %~dp0 \\gitd.bat  start=auto pause   C:\\Repositories\\git\\gitd_service_start.bat  @ echo  off\nsc.exe start  GitDaemon  pause   C:\\Repositories\\git\\gitd_service_stop.bat  @ echo  off\nsc.exe stop  GitDaemon  pause   C:\\Repositories\\git\\gitd_service_delete.bat  @ echo  off\nsc.exe delete  GitDaemon  pause   \uad00\ub9ac\uc790 \uad8c\ud55c\uc73c\ub85c \uc11c\ube44\uc2a4 \uad00\ub9ac \ubc30\uce58 \ud30c\uc77c\uc744 \uc2e4\ud589\ud569\ub2c8\ub2e4.", 
             "title": "\uc11c\ube44\uc2a4 Service"
         }, 
@@ -236,52 +236,52 @@
             "title": "\ud37c\ud3ec\uc2a4 \ubbf8\ub7ec \uc800\uc7a5\uc18c \uc0ad\uc81c Delete Perforce Mirror Repositories"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/", 
+            "location": "/ue4_windows_vs_setup_digest/", 
             "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc124\uc815 \uc694\uc57d\n\n\nhttps://docs.unrealengine.com/latest/KOR/Programming/Development/VisualStudioSetup/index.html\n\n\n\uc124\uc815 Settings\n\n\n\uc194\ub958\uc158 \uad6c\uc131 \ud3ed \ub113\ud788\uae30 ExtendWidthOfSolutionConfigurations\n\n\n\n\nTools \n Customize... \uba54\ub274 \ud074\ub9ad\n\n\nCustomize \ub2e4\uc774\uc5bc\ub85c\uadf8 Commands \ud0ed \ud074\ub9ad\n\n\nToolbar \ub77c\ub514\uc624 \ubc84\ud2bc \uc120\ud0dd \n \ucf64\ubcf4 \uc0c1\uc790 Standard \uc120\ud0dd\n\n\nControls: Solution Configurations \uc120\ud0dd\n\n\nModify Selection \ubc84\ud2bc \ud074\ub9ad\n\n\nWidth: 150 \ubcc0\uacbd\n\n\n\n\n\n\n\n\n\uc624\ub958 \ubaa9\ub85d \uac10\ucd94\uae30 Hide Error List\n\n\n\n\nTools \n Options... \uba54\ub274 \ud074\ub9ad\n\n\nOptions \ub2e4\uc774\uc5bc\ub85c\uadf8 Projects and Solutions \uce74\ud14c\uace0\ub9ac \uc120\ud0dd\n\n\nAlways show error list if build finishes with error: \n\uccb4\ud06c \ud574\uc81c\n\n\n\n\n\uc678\ubd80 \uc758\uc874\uc131 \ud3f4\ub354 \uac10\ucd94\uae30 Hide Extern Dependencies Folder\n\n\n\n\nTools \n Options... \uba54\ub274 \ud074\ub9ad\n\n\nOptions \ub2e4\uc774\uc5bc\ub85c\uadf8 Text Editor \n C/C++ \n Advanced \uce74\ud14c\uace0\ub9ac \uc120\ud0dd \n\n\nBrowsing/Navigation \uadf8\ub8f9\n\n\nDisable Extenal Dependencies Folder: \nFalse\n \uc124\uc815\n\n\n\n\n\n\n\n\n\uc778\ud154\ub9ac\uc13c\uc2a4 Intellisense\n\n\n\n\nTools \n Options... \uba54\ub274 \ud074\ub9ad\n\n\nOptions \ub2e4\uc774\uc5bc\ub85c\uadf8 Text Editor \n C/C++ \n Advanced \uce74\ud14c\uace0\ub9ac \uc120\ud0dd \n\n\nIntelliSense \uadf8\ub8f9 \n\n\nAuto Quick Info: \nTrue\n \uc124\uc815\n\n\nDisable InteliSense: \nFalse\n \uc124\uc815\n\n\nDisable Auto Updating: \nFalse\n \uc124\uc815\n\n\nDisable Error Reporting: \nFalse\n \uc124\uc815\n\n\nDisable Squiggles: \nFalse\n \uc124\uc815\n\n\n\n\n\n\n\n\n\ud3b8\uc9d1 \ud6c4 \ub514\ubc84\uae45 \ub044\uae30 Disable Debugging Edit and Continue\n\n\n\n\nTools \n Options... \uba54\ub274 \ud074\ub9ad\n\n\nOptions \ub2e4\uc774\uc5bc\ub85c\uadf8 Debugging \uce74\ud14c\uace0\ub9ac \uc120\ud0dd \n\n\nEnable Edit and Continue: \n\uccb4\ud06c \ud574\uc81c\n\n\n\n\n\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8 Export Settings\n\n\n\n\nTools \n Import and Export Settings... \uba54\ub274 \ud074\ub9ad\n\n\nImport and Export Setting Wizard \ub2e4\uc774\uc5bc\ub85c\uadf8 Export selected environment settings \uc120\ud0dd\n\n\nChoose Settings to Export\n\n\nAllSettings \n\n\nGeneral Settings\n\n\nMenu and Command Bar Customizations\n\n\n\n\n\n\nOptions\n\n\nDebugging\n\n\nEnvironment\n\n\nProjects and Solutions\n\n\n\n\n\n\nText Editor\n\n\nC/C++ Editor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\uc124\uc815 \ud30c\uc77c Settings File\n\n\n%USERPROFILE%\\Documents\\Visual Studio 2015\\Settings\\Exported-YYYY-mm-dd.vssettings\n\n\nUserSettings\n\n    \nToolOptions\n\n        \nToolOptionsCategory\n \nname=\nEnvironment\n\n            \nToolsOptionsSubCategory\n \nname=\nProjectsAndSolution\n\n                \nPropertyValue\n \nname=\nShowTaskListAfterBuild\nfalse\n/PropertyValue\n\n            \n/ToolsOptionsSubCategory\n \n        \n/ToolOptionsCategory\n\n        \nToolsOptionsCategory\n \nname=\nTextEditor\n \nRegisteredName=\nTextEditor\n\n            \nToolsOptionsSubCategory\n \nname=\nC/C++ Specific\n\n                \nPropertyValue\n \nname=\nDisableExternalDependenciesFolders\nfalse\n/PropertyValue\n\n                \nPropertyValue\n \nname=\nEnableQuickInfoToolTips\ntrue\n/PropertyValue\n\n                \nPropertyValue\n \nname=\nDisableSharedIntelliSense\nfalse\n/PropertyValue\n\n                \nPropertyValue\n \nname=\nDisableIntelliSenseUpdating\nfalse\n/PropertyValue\n                \nPropertyValue\n \nname=\nDisableErrorReporting\nfalse\n/PropertyValue\n\n                \nPropertyValue\n \nname=\nDisableSquiggles\nfalse\n/PropertyValue\n\n            \n/ToolsOptionsSubCategory\n \n        \n/ToolOptionsCategory\n\n    \n/ToolOptions\n\n    \nCategory\n \nname=\nEnvironment Group\n \n        \nCategory\n \nname=\nEnvironment_CommandBars\n\n            \nCommandBars\n\n                \nUserCustomizations\n\n                    \nmodify\n \nCmd=\n{5EFC7975-14BC-11CF-9B2B-00AA00573819}:000002ac\n \nCmdPri=\n03000000\n \nGroup=\n{D309F791-903F-11D0-9EFC-00A0C911004F}:00000174\n \nGroupPri=\n09000000\n \nMenu=\n{D309F791-903F-11D0-9EFC-00A0C911004F}:00000001\n \nWidth=\n150\n/\n\n                \n/UserCustomizations\n\n            \n/CommandBars\n\n        \n/Category\n\n    \n/Category\n\n    \nCategory\n \nname=\nDebugger\n \n        \nPropertyValue\n \nname=\nENCEnable\n0\n/PropertyValue\n\n    \n/Category\n\n\n/UserSettings", 
-            "title": "vs"
+            "title": "vs setup"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#_1", 
+            "location": "/ue4_windows_vs_setup_digest/#_1", 
             "text": "https://docs.unrealengine.com/latest/KOR/Programming/Development/VisualStudioSetup/index.html", 
             "title": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 \ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \uc124\uc815 \uc694\uc57d"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#settings", 
+            "location": "/ue4_windows_vs_setup_digest/#settings", 
             "text": "", 
             "title": "\uc124\uc815 Settings"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#extendwidthofsolutionconfigurations", 
+            "location": "/ue4_windows_vs_setup_digest/#extendwidthofsolutionconfigurations", 
             "text": "Tools   Customize... \uba54\ub274 \ud074\ub9ad  Customize \ub2e4\uc774\uc5bc\ub85c\uadf8 Commands \ud0ed \ud074\ub9ad  Toolbar \ub77c\ub514\uc624 \ubc84\ud2bc \uc120\ud0dd   \ucf64\ubcf4 \uc0c1\uc790 Standard \uc120\ud0dd  Controls: Solution Configurations \uc120\ud0dd  Modify Selection \ubc84\ud2bc \ud074\ub9ad  Width: 150 \ubcc0\uacbd", 
             "title": "\uc194\ub958\uc158 \uad6c\uc131 \ud3ed \ub113\ud788\uae30 ExtendWidthOfSolutionConfigurations"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#hide-error-list", 
+            "location": "/ue4_windows_vs_setup_digest/#hide-error-list", 
             "text": "Tools   Options... \uba54\ub274 \ud074\ub9ad  Options \ub2e4\uc774\uc5bc\ub85c\uadf8 Projects and Solutions \uce74\ud14c\uace0\ub9ac \uc120\ud0dd  Always show error list if build finishes with error:  \uccb4\ud06c \ud574\uc81c", 
             "title": "\uc624\ub958 \ubaa9\ub85d \uac10\ucd94\uae30 Hide Error List"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#hide-extern-dependencies-folder", 
+            "location": "/ue4_windows_vs_setup_digest/#hide-extern-dependencies-folder", 
             "text": "Tools   Options... \uba54\ub274 \ud074\ub9ad  Options \ub2e4\uc774\uc5bc\ub85c\uadf8 Text Editor   C/C++   Advanced \uce74\ud14c\uace0\ub9ac \uc120\ud0dd   Browsing/Navigation \uadf8\ub8f9  Disable Extenal Dependencies Folder:  False  \uc124\uc815", 
             "title": "\uc678\ubd80 \uc758\uc874\uc131 \ud3f4\ub354 \uac10\ucd94\uae30 Hide Extern Dependencies Folder"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#intellisense", 
+            "location": "/ue4_windows_vs_setup_digest/#intellisense", 
             "text": "Tools   Options... \uba54\ub274 \ud074\ub9ad  Options \ub2e4\uc774\uc5bc\ub85c\uadf8 Text Editor   C/C++   Advanced \uce74\ud14c\uace0\ub9ac \uc120\ud0dd   IntelliSense \uadf8\ub8f9   Auto Quick Info:  True  \uc124\uc815  Disable InteliSense:  False  \uc124\uc815  Disable Auto Updating:  False  \uc124\uc815  Disable Error Reporting:  False  \uc124\uc815  Disable Squiggles:  False  \uc124\uc815", 
             "title": "\uc778\ud154\ub9ac\uc13c\uc2a4 Intellisense"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#disable-debugging-edit-and-continue", 
+            "location": "/ue4_windows_vs_setup_digest/#disable-debugging-edit-and-continue", 
             "text": "Tools   Options... \uba54\ub274 \ud074\ub9ad  Options \ub2e4\uc774\uc5bc\ub85c\uadf8 Debugging \uce74\ud14c\uace0\ub9ac \uc120\ud0dd   Enable Edit and Continue:  \uccb4\ud06c \ud574\uc81c", 
             "title": "\ud3b8\uc9d1 \ud6c4 \ub514\ubc84\uae45 \ub044\uae30 Disable Debugging Edit and Continue"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#export-settings", 
+            "location": "/ue4_windows_vs_setup_digest/#export-settings", 
             "text": "Tools   Import and Export Settings... \uba54\ub274 \ud074\ub9ad  Import and Export Setting Wizard \ub2e4\uc774\uc5bc\ub85c\uadf8 Export selected environment settings \uc120\ud0dd  Choose Settings to Export  AllSettings   General Settings  Menu and Command Bar Customizations    Options  Debugging  Environment  Projects and Solutions    Text Editor  C/C++ Editor", 
             "title": "\uc124\uc815 \uc775\uc2a4\ud3ec\ud2b8 Export Settings"
         }, 
         {
-            "location": "/windows_ue4_setup_vs_digest/#settings-file", 
+            "location": "/ue4_windows_vs_setup_digest/#settings-file", 
             "text": "%USERPROFILE%\\Documents\\Visual Studio 2015\\Settings\\Exported-YYYY-mm-dd.vssettings  UserSettings \n     ToolOptions \n         ToolOptionsCategory   name= Environment \n             ToolsOptionsSubCategory   name= ProjectsAndSolution \n                 PropertyValue   name= ShowTaskListAfterBuild false /PropertyValue \n             /ToolsOptionsSubCategory  \n         /ToolOptionsCategory \n         ToolsOptionsCategory   name= TextEditor   RegisteredName= TextEditor \n             ToolsOptionsSubCategory   name= C/C++ Specific \n                 PropertyValue   name= DisableExternalDependenciesFolders false /PropertyValue \n                 PropertyValue   name= EnableQuickInfoToolTips true /PropertyValue \n                 PropertyValue   name= DisableSharedIntelliSense false /PropertyValue \n                 PropertyValue   name= DisableIntelliSenseUpdating false /PropertyValue\n                 PropertyValue   name= DisableErrorReporting false /PropertyValue \n                 PropertyValue   name= DisableSquiggles false /PropertyValue \n             /ToolsOptionsSubCategory  \n         /ToolOptionsCategory \n     /ToolOptions \n     Category   name= Environment Group  \n         Category   name= Environment_CommandBars \n             CommandBars \n                 UserCustomizations \n                     modify   Cmd= {5EFC7975-14BC-11CF-9B2B-00AA00573819}:000002ac   CmdPri= 03000000   Group= {D309F791-903F-11D0-9EFC-00A0C911004F}:00000174   GroupPri= 09000000   Menu= {D309F791-903F-11D0-9EFC-00A0C911004F}:00000001   Width= 150 / \n                 /UserCustomizations \n             /CommandBars \n         /Category \n     /Category \n     Category   name= Debugger  \n         PropertyValue   name= ENCEnable 0 /PropertyValue \n     /Category  /UserSettings", 
             "title": "\uc124\uc815 \ud30c\uc77c Settings File"
         }, 
@@ -338,7 +338,7 @@
         {
             "location": "/vscode_plugin_vim_digest/", 
             "text": "\ube44\uc8fc\uc5bc \uc2a4\ud29c\ub514\uc624 \ucf54\ub4dc \ud50c\ub7ec\uadf8\uc778: vim \uc694\uc57d\n\n\nhttps://github.com/VSCodeVim/Vim\n\n\n\uc124\uc815\n\n\n\uc18d\uc131\n\n\n\n\nvim.useCtrlKeys\n: \ucee8\ud2b8\ub864 \uae30\ubc18 \ub2e8\ucd95\ud0a4 \uc9c0\uc6d0 \n\n\nvim.useSystemClipboard\n: \uc2dc\uc2a4\ud15c \ud074\ub9bd\ubcf4\ub4dc \uc5f0\ub3d9 \n\n\neditor.cursorStyle\n: \uae30\ubcf8 \ucee4\uc11c \ubaa8\uc591 \uc124\uc815 (vim \ud50c\ub7ec\uadf8\uc778 \ud65c\uc131\ud654-\ube44\ud65c\uc131\ud654 \uad6c\ubd84)\n\n\n\n\n\uc608\uc2dc\n\n\n{\n    \nvim.useCtrlKeys\n: \ntrue\n,\n    \nvim.useSystemClipboard\n: \ntrue\n,\n    \neditor.cursorStyle\n: \nunderline\n\n}", 
-            "title": "vim"
+            "title": "vim plugin"
         }, 
         {
             "location": "/vscode_plugin_vim_digest/#vim", 
@@ -381,42 +381,42 @@
             "title": "VM \uc6e8\uc5b4 \ud4e8\uc804 8 \uc815\uc801 IP \uc124\uc815"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/", 
             "text": "GitHub Extension for VisualStudio: UnrealEngine .gitignore \ubc84\uadf8\n\n\n\ud658\uacbd\n\n\n\n\nVisualStudio Community 2015 14.0.25431.01 Update 3\n\n\nWindows 10 Pro 64bit\n\n\nUnrealEngine-4.15.0\n\n\n\n\n\uc7ac\ud604\n\n\n\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 Git \ub85c\uceec \uc800\uc7a5\uc18c\ub97c \uc624\ud508\ud55c \ub2e4\uc74c \ud300 \ud0d0\uc0c9\uae30\ub97c \ud1b5\ud574 \ucee4\ubc0b\uc744 \uc2dc\ub3c4\ud569\ub2c8\ub2e4.\n\n\n\uc0c1\ud669\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ubcc0\uacbd \ub0b4\uc6a9 (15781\uac1c)\n\n\n.suo [\ucd94\uac00]\nAgentInterface.dll [\ucd94\uac00]\nAllDesktop.Automation.dll [\ucd94\uac00]\nAllDesktop.Automation.pdb [\ucd94\uac00]\n...\n\n\n\n\n\n\uc6d0\uc778\n\n\n\uc5b8\ub9ac\uc5bc\uc5d0\uc11c\ub294 \ubc84\uc804 \uad00\ub9ac \ub300\uc0c1 \ud30c\uc77c\uc744 \ube14\ub799 \ub9ac\uc2a4\ud2b8 \ub300\uc2e0 \ud654\uc774\ud2b8 \ub9ac\uc2a4\ud2b8 \uad00\ub9ac\ud569\ub2c8\ub2e4.\n\n\n\ubd84\uc11d\n\n\n\ud300 \ud0d0\uc0c9\uae30 \n \ud504\ub85c\uc81d\ud2b8 \n \uc124\uc815 \n Git \n \ub9ac\ud3ec\uc9c0\ud1a0\ub9ac \uc124\uc815 \n \ubb34\uc2dc \ubc0f \ud2b9\uc131 \ud30c\uc77c \n \ubb34\uc2dc \ud30c\uc77c \ud3b8\uc9d1\n\n\n# Ignore all files by default, but scan all directories\n\n*\n!*/\n\n\n\n\n\n!*/\n \ubb38\uad6c\ub97c \uc81c\ub300\ub85c \ucc98\ub9ac\ud558\uc9c0 \ubabb\ud568\n\n\n\ud574\uacb0\n\n\n\n\nGit \ucf58\uc194 \uc0ac\uc6a9\n\n\nGit GUI \ud074\ub77c\uc774\uc5b8\ud2b8 \uc0ac\uc6a9(SmartGit, SourceTree)\n\n\n\ub2e4\ub978 Git \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uad50\uccb4(\ud655\uc778\uc911)", 
-            "title": "vs gitignore"
+            "title": "vs ext"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#github-extension-for-visualstudio-unrealengine-gitignore", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#github-extension-for-visualstudio-unrealengine-gitignore", 
             "text": "", 
             "title": "GitHub Extension for VisualStudio: UnrealEngine .gitignore \ubc84\uadf8"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_1", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#_1", 
             "text": "VisualStudio Community 2015 14.0.25431.01 Update 3  Windows 10 Pro 64bit  UnrealEngine-4.15.0", 
             "title": "\ud658\uacbd"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_2", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#_2", 
             "text": "\uc5b8\ub9ac\uc5bc \uc5d4\uc9c4 Git \ub85c\uceec \uc800\uc7a5\uc18c\ub97c \uc624\ud508\ud55c \ub2e4\uc74c \ud300 \ud0d0\uc0c9\uae30\ub97c \ud1b5\ud574 \ucee4\ubc0b\uc744 \uc2dc\ub3c4\ud569\ub2c8\ub2e4.", 
             "title": "\uc7ac\ud604"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_3", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#_3", 
             "text": "\ud300 \ud0d0\uc0c9\uae30   \ubcc0\uacbd \ub0b4\uc6a9 (15781\uac1c)  .suo [\ucd94\uac00]\nAgentInterface.dll [\ucd94\uac00]\nAllDesktop.Automation.dll [\ucd94\uac00]\nAllDesktop.Automation.pdb [\ucd94\uac00]\n...", 
             "title": "\uc0c1\ud669"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_4", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#_4", 
             "text": "\uc5b8\ub9ac\uc5bc\uc5d0\uc11c\ub294 \ubc84\uc804 \uad00\ub9ac \ub300\uc0c1 \ud30c\uc77c\uc744 \ube14\ub799 \ub9ac\uc2a4\ud2b8 \ub300\uc2e0 \ud654\uc774\ud2b8 \ub9ac\uc2a4\ud2b8 \uad00\ub9ac\ud569\ub2c8\ub2e4.", 
             "title": "\uc6d0\uc778"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_5", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#_5", 
             "text": "\ud300 \ud0d0\uc0c9\uae30   \ud504\ub85c\uc81d\ud2b8   \uc124\uc815   Git   \ub9ac\ud3ec\uc9c0\ud1a0\ub9ac \uc124\uc815   \ubb34\uc2dc \ubc0f \ud2b9\uc131 \ud30c\uc77c   \ubb34\uc2dc \ud30c\uc77c \ud3b8\uc9d1  # Ignore all files by default, but scan all directories \n*\n!*/  !*/  \ubb38\uad6c\ub97c \uc81c\ub300\ub85c \ucc98\ub9ac\ud558\uc9c0 \ubabb\ud568", 
             "title": "\ubd84\uc11d"
         }, 
         {
-            "location": "/github_ext_for_vs_ue4_gitignore_issue/#_6", 
+            "location": "/ue4_windows_vs_git_ext_gitignore_issue/#_6", 
             "text": "Git \ucf58\uc194 \uc0ac\uc6a9  Git GUI \ud074\ub77c\uc774\uc5b8\ud2b8 \uc0ac\uc6a9(SmartGit, SourceTree)  \ub2e4\ub978 Git \ud50c\ub7ec\uadf8\uc778\uc73c\ub85c \uad50\uccb4(\ud655\uc778\uc911)", 
             "title": "\ud574\uacb0"
         }, 
