@@ -15,7 +15,7 @@
     
     
       
-        <title>port forwarding - myevan.net</title>
+        <title>perforce service - myevan.net</title>
       
     
     
@@ -72,15 +72,15 @@
             
               
                 <span class="md-header-nav__parent">
-                  digests
+                  vcs
                 </span>
               
                 <span class="md-header-nav__parent">
-                  vmware
+                  helix
                 </span>
               
             
-            port forwarding
+            perforce service
           
         </span>
       </div>
@@ -266,10 +266,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
     <label class="md-nav__link" for="nav-3-1">
       vcs
@@ -321,10 +323,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2" checked>
     
     <label class="md-nav__link" for="nav-3-1-2">
       helix
@@ -424,11 +428,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../helix_perforce_windows_service_digest/" title="perforce service" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="perforce service" class="md-nav__link md-nav__link--active">
       perforce service
     </a>
+    
   </li>
 
         
@@ -566,12 +579,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
     
     <label class="md-nav__link" for="nav-3-5">
       vmware
@@ -599,20 +610,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="port forwarding" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../vmware_fusion_8_port_forwarding_digest/" title="port forwarding" class="md-nav__link">
       port forwarding
     </a>
-    
   </li>
 
         
@@ -870,31 +872,14 @@
                
               
                 
-                <h1 id="vm-8-ip">VM 웨어 퓨전 8 정적 IP 설정<a class="headerlink" href="#vm-8-ip" title="Permanent link">&para;</a></h1>
-<p><a href="https://medium.com/@tuweizhong/how-to-setup-port-forward-at-vmware-fusion-8-for-os-x-742ad6ca1344#.8761w21h2">https://medium.com/@tuweizhong/how-to-setup-port-forward-at-vmware-fusion-8-for-os-x-742ad6ca1344#.8761w21h2</a></p>
-<p>NAT 설정 파일을 편집합니다</p>
-<div class="codehilite"><pre><span></span>$ sudo vi /Library/Preferences/VMware<span class="se">\ </span>Fusion/vmnet8/nat.conf
+                <h1 id="perforce-service">헬릭스 윈도우 퍼포스 서비스 요약 Perforce Service<a class="headerlink" href="#perforce-service" title="Permanent link">&para;</a></h1>
+<p><a href="https://www.perforce.com/perforce/r10.2/manuals/p4sag/08_nt.html">https://www.perforce.com/perforce/r10.2/manuals/p4sag/08_nt.html</a></p>
+<p>helix_p4d_service.bat</p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin           <span class="k">mkdir</span> <span class="nv">%~dp0</span>bin
+<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin\p4d.exe   powershell Invoke-WebRequest ftp://ftp.perforce.com/perforce/r16.2/bin.ntx64/p4d.exe -OutFile <span class="nv">%~dp0</span>bin\p4d.exe
+<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin\p4s.exe   <span class="k">copy</span> <span class="nv">%~dp0</span>bin\p4d.exe <span class="nv">%~dp0</span>bin\p4s.exe 
 </pre></div>
-
-
-<p><code>[incomingtcp]</code>을 찾은 다음 외부-내부 포트 맵핑을 추가합니다.</p>
-<div class="codehilite"><pre><span></span>[incomingtcp]
-# Use these with care — anyone can enter into your VM through these…
-# The format and example are as follows:
-#&lt;external port number&gt; = &lt;VM’s IP address&gt;:&lt;VM’s port number&gt;
-#8080 = 172.16.3.128:80
-<span class="gi">+8010 = 192.168.149.10:80</span>
-<span class="gi">+2010 = 192.168.149.10:22</span>
-</pre></div>
-
-
-<p>VM 웨어 퓨전 네트워크 서비스를 재시작합니다.</p>
-<div class="codehilite"><pre><span></span>$ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library/vmnet-cli --stop
-$ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library/vmnet-cli --start
-</pre></div>
-
-
-<p>VM 웨어 퓨전 설정 파일은 업그레이드될때마다 리셋되므로 백업해놓는 것이 좋습니다.</p>
               
               
             </article>
@@ -908,7 +893,7 @@ $ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vmware_fusion_8_static_ip_digest/" title="static ip" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../helix_perforce_windows_daemon_digest/" title="perforce daemon" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -917,19 +902,19 @@ $ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                static ip
+                perforce daemon
               </span>
             </div>
           </a>
         
         
-          <a href="../ue4_windows_vs_git_ext_gitignore_issue/" title="vs ext" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ue4_windows_vs_setup_digest/" title="vs setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                vs ext
+                vs setup
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -15,7 +15,7 @@
     
     
       
-        <title>port forwarding - myevan.net</title>
+        <title>installation - myevan.net</title>
       
     
     
@@ -72,15 +72,15 @@
             
               
                 <span class="md-header-nav__parent">
-                  digests
+                  tutorials
                 </span>
               
                 <span class="md-header-nav__parent">
-                  vmware
+                  hyper-v ubuntu
                 </span>
               
             
-            port forwarding
+            installation
           
         </span>
       </div>
@@ -149,10 +149,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       tutorials
@@ -192,10 +194,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
     
     <label class="md-nav__link" for="nav-2-3">
       hyper-v ubuntu
@@ -211,11 +215,127 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../hyper_v_ubuntu_installation_tutorial/" title="installation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        installation
+      </label>
+    
+    <a href="./" title="installation" class="md-nav__link md-nav__link--active">
       installation
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environments" title="환경 Environments" class="md-nav__link">
+    환경 Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-install-hyper-v" title="하이퍼 V 설치 Install Hyper-V" class="md-nav__link">
+    하이퍼 V 설치 Install Hyper-V
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-ubuntu" title="우분투 다운로드 Download Ubuntu" class="md-nav__link">
+    우분투 다운로드 Download Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-create-hyper-v-virtual-machine" title="하이퍼 V 가상 컴퓨터 생성 Create Hyper-V Virtual Machine" class="md-nav__link">
+    하이퍼 V 가상 컴퓨터 생성 Create Hyper-V Virtual Machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-internet-connection" title="인터넷 연결 공유 Share Internet Connection" class="md-nav__link">
+    인터넷 연결 공유 Share Internet Connection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-ubuntu" title="우분투 설치 Install Ubuntu" class="md-nav__link">
+    우분투 설치 Install Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-ubuntu" title="우분투 셋업 Setup Ubuntu" class="md-nav__link">
+    우분투 셋업 Setup Ubuntu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="네트워크 확인" class="md-nav__link">
+    네트워크 확인
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ping" title="PING" class="md-nav__link">
+    PING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh" title="SSH" class="md-nav__link">
+    SSH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="패키지 업데이트" class="md-nav__link">
+    패키지 업데이트
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -245,12 +365,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       digests
@@ -566,12 +684,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
     
     <label class="md-nav__link" for="nav-3-5">
       vmware
@@ -599,20 +715,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="port forwarding" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../vmware_fusion_8_port_forwarding_digest/" title="port forwarding" class="md-nav__link">
       port forwarding
     </a>
-    
   </li>
 
         
@@ -859,6 +966,100 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environments" title="환경 Environments" class="md-nav__link">
+    환경 Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-install-hyper-v" title="하이퍼 V 설치 Install Hyper-V" class="md-nav__link">
+    하이퍼 V 설치 Install Hyper-V
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-ubuntu" title="우분투 다운로드 Download Ubuntu" class="md-nav__link">
+    우분투 다운로드 Download Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-create-hyper-v-virtual-machine" title="하이퍼 V 가상 컴퓨터 생성 Create Hyper-V Virtual Machine" class="md-nav__link">
+    하이퍼 V 가상 컴퓨터 생성 Create Hyper-V Virtual Machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-internet-connection" title="인터넷 연결 공유 Share Internet Connection" class="md-nav__link">
+    인터넷 연결 공유 Share Internet Connection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-ubuntu" title="우분투 설치 Install Ubuntu" class="md-nav__link">
+    우분투 설치 Install Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-ubuntu" title="우분투 셋업 Setup Ubuntu" class="md-nav__link">
+    우분투 셋업 Setup Ubuntu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="네트워크 확인" class="md-nav__link">
+    네트워크 확인
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ping" title="PING" class="md-nav__link">
+    PING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh" title="SSH" class="md-nav__link">
+    SSH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="패키지 업데이트" class="md-nav__link">
+    패키지 업데이트
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -870,31 +1071,174 @@
                
               
                 
-                <h1 id="vm-8-ip">VM 웨어 퓨전 8 정적 IP 설정<a class="headerlink" href="#vm-8-ip" title="Permanent link">&para;</a></h1>
-<p><a href="https://medium.com/@tuweizhong/how-to-setup-port-forward-at-vmware-fusion-8-for-os-x-742ad6ca1344#.8761w21h2">https://medium.com/@tuweizhong/how-to-setup-port-forward-at-vmware-fusion-8-for-os-x-742ad6ca1344#.8761w21h2</a></p>
-<p>NAT 설정 파일을 편집합니다</p>
-<div class="codehilite"><pre><span></span>$ sudo vi /Library/Preferences/VMware<span class="se">\ </span>Fusion/vmnet8/nat.conf
+                <h1 id="v">하이퍼 V 우분투 설치<a class="headerlink" href="#v" title="Permanent link">&para;</a></h1>
+<h2 id="environments">환경 Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Windows-10-Pro-x64</li>
+<li>Ubuntu-14.04-x64</li>
+</ul>
+<h2 id="v-install-hyper-v">하이퍼 V 설치 Install Hyper-V<a class="headerlink" href="#v-install-hyper-v" title="Permanent link">&para;</a></h2>
+<ul>
+<li>제어판 &gt; 프로그램 및 기능 &gt; Windows 기능 켜기 / 끄기 클릭</li>
+<li>Hyper-V 체크 후 확인 버튼 클릭</li>
+<li>재부팅</li>
+</ul>
+<h2 id="download-ubuntu">우분투 다운로드 Download Ubuntu<a class="headerlink" href="#download-ubuntu" title="Permanent link">&para;</a></h2>
+<ul>
+<li>다음 카카오 <a href="http://ftp.daumkakao.com/ubuntu-releases/14.04/ubuntu-14.04.5-server-amd64.iso">http://ftp.daumkakao.com/ubuntu-releases/14.04/ubuntu-14.04.5-server-amd64.iso</a></li>
+<li>네오위즈 <a href="http://ftp.neowiz.com/ubuntu-releases/14.04.5/ubuntu-14.04.5-server-amd64.iso">http://ftp.neowiz.com/ubuntu-releases/14.04.5/ubuntu-14.04.5-server-amd64.iso</a></li>
+</ul>
+<h2 id="v-create-hyper-v-virtual-machine">하이퍼 V 가상 컴퓨터 생성 Create Hyper-V Virtual Machine<a class="headerlink" href="#v-create-hyper-v-virtual-machine" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Hyper-V 관리자 실행</li>
+<li>작업 &gt; 가상 스위치 관리자 &gt; 가상 스위치 관리자 다이얼로그 <ul>
+<li>유형: 내부 선택 &gt; 가상 스위치 만들기 버튼 클릭</li>
+<li>새 가상 스위치 선택<ul>
+<li>이름: <code>NAT</code></li>
+<li>확인 버튼 클릭 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>작업 &gt; 새로 만들기 &gt; 새 가상 컴퓨터 마법사 다이얼로그 <ul>
+<li>이름: <code>Ubuntu-14.04.5-x64</code></li>
+<li>세대: 1세대 선택</li>
+<li>메모리<ul>
+<li>시작 메모리: 1024MB</li>
+<li>동적 메모리: 사용</li>
+</ul>
+</li>
+<li>네트워킹: <code>NAT</code> 스위치 선택</li>
+<li>가상 하드 디스크 연결<ul>
+<li>이름: <code>Ubuntu-14.04.5-x64.vhdx</code></li>
+<li>위치: <code>C:\Users\Public\Documents\Hyper-V\Virtual hard disks\Ubuntu-14.04.5-x64.vhdx</code></li>
+<li>크기: <code>10GB</code></li>
+</ul>
+</li>
+<li>설치 옵션 &gt; 부팅 가능 CD/DVD-ROM 에서 운영 체제 설치: <code>ubunutu-14.04.5-server-amd64.iso 선택</code></li>
+<li>마침</li>
+</ul>
+</li>
+<li>가상 컴퓨터 <code>Ubuntu-14.04.5-x64</code> 선택 &gt; 설정 클릭<ul>
+<li>프로세서 카테고리 선택 &gt; 가상 프로세서 수: 2개 </li>
+<li>확인</li>
+</ul>
+</li>
+</ul>
+<h2 id="share-internet-connection">인터넷 연결 공유 Share Internet Connection<a class="headerlink" href="#share-internet-connection" title="Permanent link">&para;</a></h2>
+<ul>
+<li>제어판 &gt; 네트워크 및 공유 센터 &gt; 인터넷 이더넷 클릭</li>
+<li>이더넷 상태 다이얼로그 &gt; 속성 버튼 클릭</li>
+<li>이더넷 속성 다이얼로그 &gt; 공유 탭 선택<ul>
+<li>인터넷 연결 공유</li>
+<li>다른 네트워크 사용자가 이 컴퓨터의 인터넷 연결을 통해 연결할 수 있도록 허용 체크</li>
+<li>홈 네트워킹 연결: <code>NAT</code></li>
+<li>확인 버튼 클릭</li>
+</ul>
+</li>
+</ul>
+<h2 id="install-ubuntu">우분투 설치 Install Ubuntu<a class="headerlink" href="#install-ubuntu" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Hyper-V 가상 컴퓨터 <code>Ubuntu-14.04.5-x64</code> 선택 <ul>
+<li>시작 클릭</li>
+<li>연결 클릭</li>
+</ul>
+</li>
+<li>Lanauage: <code>English</code> 선택</li>
+<li><code>Install Ubuntu Server</code> 선택 </li>
+<li>Select a language: <code>English - English</code> 선택 </li>
+<li>Select your location: <code>Unite States</code> 선택 </li>
+<li>Configure the keyboard<ul>
+<li>Detect keyboard layout? <code>No</code> 선택 </li>
+<li>Country of origin for the keyboard: <code>English (US)</code> 선택 </li>
+<li>Keyboard layout: <code>English (US)</code> 선택 </li>
+</ul>
+</li>
+<li>Configure the network:<ul>
+<li>DHCP <code>Cancel</code> 선택 </li>
+<li>Network autoconfiguration failed: <code>Continue</code> 선택 </li>
+<li>Network configuration method: <code>Configure network manually</code> 선택 <ul>
+<li>IP Address: <code>192.168.137.100/24</code> 입력</li>
+<li>Gateway: <code>192.168.137.1</code> 입력</li>
+<li>Name server address: <code>8.8.8.8</code> 입력</li>
+<li>Hostname: <code>ubuntu</code> 입력</li>
+<li>Domain name: `` 입력</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Set up users and passwords:<ul>
+<li>Full name for the new user: <code>실제 이름</code> 입력</li>
+<li>User name for your account: <code>계정 이름</code> 입력</li>
+<li>Choose a password for the new user: <code>비밀번호</code> 입력</li>
+<li>Re-enter password for verify: <code>비밀번호</code> 재입력</li>
+<li>Encrypt your home directory?: <code>No</code> 선택</li>
+</ul>
+</li>
+<li>Setting up the clock &gt; Select your time zone: <code>Select from worldwide list</code> 선택 &gt; <code>Asia/Seoul</code> 선택</li>
+<li>Partition disks:<ul>
+<li>Partitioning method: <code>Guided - use enitre disk and setup LVM</code> 선택udo </li>
+<li>Select disk to partition: <code>SCSI3 (0,0,0) (sda) - 10.7GB Msft Virtual Disk</code> 선택</li>
+<li>Wrtie the changes to disks and configure LVM? <code>Yes</code> 선택</li>
+<li>Amount of volume group to use for guided partioning: <code>Continue</code> 선택    </li>
+<li>Write the changes to diskss? <code>Yes</code> 선택</li>
+</ul>
+</li>
+<li>Configure the package manager &gt;  HTTP proxy information: <code>Continue</code> 선택</li>
+<li>Configure tasksel: How do you want to manage upgrades on this system? <code>No automatic updates</code> 선택</li>
+<li>Software selection: <code>OpenSSH server</code> 체크</li>
+<li>Install the GRUD boot loader on a hard disk: <code>Yes</code> 선택</li>
+</ul>
+<h2 id="setup-ubuntu">우분투 셋업 Setup Ubuntu<a class="headerlink" href="#setup-ubuntu" title="Permanent link">&para;</a></h2>
+<h3 id="_1">네트워크 확인<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h4 id="ping">PING<a class="headerlink" href="#ping" title="Permanent link">&para;</a></h4>
+<p>적당한 네임 서버에 핑을 확인합니다.</p>
+<div class="codehilite"><pre><span></span>$ ping <span class="m">168</span>.126.63.1
 </pre></div>
 
 
-<p><code>[incomingtcp]</code>을 찾은 다음 외부-내부 포트 맵핑을 추가합니다.</p>
-<div class="codehilite"><pre><span></span>[incomingtcp]
-# Use these with care — anyone can enter into your VM through these…
-# The format and example are as follows:
-#&lt;external port number&gt; = &lt;VM’s IP address&gt;:&lt;VM’s port number&gt;
-#8080 = 172.16.3.128:80
-<span class="gi">+8010 = 192.168.149.10:80</span>
-<span class="gi">+2010 = 192.168.149.10:22</span>
+<p>핑 실패시 <strong>인터넷 연결 공유</strong>을 재설정합니다.</p>
+<h4 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h4>
+<p>bash 나 putty 로 <ssh://192.168.137.100> 에 접속합니다.</p>
+<p>접속시 password 프롬프트가 늦게 표시된다면 네임 서버 주소를 확인합니다.</p>
+<div class="codehilite"><pre><span></span>$ sudo vim /etc/network/interfaces
+<span class="c1"># This file describes the network interfaces available on your system</span>
+<span class="c1"># and how to activate them. For more information, see interfaces(5).</span>
+
+<span class="c1"># The loopback network interface</span>
+auto lo
+iface lo inet loopback
+
+<span class="c1"># The primary network interface</span>
+auto eth0
+iface eth0 inet static
+        address <span class="m">192</span>.168.137.100
+        netmask <span class="m">255</span>.255.255.0
+        network <span class="m">192</span>.168.137.0
+        broadcast <span class="m">192</span>.168.137.255
+        gateway <span class="m">192</span>.168.137.1
+        <span class="c1"># dns-* options are implemented by the resolvconf package, if installed</span>
+        dns-nameservers <span class="m">8</span>.8.8.8
 </pre></div>
 
 
-<p>VM 웨어 퓨전 네트워크 서비스를 재시작합니다.</p>
-<div class="codehilite"><pre><span></span>$ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library/vmnet-cli --stop
-$ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library/vmnet-cli --start
+<p>이더넷 설정을 재시작합니다.</p>
+<div class="codehilite"><pre><span></span>$ sudo ifdown eth0 <span class="o">&amp;&amp;</span> sudo ifup eth0
 </pre></div>
 
 
-<p>VM 웨어 퓨전 설정 파일은 업그레이드될때마다 리셋되므로 백업해놓는 것이 좋습니다.</p>
+<p>네임 서버가 제대로 변경 되었는지 확인합니다.</p>
+<div class="codehilite"><pre><span></span>$ sudo cat /etc/resolv.conf
+<span class="c1"># Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)</span>
+<span class="c1">#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN</span>
+nameserver <span class="m">8</span>.8.8.8
+</pre></div>
+
+
+<h3 id="_2">패키지 업데이트<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>$ sudo apt-get update
+$ sudo apt-get upgrade
+</pre></div>
               
               
             </article>
@@ -908,7 +1252,7 @@ $ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../vmware_fusion_8_static_ip_digest/" title="static ip" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ue4_windows_build_tutorial/" title="ue4 build" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -917,19 +1261,19 @@ $ sudo /Applications/VMware<span class="se">\ </span>Fusion.app/Contents/Library
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                static ip
+                ue4 build
               </span>
             </div>
           </a>
         
         
-          <a href="../ue4_windows_vs_git_ext_gitignore_issue/" title="vs ext" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../hyper_v_ubuntu_disk_expanding_tutorial/" title="disk expanding" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                vs ext
+                disk expanding
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
