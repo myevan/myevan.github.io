@@ -15,7 +15,7 @@
     
     
       
-        <title>perforce service - myevan.net</title>
+        <title>enable root - myevan.net</title>
       
     
     
@@ -72,15 +72,15 @@
             
               
                 <span class="md-header-nav__parent">
-                  vcs
+                  digests
                 </span>
               
                 <span class="md-header-nav__parent">
-                  helix
+                  mac
                 </span>
               
             
-            perforce service
+            enable root
           
         </span>
       </div>
@@ -326,12 +326,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       vcs
@@ -491,12 +489,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
     
     <label class="md-nav__link" for="nav-3-1-2">
       helix
@@ -536,20 +532,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="perforce service" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../helix_perforce_windows_service_digest/" title="perforce service" class="md-nav__link">
       perforce service
     </a>
-    
   </li>
 
         
@@ -735,10 +722,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" checked>
     
     <label class="md-nav__link" for="nav-3-6">
       mac
@@ -754,11 +743,52 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../mac_root_enable_digest/" title="enable root" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        enable root
+      </label>
+    
+    <a href="./" title="enable root" class="md-nav__link md-nav__link--active">
       enable root
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="설정" class="md-nav__link">
+    설정
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="테스트" class="md-nav__link">
+    테스트
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1041,6 +1071,25 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="설정" class="md-nav__link">
+    설정
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="테스트" class="md-nav__link">
+    테스트
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1052,13 +1101,19 @@
                
               
                 
-                <h1 id="perforce-service">헬릭스 윈도우 퍼포스 서비스 요약 Perforce Service<a class="headerlink" href="#perforce-service" title="Permanent link">&para;</a></h1>
-<p><a href="https://www.perforce.com/perforce/r10.2/manuals/p4sag/08_nt.html">https://www.perforce.com/perforce/r10.2/manuals/p4sag/08_nt.html</a></p>
-<p>helix_p4d_service.bat</p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin           <span class="k">mkdir</span> <span class="nv">%~dp0</span>bin
-<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin\p4d.exe   powershell Invoke-WebRequest ftp://ftp.perforce.com/perforce/r16.2/bin.ntx64/p4d.exe -OutFile <span class="nv">%~dp0</span>bin\p4d.exe
-<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin\p4s.exe   <span class="k">copy</span> <span class="nv">%~dp0</span>bin\p4d.exe <span class="nv">%~dp0</span>bin\p4s.exe 
+                <h1 id="how-to-enable-the-root-user-on-your-mac">맥 루트 유저 활성화 How to enable the root user on your mac<a class="headerlink" href="#how-to-enable-the-root-user-on-your-mac" title="Permanent link">&para;</a></h1>
+<p><a href="https://support.apple.com/ko-kr/HT204012">https://support.apple.com/ko-kr/HT204012</a></p>
+<h2 id="_1">설정<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>시스템 환경 설정 &gt; 사용자 및 그룹: 자물쇠 해제</li>
+<li>로그인 옵션 &gt; 네트워크 계정 서버 연결 &gt; 디렉토리 유틸리티 열기: 자물쇠 해제</li>
+<li>디렉토리 유틸리티 메인 메뉴 &gt; 편집 &gt; Root 사용자 활성화</li>
+<li>루트 패스워드 입력</li>
+</ul>
+<h2 id="_2">테스트<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>$ sudo whoami
+Password: 루트 패스워드 입력
+root
 </pre></div>
               
               
@@ -1073,7 +1128,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../helix_perforce_windows_daemon_digest/" title="perforce daemon" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../vmware_fusion_8_port_forwarding_digest/" title="port forwarding" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1082,19 +1137,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                perforce daemon
+                port forwarding
               </span>
             </div>
           </a>
         
         
-          <a href="../ue4_windows_vs_setup_digest/" title="vs setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../python_mac_venv_wrapper_digest/" title="mac venv" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                vs setup
+                mac venv
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
