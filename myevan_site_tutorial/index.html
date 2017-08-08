@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
       
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.2.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
     
       
@@ -19,10 +20,10 @@
       
     
     
-      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-e17eeafcbc.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-bfecc7305d.css">
       
     
     
@@ -54,7 +55,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <header class="md-header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -84,27 +85,29 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result"></div>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
       </div>
     </div>
   </div>
 </div>
         
       </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="md-header-nav__source">
-          
-        </div>
-      </div>
+      
     </div>
   </nav>
 </header>
@@ -195,36 +198,89 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#os-support" title="운영체제 지원 OS Support" class="md-nav__link">
-    운영체제 지원 OS Support
+  <a href="#setup" title="셋업 Setup" class="md-nav__link">
+    셋업 Setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment" title="가상 환경 Virtual Environment" class="md-nav__link">
+    가상 환경 Virtual Environment
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#development-environments" title="개발 환경 Development Environments" class="md-nav__link">
-    개발 환경 Development Environments
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#new-site" title="새로운 사이트 New Site" class="md-nav__link">
     새로운 사이트 New Site
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#preview-site" title="사이트 미리 보기 Preview Site" class="md-nav__link">
     사이트 미리 보기 Preview Site
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posix" title="POSIX" class="md-nav__link">
+    POSIX
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment_1" title="가상 환경 Virtual Environment" class="md-nav__link">
+    가상 환경 Virtual Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-site_1" title="새로운 사이트 New Site" class="md-nav__link">
+    새로운 사이트 New Site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-site_1" title="사이트 미리 보기 Preview Site" class="md-nav__link">
+    사이트 미리 보기 Preview Site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#site-configuration" title="사이트 설정 Site Configuration" class="md-nav__link">
-    사이트 설정 Site Configuration
+  <a href="#configuration" title="설정 Configuration" class="md-nav__link">
+    설정 Configuration
   </a>
   
     <nav class="md-nav">
@@ -254,6 +310,26 @@
     배포 Deployment
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows_1" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posix_1" title="POSIX" class="md-nav__link">
+    POSIX
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -262,6 +338,8 @@
   </a>
   
 </li>
+      
+      
       
     </ul>
   
@@ -1124,36 +1202,89 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#os-support" title="운영체제 지원 OS Support" class="md-nav__link">
-    운영체제 지원 OS Support
+  <a href="#setup" title="셋업 Setup" class="md-nav__link">
+    셋업 Setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment" title="가상 환경 Virtual Environment" class="md-nav__link">
+    가상 환경 Virtual Environment
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#development-environments" title="개발 환경 Development Environments" class="md-nav__link">
-    개발 환경 Development Environments
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#new-site" title="새로운 사이트 New Site" class="md-nav__link">
     새로운 사이트 New Site
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#preview-site" title="사이트 미리 보기 Preview Site" class="md-nav__link">
     사이트 미리 보기 Preview Site
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posix" title="POSIX" class="md-nav__link">
+    POSIX
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment_1" title="가상 환경 Virtual Environment" class="md-nav__link">
+    가상 환경 Virtual Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-site_1" title="새로운 사이트 New Site" class="md-nav__link">
+    새로운 사이트 New Site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-site_1" title="사이트 미리 보기 Preview Site" class="md-nav__link">
+    사이트 미리 보기 Preview Site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#site-configuration" title="사이트 설정 Site Configuration" class="md-nav__link">
-    사이트 설정 Site Configuration
+  <a href="#configuration" title="설정 Configuration" class="md-nav__link">
+    설정 Configuration
   </a>
   
     <nav class="md-nav">
@@ -1183,6 +1314,26 @@
     배포 Deployment
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows_1" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posix_1" title="POSIX" class="md-nav__link">
+    POSIX
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1191,6 +1342,8 @@
   </a>
   
 </li>
+      
+      
       
     </ul>
   
@@ -1202,91 +1355,141 @@
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
-               
               
                 
+                
                 <h1 id="_1">빗자루넷 따라하기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="os-support">운영체제 지원 OS Support<a class="headerlink" href="#os-support" title="Permanent link">&para;</a></h2>
-<ul>
-<li>macOS Sierra 10.12.1 </li>
-<li>Windows 10 Professional + Windows Subsystem for Linux</li>
-</ul>
-<h2 id="development-environments">개발 환경 Development Environments<a class="headerlink" href="#development-environments" title="Permanent link">&para;</a></h2>
-<p>python-2.7 + virtualenvwrapper</p>
-<div class="codehilite"><pre><span></span>$ mkvirtualenv myevan_site
-<span class="o">(</span>myevan_site<span class="o">)</span>$ pip install mkdocs
-<span class="o">(</span>myevan_site<span class="o">)</span>$ pip install pygments
-<span class="o">(</span>myevan_site<span class="o">)</span>$ pip install pymdown-extensions
-<span class="o">(</span>myevan_site<span class="o">)</span>$ pip install mkdocs-material
+<h2 id="setup">셋업 Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<h4 id="virtual-environment">가상 환경 Virtual Environment<a class="headerlink" href="#virtual-environment" title="Permanent link">&para;</a></h4>
+<p>python-2.7 + virtualenv</p>
+<div class="codehilite"><pre><span></span>C<span class="p">:</span><span class="nl">\</span><span class="c1">&gt; virtualenv \Python27\venvs\mkdocs</span>
+C<span class="p">:</span><span class="nl">\</span><span class="c1">&gt; \Python27\venvs\mkdocs\Scripts\active</span>
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\<span class="p">&gt;</span> pip install mkdocs
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\<span class="p">&gt;</span> pip install pygments
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\<span class="p">&gt;</span> pip install pymdown-extensions
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\<span class="p">&gt;</span> pip install mkdocs-material
 </pre></div>
 
 
-<h2 id="new-site">새로운 사이트 New Site<a class="headerlink" href="#new-site" title="Permanent link">&para;</a></h2>
-<p>GitHub 원격 저장소를 로컬 저장소로 복제합니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ git clone https://github.com/myevan/myevan myevan
+<h4 id="new-site">새로운 사이트 New Site<a class="headerlink" href="#new-site" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="p">(</span>mkdocs<span class="p">)</span> C:\<span class="p">&gt;</span> md \GitHub
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\<span class="p">&gt;</span> cd \GitHub
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub<span class="p">&gt;</span> md \myevan
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub<span class="p">&gt;</span> cd \myevan
+<span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub\myevan<span class="p">&gt;</span> mkdocs new .
 </pre></div>
 
 
-<p>로컬 저장소에 기본 구조를 생성합니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ <span class="nb">cd</span> myevan
-<span class="o">(</span>myevan_site<span class="o">)</span>$ mkdocs new .
-</pre></div>
-
-
-<h2 id="preview-site">사이트 미리 보기 Preview Site<a class="headerlink" href="#preview-site" title="Permanent link">&para;</a></h2>
+<h4 id="preview-site">사이트 미리 보기 Preview Site<a class="headerlink" href="#preview-site" title="Permanent link">&para;</a></h4>
 <p>로컬 서버를 통해 실제 출력되는 모습을 확인할 수 있습니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ mkdocs serve
+<div class="codehilite"><pre><span></span><span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub\myevan<span class="p">&gt;</span> mkdocs serve
 </pre></div>
 
 
 <p><a href="http://localhost:8000">http://localhost:8000</a> 접속하면 미리 보기가 가능합니다. 변경 사항도 바로 적용됩니다. </p>
-<h2 id="site-configuration">사이트 설정 Site Configuration<a class="headerlink" href="#site-configuration" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ vim mkdocs.yml
+<h3 id="posix">POSIX<a class="headerlink" href="#posix" title="Permanent link">&para;</a></h3>
+<ul>
+<li>macOS Sierra 10.12.1 </li>
+<li>Windows 10 Professional + Windows Subsystem for Linux</li>
+</ul>
+<h4 id="virtual-environment_1">가상 환경 Virtual Environment<a class="headerlink" href="#virtual-environment_1" title="Permanent link">&para;</a></h4>
+<p>python-2.7 + virtualenvwrapper</p>
+<div class="codehilite"><pre><span></span>$ mkvirtualenv mkdocs
+<span class="o">(</span>mkdocs<span class="o">)</span>$ pip install mkdocs
+<span class="o">(</span>mkdocs<span class="o">)</span>$ pip install pygments
+<span class="o">(</span>mkdocs<span class="o">)</span>$ pip install pymdown-extensions
+<span class="o">(</span>mkdocs<span class="o">)</span>$ pip install mkdocs-material
 </pre></div>
 
 
+<h4 id="new-site_1">새로운 사이트 New Site<a class="headerlink" href="#new-site_1" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="o">(</span>mkdocs<span class="o">)</span>$ mkdir GitHub
+<span class="o">(</span>mkdocs<span class="o">)</span>$ <span class="nb">cd</span> GitHub
+<span class="o">(</span>mkdocs<span class="o">)</span>$ mkdir myevan
+<span class="o">(</span>mkdocs<span class="o">)</span>$ <span class="nb">cd</span> myevan
+<span class="o">(</span>mkdocs<span class="o">)</span>$ mkdocs new .
+</pre></div>
+
+
+<h4 id="preview-site_1">사이트 미리 보기 Preview Site<a class="headerlink" href="#preview-site_1" title="Permanent link">&para;</a></h4>
+<p>로컬 서버를 통해 실제 출력되는 모습을 확인할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="o">(</span>mkdocs<span class="o">)</span>$ mkdocs serve
+</pre></div>
+
+
+<p><a href="http://localhost:8000">http://localhost:8000</a> 접속하면 미리 보기가 가능합니다. 변경 사항도 바로 적용됩니다. </p>
+<h2 id="configuration">설정 Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <h3 id="example">예제 Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="s">&quot;myevan.net&quot;</span>
-<span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">material</span>
-<span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
-<span class="l l-Scalar l-Scalar-Plain">pages</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="s">&quot;home&quot;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
-    <span class="p p-Indicator">-</span> <span class="s">&quot;tutorials&quot;</span><span class="p p-Indicator">:</span> 
-        <span class="p p-Indicator">-</span> <span class="s">&quot;myevan</span><span class="nv"> </span><span class="s">site&quot;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">myevan_site_tutorial.md</span>
+<div class="codehilite"><pre><span></span>mkdocs.yml
+
+:::yaml
+site_name: &quot;myevan.net&quot;
+theme: material
+markdown_extensions:
+    - codehilite
+pages:
+    - &quot;home&quot;: index.md
+    - &quot;tutorials&quot;: 
+        - &quot;myevan site&quot;: mkdocs_tutorial.md
 </pre></div>
 
 
 <h3 id="properties">속성 Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li>site_name: 사이트 이름 </li>
-<li>theme: 테마</li>
-<li>markdown_extensions: 마크 다운 확장 <ul>
-<li>codehilite: 문법 강조 지원</li>
+<li><code>site_name</code>: 사이트 이름 </li>
+<li><code>theme</code>: 테마</li>
+<li><code>markdown_extensions</code>: 마크 다운 확장 <ul>
+<li><code>codehilite</code>: 문법 강조 지원</li>
 </ul>
 </li>
-<li>pages: 페이지 이름과 마크다운 파일 맵핑, 계층 구조 지원</li>
+<li><code>pages</code>: 페이지 이름과 마크다운 파일 맵핑, 계층 구조 지원</li>
 </ul>
 <h2 id="deployment">배포 Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
+<h3 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h3>
 <p>페이지 저장소를 site 디렉토리에 클론 받습니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ git clone https://github.com/myevan/myevan.github.io site
+<div class="codehilite"><pre><span></span><span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub\myevan<span class="p">&gt;</span> git clone https://github.com/myevan/myevan.github.io site
 </pre></div>
 
 
 <p>홈 저장소에서 site 디렉토리를 버전 관리하지 않도록 무시 설정해 줍니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ vim .gitignore
+<div class="codehilite"><pre><span></span><span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub\myevan<span class="p">&gt;</span> vim .gitignore
 /site
 </pre></div>
 
 
 <p>빌드하면 site 디렉토리에 정적 사이트가 만들어집니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ mkdocs build
+<div class="codehilite"><pre><span></span><span class="p">(</span>mkdocs<span class="p">)</span> C:\GitHub\myevan<span class="p">&gt;</span> mkdocs build
 </pre></div>
 
 
 <p>git 을 사용해서 정적 사이트 배포가 가능합니다.</p>
-<div class="codehilite"><pre><span></span><span class="o">(</span>myevan_site<span class="o">)</span>$ <span class="o">(</span><span class="nb">cd</span> site<span class="p">;</span>git commit -a<span class="o">)</span>
-<span class="o">(</span>myevan_site<span class="o">)</span>$ <span class="o">(</span><span class="nb">cd</span> site<span class="p">;</span>git push<span class="o">)</span>
+<div class="codehilite"><pre><span></span><span class="p">(</span>mkdocs<span class="p">)</span>$ C:\GitHub\myevan<span class="p">&gt;</span> (cd site;git commit -a)
+<span class="p">(</span>mkdocs<span class="p">)</span>$ C:\GitHub\myevan<span class="p">&gt;</span> (cd site;git push)
+</pre></div>
+
+
+<p>배포된 사이트는 <a href="https://myevan.github.io">https://myevan.github.io</a> 에서 확인 가능합니다. </p>
+<h3 id="posix_1">POSIX<a class="headerlink" href="#posix_1" title="Permanent link">&para;</a></h3>
+<p>페이지 저장소를 site 디렉토리에 클론 받습니다.</p>
+<div class="codehilite"><pre><span></span><span class="o">(</span>mkdocs<span class="o">)</span>$ git clone https://github.com/myevan/myevan.github.io site
+</pre></div>
+
+
+<p>홈 저장소에서 site 디렉토리를 버전 관리하지 않도록 무시 설정해 줍니다.</p>
+<div class="codehilite"><pre><span></span><span class="o">(</span>mkdocs<span class="o">)</span>$ vim .gitignore
+/site
+</pre></div>
+
+
+<p>빌드하면 site 디렉토리에 정적 사이트가 만들어집니다.</p>
+<div class="codehilite"><pre><span></span><span class="o">(</span>mkdocs<span class="o">)</span>$ mkdocs build
+</pre></div>
+
+
+<p>git 을 사용해서 정적 사이트 배포가 가능합니다.</p>
+<div class="codehilite"><pre><span></span><span class="o">(</span>mkdocs<span class="o">)</span>$ <span class="o">(</span><span class="nb">cd</span> site<span class="p">;</span>git commit -a<span class="o">)</span>
+<span class="o">(</span>mkdocs<span class="o">)</span>$ <span class="o">(</span><span class="nb">cd</span> site<span class="p">;</span>git push<span class="o">)</span>
 </pre></div>
 
 
@@ -1312,7 +1515,12 @@
 <li>site 저장소에 <a href="https://github.com/myevan/myevan.github.io/blob/master/CNAME">CNAME 파일</a>이 생성됩니다.</li>
 <li>mkdocs build 시마다 site 디렉토리가 리셋되어 CNAME 파일이 삭제되는 것을 막기 위해 CNAME 파일을 <a href="https://github.com/myevan/myevan/tree/master/docs">docs 디렉토리</a>로 복사합니다</li>
 </ul>
+                
+                  
+                
               
+              
+                
               
             </article>
           </div>
@@ -1376,7 +1584,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-30ac6a1727.js"></script>
+      <script src="../assets/javascripts/application-6940329b9f.js"></script>
+      
+      
       <script>app.initialize({url:{base:".."}})</script>
       
     
