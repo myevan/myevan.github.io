@@ -244,6 +244,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#runeditor" title="에디터 실행 RunEditor" class="md-nav__link">
+    에디터 실행 RunEditor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#re-registerengine" title="엔진 재등록 Re-RegisterEngine" class="md-nav__link">
+    엔진 재등록 Re-RegisterEngine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setupdistribution" title="배포 버전 설정 SetupDistribution" class="md-nav__link">
+    배포 버전 설정 SetupDistribution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makedistributionbinary" title="바이너리 배포 버전 설정 MakeDistributionBinary" class="md-nav__link">
+    바이너리 배포 버전 설정 MakeDistributionBinary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#makedistributionsource" title="소스 배포 버전 설정 MakeDistributionSource" class="md-nav__link">
+    소스 배포 버전 설정 MakeDistributionSource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installedplatforms" title="설치된 플랫폼 설정 InstalledPlatforms" class="md-nav__link">
+    설치된 플랫폼 설정 InstalledPlatforms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -764,6 +812,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ue4_dedicated_server_digest/" title="dedicated" class="md-nav__link">
+      dedicated
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -935,11 +995,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7">
     
     <label class="md-nav__link" for="nav-3-7">
-      win
+      windows
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-7">
-        win
+        windows
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -950,7 +1010,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../win_keyboard_digest/" title="keyboard" class="md-nav__link">
+    <a href="../windows_keyboard_digest/" title="keyboard" class="md-nav__link">
       keyboard
     </a>
   </li>
@@ -1273,6 +1333,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#runeditor" title="에디터 실행 RunEditor" class="md-nav__link">
+    에디터 실행 RunEditor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#re-registerengine" title="엔진 재등록 Re-RegisterEngine" class="md-nav__link">
+    엔진 재등록 Re-RegisterEngine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setupdistribution" title="배포 버전 설정 SetupDistribution" class="md-nav__link">
+    배포 버전 설정 SetupDistribution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makedistributionbinary" title="바이너리 배포 버전 설정 MakeDistributionBinary" class="md-nav__link">
+    바이너리 배포 버전 설정 MakeDistributionBinary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#makedistributionsource" title="소스 배포 버전 설정 MakeDistributionSource" class="md-nav__link">
+    소스 배포 버전 설정 MakeDistributionSource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installedplatforms" title="설치된 플랫폼 설정 InstalledPlatforms" class="md-nav__link">
+    설치된 플랫폼 설정 InstalledPlatforms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -1329,7 +1437,75 @@ GenerateProjectFiles.bat
 </pre></div>
 
 
-<p>UE4.sln 을 오픈합니다.</p>
+<p>UE4.sln 을 열어 <strong>Development</strong> 를 빌드합니다.</p>
+<h2 id="runeditor">에디터 실행 RunEditor<a class="headerlink" href="#runeditor" title="Permanent link">&para;</a></h2>
+<p>에디터 실행 파일이 잘 안 보이는 곳에 위치하고 있기 때문에 배치 파일을 만들어 주면 편리합니다.</p>
+<p><code>C:\EpicGames\UE_4.git\_RunEditor.bat</code></p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+<span class="k">start</span> <span class="nv">%~dp0</span>Engine\Binaries\Win64\UE4Editor.exe
+</pre></div>
+
+
+<h2 id="re-registerengine">엔진 재등록 Re-RegisterEngine<a class="headerlink" href="#re-registerengine" title="Permanent link">&para;</a></h2>
+<p>엔진 소스 경로를 변경하게 되면 .uproject 와의 연결이 끊어집니다. 재연결을 하기 위해서는 Setup.bat 를 실행해도 되지만 여러가지 절차를 수행하기 때문에 재등록 과정만 배치 파일로 만들어 주면 빠르게 엔진을 재등록 할 수 있습니다.</p>
+<p><code>C:\EpicGames\UE_4.git\Build\BatchFiles\_RegisterEngine.bat</code></p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+<span class="k">echo</span> Register Engine Path
+<span class="nv">%~dp0</span>..\..\..\Engine\Binaries\Win64\UnrealVersionSelector-Win64-Shipping.exe /register
+<span class="k">pause</span>
+</pre></div>
+
+
+<h2 id="setupdistribution">배포 버전 설정 SetupDistribution<a class="headerlink" href="#setupdistribution" title="Permanent link">&para;</a></h2>
+<p>직접 빌드한 에디터로 프로젝트를 만들 경우 프로젝트 설정에 최적화시키기 위해 엔진을 다시 빌드하게 됩니다. 굳이 프로젝트별 엔진 빌드를 할 필요가 없다면 엔진을 <strong>바이너리 배포 버전</strong>으로 설정하는 것이 좋습니다.</p>
+<ul>
+<li>GeneratedProjectFiles.bat 삭제</li>
+<li>Build\SourceDistribution.txt 삭제</li>
+<li>Build\InstalledBuild.txt 빈 파일 생성</li>
+</ul>
+<p>GeneratedProjectFiles.bat 와 SourceDistribution.txt 를 삭제할 경우 다시 소스 배포 버전으로 돌리기 어려우므로 삭제보다는 이름을 변경하는 방법이 좋습니다.</p>
+<h3 id="makedistributionbinary">바이너리 배포 버전 설정 MakeDistributionBinary<a class="headerlink" href="#makedistributionbinary" title="Permanent link">&para;</a></h3>
+<p><code>C:\EpicGames\UE_4.git\Build\BatchFiles\_MakeDistributionBinary.bat</code></p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>..\InstalledBuild.txt <span class="p">(</span>
+    <span class="k">echo</span> Already made Distribution: Binary
+    <span class="k">goto</span> <span class="nl">finish</span>
+<span class="p">)</span>
+<span class="k">echo</span> Make Distribution: Binary
+<span class="k">ren</span> <span class="nv">%~dp0</span>..\..\..\GenerateProjectFiles.bat _GenerateProjectFiles.bat       
+<span class="k">ren</span> <span class="nv">%~dp0</span>..\SourceDistribution.txt _SourceDistribution.txt
+<span class="k">copy</span> NUL <span class="nv">%~dp0</span>..\InstalledBuild.bat
+
+<span class="p">:</span><span class="nl">finish</span>
+<span class="k">pause</span>
+</pre></div>
+
+
+<h3 id="makedistributionsource">소스 배포 버전 설정 MakeDistributionSource<a class="headerlink" href="#makedistributionsource" title="Permanent link">&para;</a></h3>
+<p><code>C:\EpicGames\UE_4.git\Build\BatchFiles\_MakeDistributionSource.bat</code></p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+<span class="k">if</span> <span class="k">not</span> <span class="k">exist</span> <span class="nv">%~dp0</span>..\InstalledBuild.txt <span class="p">(</span>
+    <span class="k">echo</span> Already made Distribution: Source
+    <span class="k">goto</span> <span class="nl">finish</span>
+<span class="p">)</span>
+
+<span class="k">echo</span> Make Distribution: Source
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>..\..\..\_GenerateProjectFiles.bat <span class="k">ren</span> <span class="nv">%~dp0</span>..\..\..\_GenerateProjectFiles.bat GenerateProjectFiles.bat       
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>..\_SourceDistribution.txt <span class="k">ren</span> <span class="nv">%~dp0</span>..\_SourceDistribution.txt SourceDistribution.txt
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>..\InstalledBuild.txt <span class="k">del</span> <span class="nv">%~dp0</span>..\InstalledBuild.txt
+
+<span class="p">:</span><span class="nl">finish</span>
+<span class="k">pause</span>
+</pre></div>
+
+
+<h3 id="installedplatforms">설치된 플랫폼 설정 InstalledPlatforms<a class="headerlink" href="#installedplatforms" title="Permanent link">&para;</a></h3>
+<p>C++ 프로젝트를 생성하기 위해서는 설치된 플랫폼 설정을 추가해 주어야 합니다.</p>
+<p><code>C:\EpicGames\UE_4.git\Engine\Config\BaseEngine.ini</code></p>
+<div class="codehilite"><pre><span></span><span class="k">[InstalledPlatforms]</span>
+<span class="na">+InstalledPlatformConfigurations</span><span class="o">=</span><span class="s">(PlatformName=&quot;Win64&quot;, Configuration=&quot;DebugGame&quot;, PlatformType=&quot;Game&quot;, RequiredFile=&quot;Engine\Binaries\Win64\UE4Game.target&quot;, ProjectType=&quot;Any&quot;, bCanBeDisplayed=False)</span>
+<span class="na">+InstalledPlatformConfigurations</span><span class="o">=</span><span class="s">(PlatformName=&quot;Win64&quot;, Configuration=&quot;Development&quot;, PlatformType=&quot;Game&quot;, RequiredFile=&quot;Engine\Binaries\Win64\UE4Game.target&quot;, ProjectType=&quot;Any&quot;, bCanBeDisplayed=False)</span>
+</pre></div>
                 
                   
                 
