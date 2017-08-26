@@ -16,7 +16,7 @@
     
     
       
-        <title>perforce service - myevan.net</title>
+        <title>keyboard - myevan.net</title>
       
     
     
@@ -73,15 +73,15 @@
             
               
                 <span class="md-header-nav__parent">
-                  vcs
+                  digests
                 </span>
               
                 <span class="md-header-nav__parent">
-                  helix
+                  win
                 </span>
               
             
-            perforce service
+            keyboard
           
         </span>
       </div>
@@ -437,12 +437,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       vcs
@@ -602,12 +600,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-2" type="checkbox" id="nav-3-1-2">
     
     <label class="md-nav__link" for="nav-3-1-2">
       helix
@@ -647,20 +643,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="perforce service" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../helix_perforce_windows_service_digest/" title="perforce service" class="md-nav__link">
       perforce service
     </a>
-    
   </li>
 
         
@@ -882,10 +869,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7" checked>
     
     <label class="md-nav__link" for="nav-3-7">
       win
@@ -901,11 +890,47 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../win_keyboard_digest/" title="keyboard" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        keyboard
+      </label>
+    
+    <a href="./" title="keyboard" class="md-nav__link md-nav__link--active">
       keyboard
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capslock" title="한영키 Capslock 사용" class="md-nav__link">
+    한영키 Capslock 사용
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1188,6 +1213,20 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capslock" title="한영키 Capslock 사용" class="md-nav__link">
+    한영키 Capslock 사용
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1199,13 +1238,14 @@
               
                 
                 
-                <h1 id="perforce-service">헬릭스 윈도우 퍼포스 서비스 요약 Perforce Service<a class="headerlink" href="#perforce-service" title="Permanent link">&para;</a></h1>
-<p><a href="https://www.perforce.com/perforce/r10.2/manuals/p4sag/08_nt.html">https://www.perforce.com/perforce/r10.2/manuals/p4sag/08_nt.html</a></p>
-<p>helix_p4d_service.bat</p>
-<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
-<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin           <span class="k">mkdir</span> <span class="nv">%~dp0</span>bin
-<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin\p4d.exe   powershell Invoke-WebRequest ftp://ftp.perforce.com/perforce/r16.2/bin.ntx64/p4d.exe -OutFile <span class="nv">%~dp0</span>bin\p4d.exe
-<span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXIST</span> <span class="nv">%~dp0</span>bin\p4s.exe   <span class="k">copy</span> <span class="nv">%~dp0</span>bin\p4d.exe <span class="nv">%~dp0</span>bin\p4s.exe 
+                <h1 id="_1">윈도우 키보드 드라이버 요약<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="capslock">한영키 Capslock 사용<a class="headerlink" href="#capslock" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.microsoft.com/ko-kr/windows-hardware/drivers/hid/keyboard-and-mouse-class-drivers">https://docs.microsoft.com/ko-kr/windows-hardware/drivers/hid/keyboard-and-mouse-class-drivers</a></p>
+<p>IME_Capslock.reg</p>
+<div class="codehilite"><pre><span></span><span class="na">Windows Registry Editor Version 5.00</span>
+
+<span class="k">[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]</span>
+<span class="na">&quot;Scancode Map&quot;</span><span class="o">=</span><span class="s">hex:00,00,00,00,00,00,00,00,02,00,00,00,72,00,3a,00,00,00,00,00</span>
 </pre></div>
                 
                   
@@ -1225,7 +1265,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../helix_perforce_windows_daemon_digest/" title="perforce daemon" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mac_root_enable_digest/" title="enable root" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1234,19 +1274,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                perforce daemon
+                enable root
               </span>
             </div>
           </a>
         
         
-          <a href="../ue4_windows_vs_setup_digest/" title="vs setup" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../python_mac_venv_wrapper_digest/" title="mac venv" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                vs setup
+                mac venv
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
