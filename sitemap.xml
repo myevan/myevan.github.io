@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-08-27</lastmod>
+     <lastmod>2017-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,19 @@
         
     <url>
      <loc>/myevan_site_tutorial/</loc>
-     <lastmod>2017-08-27</lastmod>
+     <lastmod>2017-10-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/choco_tutorial/</loc>
+     <lastmod>2017-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ue4_windows_build_tutorial/</loc>
-     <lastmod>2017-08-27</lastmod>
+     <lastmod>2017-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
