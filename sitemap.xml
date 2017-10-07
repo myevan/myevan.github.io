@@ -29,15 +29,15 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
-        
-    <url>
-     <loc>/myevan_site/</loc>
-     <lastmod>2017-10-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
         
     <url>
      <loc>/ue4_windows_build/</loc>
