@@ -12,30 +12,6 @@
     
         
     <url>
-     <loc>/myevan_site_tutorial/</loc>
-     <lastmod>2017-10-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/choco_tutorial/</loc>
-     <lastmod>2017-10-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ue4_windows_build_tutorial/</loc>
-     <lastmod>2017-10-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
@@ -58,8 +34,14 @@
     
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/myevan_site/</loc>
+     <lastmod>2017-10-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/ue4_windows_build/</loc>
+     <lastmod>2017-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -75,11 +57,9 @@
      <changefreq>daily</changefreq>
     </url>
         
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+    
+
+    
         
     <url>
      <loc></loc>
