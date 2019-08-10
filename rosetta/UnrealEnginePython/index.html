@@ -1,0 +1,3276 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>UnrealEnginePython - myevan.net</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#readme" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="myevan.net" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              myevan.net
+            </span>
+            <span class="md-header-nav__topic">
+              
+                UnrealEnginePython
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="myevan.net" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    myevan.net
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="home" class="md-nav__link">
+      home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      windows
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        windows
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      system
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        system
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows_package_mgr_choco/" title="package" class="md-nav__link">
+      package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows_hangul_key_capslock/" title="hangul" class="md-nav__link">
+      hangul
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows_remote_desktop_port/" title="remote desktop" class="md-nav__link">
+      remote desktop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows_python_virtualenv/" title="virtualenv" class="md-nav__link">
+      virtualenv
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
+    
+    <label class="md-nav__link" for="nav-2-1-2">
+      editor
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-2">
+        editor
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2-1" type="checkbox" id="nav-2-1-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1-2-1">
+      vscode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-1-2-1">
+        vscode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows_vscode_python_virtualenv/" title="python" class="md-nav__link">
+      python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+    
+    <label class="md-nav__link" for="nav-2-1-3">
+      tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-3">
+        tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows_python_mkdocs/" title="mkdocs" class="md-nav__link">
+      mkdocs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      mac
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        mac
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1">
+    
+    <label class="md-nav__link" for="nav-2-2-1">
+      system
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        system
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_package_mgr_homebrew/" title="package" class="md-nav__link">
+      package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_hangul_key_capslock/" title="hangul" class="md-nav__link">
+      hangul
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_root_enable/" title="enable root" class="md-nav__link">
+      enable root
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_terminal_hostname/" title="hostname" class="md-nav__link">
+      hostname
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-2" type="checkbox" id="nav-2-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2-2">
+      python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-2">
+        python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_python_pyenv/" title="pyenv" class="md-nav__link">
+      pyenv
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-2-2" type="checkbox" id="nav-2-2-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2-2-2">
+      virtualenv
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-2-2-2">
+        virtualenv
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_python_virtualenvwrapper/" title="wrapper" class="md-nav__link">
+      wrapper
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-3" type="checkbox" id="nav-2-2-3">
+    
+    <label class="md-nav__link" for="nav-2-2-3">
+      tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-3">
+        tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mac_xcode_command_line/" title="xcode" class="md-nav__link">
+      xcode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      ubuntu
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        ubuntu
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-1" type="checkbox" id="nav-2-3-1">
+    
+    <label class="md-nav__link" for="nav-2-3-1">
+      python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-3-1">
+        python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu_python_pyenv/" title="pyenv" class="md-nav__link">
+      pyenv
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      xplatform
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        xplatform
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      git
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        git
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git_config/" title="config" class="md-nav__link">
+      config
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-2" type="checkbox" id="nav-2-4-2">
+    
+    <label class="md-nav__link" for="nav-2-4-2">
+      vscode plugin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-2">
+        vscode plugin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../vscode_plugin_vim/" title="vim" class="md-nav__link">
+      vim
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3">
+      mkdocs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-3">
+        mkdocs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mkdocs_toc_hide/" title="toc" class="md-nav__link">
+      toc
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      github.io
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        github.io
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github_io_mkdocs/" title="mkdocs" class="md-nav__link">
+      mkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github_io_custom_domain/" title="custom domain" class="md-nav__link">
+      custom domain
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      tutorial
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_windows_build/" title="ue4 build" class="md-nav__link">
+      ue4 build
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      hyper-v
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        hyper-v
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2-1" type="checkbox" id="nav-3-2-1">
+    
+    <label class="md-nav__link" for="nav-3-2-1">
+      ubuntu
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-2-1">
+        ubuntu
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hyper_v_ubuntu_installation/" title="installation" class="md-nav__link">
+      installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hyper_v_ubuntu_disk_expanding/" title="disk expanding" class="md-nav__link">
+      disk expanding
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      ubuntu
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        ubuntu
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu_setup_ip/" title="ip" class="md-nav__link">
+      ip
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python_tcod/" title="tcod" class="md-nav__link">
+      tcod
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      digest
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        digest
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      *nix
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        *nix
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../screen/" title="screen" class="md-nav__link">
+      screen
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      vcs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        vcs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2-1" type="checkbox" id="nav-4-2-1">
+    
+    <label class="md-nav__link" for="nav-4-2-1">
+      git
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-1">
+        git
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git_bash_prompt/" title="git bash prompt" class="md-nav__link">
+      git bash prompt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git_windows_hosting/" title="git hosting" class="md-nav__link">
+      git hosting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2-1-3" type="checkbox" id="nav-4-2-1-3">
+    
+    <label class="md-nav__link" for="nav-4-2-1-3">
+      git lab
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-2-1-3">
+        git lab
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gitlab_ubuntu_installation/" title="installation" class="md-nav__link">
+      installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2-1-4" type="checkbox" id="nav-4-2-1-4">
+    
+    <label class="md-nav__link" for="nav-4-2-1-4">
+      git swarm
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-2-1-4">
+        git swarm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_gitswarm_requirements/" title="requirements" class="md-nav__link">
+      requirements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_gitswarm_ubuntu_installation/" title="installation" class="md-nav__link">
+      installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_gitswarm_ubuntu_administration/" title="administration" class="md-nav__link">
+      administration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2-2" type="checkbox" id="nav-4-2-2">
+    
+    <label class="md-nav__link" for="nav-4-2-2">
+      helix
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-2">
+        helix
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_perforce_windows_svn_migration/" title="svn migration" class="md-nav__link">
+      svn migration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_perforce_windows_daemon/" title="perforce daemon" class="md-nav__link">
+      perforce daemon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_perforce_windows_service/" title="perforce service" class="md-nav__link">
+      perforce service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      ue4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        ue4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_windows_vs_setup/" title="vs setup" class="md-nav__link">
+      vs setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_boost_compile_times/" title="boost compile time" class="md-nav__link">
+      boost compile time
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_dedicated_server/" title="dedicated" class="md-nav__link">
+      dedicated
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      vs2015
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        vs2015
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../vs2015_download/" title="download" class="md-nav__link">
+      download
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      vmware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        vmware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../vmware_fusion_8_static_ip/" title="static ip" class="md-nav__link">
+      static ip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../vmware_fusion_8_port_forwarding/" title="port forwarding" class="md-nav__link">
+      port forwarding
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      issue
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        issue
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      ue4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        ue4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_windows_vs_git_ext_gitignore/" title="vs ext" class="md-nav__link">
+      vs ext
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      helix
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        helix
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../helix_gitswarm_ubuntu_mirror_repository_delete/" title="gitswarm mirror" class="md-nav__link">
+      gitswarm mirror
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      ue4
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        ue4
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_setup_script/" title="setup script" class="md-nav__link">
+      setup script
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1-2" type="checkbox" id="nav-6-1-2">
+    
+    <label class="md-nav__link" for="nav-6-1-2">
+      build tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-1-2">
+        build tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_processor_count_multiplier/" title="processor count multiplier" class="md-nav__link">
+      processor count multiplier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_faster_without_unity/" title="faster without unity" class="md-nav__link">
+      faster without unity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ue4_min_files_using_precompiled_header/" title="min files using precompiled header" class="md-nav__link">
+      min files using precompiled header
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      translation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        translation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        UnrealEnginePython
+      </label>
+    
+    <a href="./" title="UnrealEnginePython" class="md-nav__link md-nav__link--active">
+      UnrealEnginePython
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-and-why" title="How and Why ? (어떻게? 왜?)" class="md-nav__link">
+    How and Why ? (어떻게? 왜?)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-installation-on-windows-64-bit-64" title="Binary installation on Windows (64 bit) 윈도우(64비트) 바이너리 설치" class="md-nav__link">
+    Binary installation on Windows (64 bit) 윈도우(64비트) 바이너리 설치
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-from-sources-on-windows-64-bit-64" title="Installation from sources on Windows (64 bit) 윈도우(64비트) 소스 설치" class="md-nav__link">
+    Installation from sources on Windows (64 bit) 윈도우(64비트) 소스 설치
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binaries-installation-on-maxosx-macos" title="Binaries installation on MaxOSX (macOS 바이너리 인스톨)" class="md-nav__link">
+    Binaries installation on MaxOSX (macOS 바이너리 인스톨)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-from-sources-on-macosx-macos" title="Installation from sources on MacOSX (macOS 소스 설치)" class="md-nav__link">
+    Installation from sources on MacOSX (macOS 소스 설치)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-on-macosx-macos" title="Upgrading on MacOSX (macOS 플러그인 업그레이드)" class="md-nav__link">
+    Upgrading on MacOSX (macOS 플러그인 업그레이드)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-from-sources-on-linux-64-bit" title="Installation from sources On Linux (64 bit)" class="md-nav__link">
+    Installation from sources On Linux (64 bit)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-the-plugin-on-linux" title="Upgrade the plugin on Linux" class="md-nav__link">
+    Upgrade the plugin on Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android-deployment" title="Android Deployment (안드로이드 개발)" class="md-nav__link">
+    Android Deployment (안드로이드 개발)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-on-other-platforms" title="Installation on other platforms (기타 플랫폼 설치)" class="md-nav__link">
+    Installation on other platforms (기타 플랫폼 설치)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-python-with-unreal-engine-finally" title="Using Python with Unreal Engine (finally) 언리얼 엔진에서 파이썬 사용하기" class="md-nav__link">
+    Using Python with Unreal Engine (finally) 언리얼 엔진에서 파이썬 사용하기
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-blueprint-class-managed-by-python" title="Creating a new blueprint class managed by python (파이썬으로 관리되는 블루프린트 만들기)" class="md-nav__link">
+    Creating a new blueprint class managed by python (파이썬으로 관리되는 블루프린트 만들기)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-selfuobject-selfuobject" title="What is 'self.uobject' ? (self.uobject 란?)" class="md-nav__link">
+    What is 'self.uobject' ? (self.uobject 란?)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-about-uobject-from-now-on-uobject" title="Note about 'uobject' from now on (이후 등장하는 'uobject' 에 대한 참고 사항)" class="md-nav__link">
+    Note about 'uobject' from now on (이후 등장하는 'uobject' 에 대한 참고 사항)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-python-component-to-an-actor" title="Adding a python component to an Actor (액터에 파이썬 컴포넌트 추가하기)" class="md-nav__link">
+    Adding a python component to an Actor (액터에 파이썬 컴포넌트 추가하기)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#native-methods-vs-reflection-vs" title="Native methods VS reflection 네이티브 메소드 vs 리플렉션" class="md-nav__link">
+    Native methods VS reflection 네이티브 메소드 vs 리플렉션
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-automagic-uclass-ustruct-and-uenums-mappers-uclass-ustruct-uenum" title="The automagic UClass, UStruct and UEnums mappers 자동 마법 UClass, UStruct, UEnum 맵퍼들" class="md-nav__link">
+    The automagic UClass, UStruct and UEnums mappers 자동 마법 UClass, UStruct, UEnum 맵퍼들
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ue_sitepy-file-ue_sitepy" title="The ue_site.py file ue_site.py 파일" class="md-nav__link">
+    The ue_site.py file ue_site.py 파일
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pypawn" title="PyPawn" class="md-nav__link">
+    PyPawn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-world-concept" title="The 'World' concept '월드' 컨셉" class="md-nav__link">
+    The 'World' concept '월드' 컨셉
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-uobject-api" title="The uobject api" class="md-nav__link">
+    The uobject api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-module-reloading-editor-only" title="Automatic module reloading (Editor only) 자동 모듈 리로딩 (에디터 전용)" class="md-nav__link">
+    Automatic module reloading (Editor only) 자동 모듈 리로딩 (에디터 전용)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primitives-and-math-functions" title="Primitives and Math functions 프리미티브와 수학 펑션들" class="md-nav__link">
+    Primitives and Math functions 프리미티브와 수학 펑션들
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencing-objects" title="Referencing objects 오브젝트 참조" class="md-nav__link">
+    Referencing objects 오브젝트 참조
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-as_dict-method-as_dict" title="The as_dict() method as_dict() 메소드" class="md-nav__link">
+    The as_dict() method as_dict() 메소드
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blueprints-integration" title="Blueprints integration 블루프린트 통합" class="md-nav__link">
+    Blueprints integration 블루프린트 통합
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" title="Events 이벤트" class="md-nav__link">
+    Events 이벤트
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-configuration" title="Plugin Configuration 플러그인 설정" class="md-nav__link">
+    Plugin Configuration 플러그인 설정
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging" title="Packaging 패키징" class="md-nav__link">
+    Packaging 패키징
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-examples" title="Quick Examples 쾌속 예제" class="md-nav__link">
+    Quick Examples 쾌속 예제
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawning-notes" title="Spawning Notes 노트 스폰" class="md-nav__link">
+    Spawning Notes 노트 스폰
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-python-editor" title="The Python Editor 파이썬 에디터" class="md-nav__link">
+    The Python Editor 파이썬 에디터
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-qt4qt5pyside2" title="Integration with Qt4/Qt5/PySide2" class="md-nav__link">
+    Integration with Qt4/Qt5/PySide2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-management" title="Memory management" class="md-nav__link">
+    Memory management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-testing" title="Unit Testing" class="md-nav__link">
+    Unit Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threading" title="Threading" class="md-nav__link">
+    Threading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-python-proxy-from-uobject" title="Accessing Python Proxy From UObject" class="md-nav__link">
+    Accessing Python Proxy From UObject
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-and-known-issues" title="Status and Known issues" class="md-nav__link">
+    Status and Known issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contacts-and-commercial-support" title="Contacts and Commercial Support" class="md-nav__link">
+    Contacts and Commercial Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-thanks" title="Special Thanks" class="md-nav__link">
+    Special Thanks
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pyjs/about/" title="pyjs" class="md-nav__link">
+      pyjs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-and-why" title="How and Why ? (어떻게? 왜?)" class="md-nav__link">
+    How and Why ? (어떻게? 왜?)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-installation-on-windows-64-bit-64" title="Binary installation on Windows (64 bit) 윈도우(64비트) 바이너리 설치" class="md-nav__link">
+    Binary installation on Windows (64 bit) 윈도우(64비트) 바이너리 설치
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-from-sources-on-windows-64-bit-64" title="Installation from sources on Windows (64 bit) 윈도우(64비트) 소스 설치" class="md-nav__link">
+    Installation from sources on Windows (64 bit) 윈도우(64비트) 소스 설치
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binaries-installation-on-maxosx-macos" title="Binaries installation on MaxOSX (macOS 바이너리 인스톨)" class="md-nav__link">
+    Binaries installation on MaxOSX (macOS 바이너리 인스톨)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-from-sources-on-macosx-macos" title="Installation from sources on MacOSX (macOS 소스 설치)" class="md-nav__link">
+    Installation from sources on MacOSX (macOS 소스 설치)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-on-macosx-macos" title="Upgrading on MacOSX (macOS 플러그인 업그레이드)" class="md-nav__link">
+    Upgrading on MacOSX (macOS 플러그인 업그레이드)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-from-sources-on-linux-64-bit" title="Installation from sources On Linux (64 bit)" class="md-nav__link">
+    Installation from sources On Linux (64 bit)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-the-plugin-on-linux" title="Upgrade the plugin on Linux" class="md-nav__link">
+    Upgrade the plugin on Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android-deployment" title="Android Deployment (안드로이드 개발)" class="md-nav__link">
+    Android Deployment (안드로이드 개발)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-on-other-platforms" title="Installation on other platforms (기타 플랫폼 설치)" class="md-nav__link">
+    Installation on other platforms (기타 플랫폼 설치)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-python-with-unreal-engine-finally" title="Using Python with Unreal Engine (finally) 언리얼 엔진에서 파이썬 사용하기" class="md-nav__link">
+    Using Python with Unreal Engine (finally) 언리얼 엔진에서 파이썬 사용하기
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-blueprint-class-managed-by-python" title="Creating a new blueprint class managed by python (파이썬으로 관리되는 블루프린트 만들기)" class="md-nav__link">
+    Creating a new blueprint class managed by python (파이썬으로 관리되는 블루프린트 만들기)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-selfuobject-selfuobject" title="What is 'self.uobject' ? (self.uobject 란?)" class="md-nav__link">
+    What is 'self.uobject' ? (self.uobject 란?)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-about-uobject-from-now-on-uobject" title="Note about 'uobject' from now on (이후 등장하는 'uobject' 에 대한 참고 사항)" class="md-nav__link">
+    Note about 'uobject' from now on (이후 등장하는 'uobject' 에 대한 참고 사항)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-python-component-to-an-actor" title="Adding a python component to an Actor (액터에 파이썬 컴포넌트 추가하기)" class="md-nav__link">
+    Adding a python component to an Actor (액터에 파이썬 컴포넌트 추가하기)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#native-methods-vs-reflection-vs" title="Native methods VS reflection 네이티브 메소드 vs 리플렉션" class="md-nav__link">
+    Native methods VS reflection 네이티브 메소드 vs 리플렉션
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-automagic-uclass-ustruct-and-uenums-mappers-uclass-ustruct-uenum" title="The automagic UClass, UStruct and UEnums mappers 자동 마법 UClass, UStruct, UEnum 맵퍼들" class="md-nav__link">
+    The automagic UClass, UStruct and UEnums mappers 자동 마법 UClass, UStruct, UEnum 맵퍼들
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ue_sitepy-file-ue_sitepy" title="The ue_site.py file ue_site.py 파일" class="md-nav__link">
+    The ue_site.py file ue_site.py 파일
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pypawn" title="PyPawn" class="md-nav__link">
+    PyPawn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-world-concept" title="The 'World' concept '월드' 컨셉" class="md-nav__link">
+    The 'World' concept '월드' 컨셉
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-uobject-api" title="The uobject api" class="md-nav__link">
+    The uobject api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-module-reloading-editor-only" title="Automatic module reloading (Editor only) 자동 모듈 리로딩 (에디터 전용)" class="md-nav__link">
+    Automatic module reloading (Editor only) 자동 모듈 리로딩 (에디터 전용)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primitives-and-math-functions" title="Primitives and Math functions 프리미티브와 수학 펑션들" class="md-nav__link">
+    Primitives and Math functions 프리미티브와 수학 펑션들
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencing-objects" title="Referencing objects 오브젝트 참조" class="md-nav__link">
+    Referencing objects 오브젝트 참조
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-as_dict-method-as_dict" title="The as_dict() method as_dict() 메소드" class="md-nav__link">
+    The as_dict() method as_dict() 메소드
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blueprints-integration" title="Blueprints integration 블루프린트 통합" class="md-nav__link">
+    Blueprints integration 블루프린트 통합
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" title="Events 이벤트" class="md-nav__link">
+    Events 이벤트
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-configuration" title="Plugin Configuration 플러그인 설정" class="md-nav__link">
+    Plugin Configuration 플러그인 설정
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging" title="Packaging 패키징" class="md-nav__link">
+    Packaging 패키징
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-examples" title="Quick Examples 쾌속 예제" class="md-nav__link">
+    Quick Examples 쾌속 예제
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawning-notes" title="Spawning Notes 노트 스폰" class="md-nav__link">
+    Spawning Notes 노트 스폰
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-python-editor" title="The Python Editor 파이썬 에디터" class="md-nav__link">
+    The Python Editor 파이썬 에디터
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-qt4qt5pyside2" title="Integration with Qt4/Qt5/PySide2" class="md-nav__link">
+    Integration with Qt4/Qt5/PySide2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-management" title="Memory management" class="md-nav__link">
+    Memory management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-testing" title="Unit Testing" class="md-nav__link">
+    Unit Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threading" title="Threading" class="md-nav__link">
+    Threading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-python-proxy-from-uobject" title="Accessing Python Proxy From UObject" class="md-nav__link">
+    Accessing Python Proxy From UObject
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-and-known-issues" title="Status and Known issues" class="md-nav__link">
+    Status and Known issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contacts-and-commercial-support" title="Contacts and Commercial Support" class="md-nav__link">
+    Contacts and Commercial Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-thanks" title="Special Thanks" class="md-nav__link">
+    Special Thanks
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/20tab/UnrealEnginePython/blob/76ae4b11bfd1cf46db0b191657c0ec2263b12741/README.md">https://github.com/20tab/UnrealEnginePython/blob/76ae4b11bfd1cf46db0b191657c0ec2263b12741/README.md</a></p>
+<p>Embed Python in Unreal Engine 4
+언리얼 엔진4 파이썬 임베딩</p>
+<p>Teaser (by Kite &amp; Lightning): https://twitter.com/KNLstudio/status/932657812466843648
+티져</p>
+<p>Fixing Mixamo RootMotion tuturial: https://github.com/20tab/UnrealEnginePython/blob/master/tutorials/FixingMixamoRootMotionWithPython.md
+믹사모 루트 모션 튜토리얼 수정</p>
+<p>Funny snippets for working with StaticMesh and SkeletalMesh assets: https://github.com/20tab/UnrealEnginePython/blob/master/tutorials/SnippetsForStaticAndSkeletalMeshes.md
+스태틱 메쉬와 스켈레탈 메쉬 애셋 작업 관련 재밌는 스니펫 모음</p>
+<p>More tutorials: https://github.com/20tab/UnrealEnginePython/tree/master/tutorials
+추가 튜토리얼</p>
+<h2 id="how-and-why">How and Why ? (어떻게? 왜?)<a class="headerlink" href="#how-and-why" title="Permanent link">&para;</a></h2>
+<p>This is a plugin embedding a whole Python VM (versions 3.x [the default and suggested one] and 2.7) In Unreal Engine 4 (both the editor and runtime).
+언리얼 엔진 파이썬은 언리얼 엔진4 에 파이썬 VM을 완전히 임베딩한 (에디터 및 런타임) 플러그인입니다. (기본적으로 파이썬 3.x 지원 및 추천하며 2.7 도 지원됩니다.)</p>
+<p>The Python VM tries to give easy access to all of the UE4 internal api + its reflection system. This means you can use the plugin to write other plugins, to automate tasks, to write unit tests and to implement gameplay elements.
+파이썬 VM 은 언리얼 내부 API 와 리플렉션 시스템 전체에 쉽게 접근할 수 있는 방법을 제공하는 것을 목표로 하고 있어, 플러그인 제작, 업무 자동화, 유닛 테스트, 게임 플레이 요소 구현에 사용될 수 있습니다.</p>
+<p>It is not meant as a way to avoid blueprints or c++ but as a good companion to them (albeit reducing the amount of c++ required for coding a game could be an interesting thing ;). If your development pipeline is already python-based (Maya, Blender, ...), this plugin could easily help you in integrating unreal into it.
+블루프린트나 C++ 를 완전히 대체하기보다는 (C++ 코딩을 줄이는데) 좋은 동반자 역할을 할 것입니다. 현재 개발 파이프 라인에 이미 파이썬 기반(마야, 블렌더, ...)이라면 언리얼 엔진 통합에 큰 도움이 될 것입니다. </p>
+<p>If you want to have an idea of what the plugin can do, jump here: https://github.com/20tab/UnrealEnginePython/blob/master/tutorials/YourFirstAutomatedPipeline.md
+플러그인으로 할 수 있는 것들에 대해 할 수 싶다면 다음 링크를 참고해주시기 바랍니다.</p>
+<p>In addition to this, the plugin automatically adds an actor class (PyActor), a pawn class (PyPawn), a character class (PyCharacter) and a component class (PythonComponent) for "gentle" integration of python in your games.
+이외에도 액터(PyActor), 폰(PyPawn), 캐릭터(PyCharacter), 컴포넌트(PythonComponent)등이 추가되어 있어 게임내 파이썬을 "젠틀하게" 통합시킬 수 있스니다. </p>
+<p>In the spirit of automating tasks, even wrappers for third party libraries used by UE4 are exposed in a 'pythonic' way. As an example the FbxSdk is exposed to allow low-level interaction with Fbx files. This is an example extracting animation curves: https://github.com/20tab/UnrealEnginePython/blob/master/examples/fbx_curves_extractor.py
+업무 자동화 측면에서도 써드 파티 라이브러리 랩퍼들을 '파이썬스러운' 방법으로 사용할 수 있습니다. 예를 들어 Fbx 파일들이 저수준 통합을 위해 FbxSdk 가 제공됩니다. 다음은 애니메이션 커브를 뽑아내는 예제입니다.  </p>
+<p>Another funny feature (well, a side effect ;) is that you can change your python code even after the project has been packaged. You can potentially build a completely new game from an already packaged one.
+(사실 사이드 이펙트에 가깝겠습니다만) 재밌는 장점 중 하나는 프로젝트를 패키징한 이후에도 파이썬 코드를 변경할 수 있다는 점입니다. 이점을 이용하면 이미 패키지된 게임에서 완전히 새로운 게임을 만들 수 있습니다.</p>
+<p>Once the plugin is installed and enabled, you get access to the 'PythonConsole' item in the 'Development Menu', you can use it to trigger python commands directly from the editor. There is even an experimental Editor/IDE included, you can run it from the Window/Layout/Python Editor menu item.
+플러그인을 설치 후 활성화시키면, '개발 메뉴'에서 '파이썬 콘솔'을 사용할 수 있습니다. 여기에서는 에디터에서 파이썬 커맨드를 실행할 수 있습니다. 이것은 실험적으로 에디터/IDE 에 포함되어 있으며 윈도우&gt; 레이아웃&gt; 파이썬 에디터 메뉴에서 실행할 수 있습니다.</p>
+<p>All of the exposed engine features are under the 'unreal_engine' virtual module (it is completely coded in c into the plugin, so do not expect to run 'import unreal_engine' from a standard python shell)
+엔진 기능들은 가상 모듈 <code>unreal_engine</code> 을 통해 접근 할 수 있습니다. (플러그인내 c 로 구현된 것이므로, 스탠다드 파이썬 쉘에서는 임포트할 수 없습니다.)</p>
+<p>The currently supported Unreal Engine versions are 4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, 4.19, 4.20, 4.21 and 4.22
+현재 지원되는 파이썬 엔진은 다음과 같습니다: 4.12, 4.13, 4.14, 4.15, 4.15, 4.17, 4.18, 4.19, 4.20, 4.21, 4.22</p>
+<p>We support official python.org releases as well as IntelPython and Anaconda distributions.
+공식 파이썬 릴리즈(인텔 파이썬, 아나콘다 배포판 포함)을 지원하고 있습니다.</p>
+<p>Note: this plugin has nothing to do with the experimental 'PythonScriptPlugin' included in Unreal Engine &gt;= 4.19. We aim at full integration with engine and editor (included the Slate api, check here: https://github.com/20tab/UnrealEnginePython/blob/master/docs/Slate_API.md), as well as support for the vast majority of python features like asyncio, coroutines, generators, threads and third party modules.
+참고: 언리얼 엔진 파이썬 플러그인은 언리얼 엔진4.19 부터 포함된 파이썬 스크립트 플러그인과는 관련이 없습니다. 우리는 엔진과 (슬레이트 API를 포함한) 에디터의 완벽한 통합과 파이썬의 중요 기능(비동기 io, 코루틴, 제너레이터, 쓰레드, 써드파티 모듈)이 지원을 목표로 하고 있습니다.</p>
+<h2 id="binary-installation-on-windows-64-bit-64">Binary installation on Windows (64 bit) 윈도우(64비트) 바이너리 설치<a class="headerlink" href="#binary-installation-on-windows-64-bit-64" title="Permanent link">&para;</a></h2>
+<p>Check in the releases page (https://github.com/20tab/UnrealEnginePython/releases) if there is a binary version that matches your configuration (otherwise open an issue asking us for it [please specify the python version too]) and download it.
+릴리즈 페이지에서 원하는 바이너리 버전을 다운로드 받으시기 바랍니다. (적합한 바이너리가 없다면 파이썬 버전을 명시해 문의 부탁드립니다.)</p>
+<p>Binary releases are in two forms: standard and embedded. Standard uses the python installation of your system, so ensure the python installation directory is in your system PATH environment variable (otherwise you will get an error while loading your project). Embedded releases include an embedded python installation so you do not need to have python in your system.
+바이너리는 스탠다드와 임베디드 2가지 형태로 릴리즈됩니다. 스탠다드 릴리즈는 시스템에 설치된 파이썬을 사용하므로 파이썬 설치 디렉토리가 시스템 환경 변수 PATH 에 존재하는지 확인이 필요합니다. (파이썬이 설치되지 않았다면 프로젝트 로딩시 에러가 발생할겁니다.) 임베디드 릴리즈는 임베디드 파이썬이 포함되어있어 시스템에 파이썬이 없어도 사용할 수 있습니다.</p>
+<p>Create (if it does not already exist) a Plugins directory in your project root directory (at the same level of Content/ and the .uproject file) and unzip the plugin into it. If your project is named FooBar you will end with FooBar/Plugins/UnrealEnginePython.
+프로젝트 루트 디렉토리에 플러그인 디렉토리가 필요합니다. 플러그인 디렉토리가 없다면 프로젝트 파일(.uproject)나 Content 폴더와 같은 위치이에 Plugins 디렉토리를 만들면 됩니다. 프로젝트 이름이 FooBar 라면 FooBar/Plugins/UnrealEnginePython 라는 경로를 갖게 됩니다.</p>
+<p>Open your project and go to the Edit/Plugins menu. Go to the bottom and under "Project/Scripting Languages" enable UnrealEnginePython.
+프로젝트를 열고, 편집 &gt; 플러그인 메뉴로 이동합니다. 플러그인 다이얼로그 하단에 "프로젝트 &gt; Scripting Languages" 에서 UnrealEnginePython 을 활성화시켜주세요.</p>
+<p>Restart your project and you should see the PythonConsole under the "Window/Developer Tools" menu
+프로젝트를 재시작하면 "윈도우 &gt; 개발자 도구" 메뉴에서 파이썬 콘솔을 찾으실 수 있을 겁니다.</p>
+<p>Binary releases are mainly useful for editor scripting, if you want to package your project for distribution and you need the python runtime, you need a source release (see below).
+바이너리 릴리즈는 주로 에디터 스크립팅을 하는데 유용합니다. 배포용 패키지에서 파이썬 런타임이 필요하다면 아래 나오는 소스 릴리즈를 사용하셔야 합니다.</p>
+<p>If instead, you want to package your project without python, just remember to change the UnrealEnginePython.uplugin to have this line: https://github.com/20tab/UnrealEnginePython/blob/master/UnrealEnginePython.uplugin#L20 set as "Editor" instead of "Runtime"
+대신 파이썬 없이 프로젝트를 패키지하려면 UnrealEnginePython.uplugin 에서 Runtime 대신 Editor 로 설정해주셔야 합니다.</p>
+<h2 id="installation-from-sources-on-windows-64-bit-64">Installation from sources on Windows (64 bit) 윈도우(64비트) 소스 설치<a class="headerlink" href="#installation-from-sources-on-windows-64-bit-64" title="Permanent link">&para;</a></h2>
+<p>Currently python3.6, python3.5 and python2.7 are supported. It is highly suggested to have a python system wide installation (by default the official python distributions are installed in user's home directory) with the PATH environment variable including it (if you change the PATH variable remember to reboot the system before running the build procedure, this is not strictly required but will ensure the PATH is updated). If the PATH variable does not contain the path of your python installation you will see a warning in the build log/output.
+현재는 파이썬 3.6, 3.5, 2.7 버전을 지원하고 있습니다. 소스 버전 사용시에는 파이썬을 시스템에 설치하는 것을 추천합니다. 파이썬 공식 배포판은 사용자의 홈 디렉토리에 설치되며, 환경 변수 PATH 에 설치 경로를 추가해줍니다. (PATH 변수가 수정되고 나면 시스템을 리부팅하는 것을 추천하지만, 환경 변수 갱신 방법을 알고 계시다면 상관없습니다.) 만약 PATH 변수에 파이썬 설치 경로가 포함되어있지 않다면 빌드 로그/출력에 경고가 나오게 됩니다.</p>
+<p>Download a source official release or simply clone the repository for latest updates:
+공식 소스 릴리즈를 다운로드하거나 저장소를 클론해주세요.</p>
+<div class="codehilite"><pre><span></span>git clone https://github.com/20tab/UnrealEnginePython
+</pre></div>
+
+
+<p>By default the build procedure will try to discover your python installation looking at hardcoded known paths. If you want to specify a custom python installation (or the autodetection simply fails) you can change it in the Source/UnrealEnginePython/UnrealEnginePython.Build.cs file at this line: https://github.com/20tab/UnrealEnginePython/blob/master/Source/UnrealEnginePython/UnrealEnginePython.Build.cs#L10
+현재 구현된 빌드 절차에서는 하드코딩된 기존 파이썬 경로에서 파이썬 설치 경로를 찾습니다. 파이썬을 다른 곳에 설치하셨다면 플러그인 빌드 설정(UnrealEnginePython.Build.cs)를 수정하셔야 합니다.</p>
+<p>Note: ensure you have a 64bit python installation
+참고: 반드시 64비트 파이썬이 설치되어있어야 합니다.</p>
+<p>choose a project you want to install the plugin into, open the file explorer (you can do it from the epic launcher too) and:
+플러그인을 설치할 프로젝트를 골랐다면, 탐색기를 오픈합니다. (에픽 런처에서도 가능합니다.)</p>
+<ul>
+<li>create a Plugins/ directory (if it does not exist) in your project and copy the directory UnrealEnginePython into it</li>
+<li>프로젝트에 Plugins/ 디렉토리를 생성한다음, UnrealEnginePython 을 복사해 넣습니다.</li>
+<li>from the file explorer right click on the project main file and choose 'generate visual studio project files'</li>
+<li>탐색기에서 프로젝트 파일을 선택 후 우클릭 한다음 "Generate Visual Studio Project Files"를 선택합니다.</li>
+<li>open visual studio, you should now see Plugins/UnrealEnginePython in your solution explorer</li>
+<li>비주얼 스튜디오를 연 다음 솔루션 탐색기에서 Plugins/UnrealEnginePython 을 확인합니다.</li>
+<li>run the compilation from visual studio</li>
+<li>비주얼 스튜디오 컴파일을 시작합니다.</li>
+<li>once the compilation ends, double check the python libraries can be found by the plugin (they must be in the system PATH like previously described, or brutally copy them in the Binaries/Win64 directory of the just built plugin)</li>
+<li>컴파일이 끝나면 플러그인에서 파이썬 라이브러리를 찾을 수 있는지 다시 한번 확인합니다. (환경 변수 PATH 에 정의되어 있거나 Binaries/Win64 디렉토리에 복사해놓으면 됩니다.)</li>
+<li>now you can re-run the unreal engine editor</li>
+<li>언리얼 엔진 에디터를 재실행합니다.</li>
+</ul>
+<p>If all goes well, you will see 'Python Console' in the "Window/Developer Tools" menu
+성공했다면 "윈도우&gt;개발자 도구" 메뉴에서 'Python Console' 이 보이실겁니다.</p>
+<p>If you want to package your project (it is required only if you need to have a python VM at runtime, read: your game logic is programmed in python) ensure the Content/Scripts/ue_site.py file is in your project (it can be empty). At the end of the build procedure ensure to copy all of your required python scripts in the final directory. Remember that unless you add an embedded python in your final build, the final users of your project will require python installed in his/her system.
+(게임 로직이 파이썬으로 코딩되어 있어서) 프로젝트 패키지 런타임에서도 사용하려면 프로젝트내 <code>Content/Scripts/ue_site.py</code> 파일이 필요합니다. 빌드 마지막 단계에 임베디드 파이썬을 추가해놓지 않으면 사용자 시스템에서 파이썬을 요구하게 된다는 점을 기억해두시기 바랍니다.</p>
+<p>If you want to package without python, just remember to change the UnrealEnginePython.uplugin to have this line: https://github.com/20tab/UnrealEnginePython/blob/master/UnrealEnginePython.uplugin#L20 set as "Editor" instead of "Runtime"
+파이썬 없이 패키징 하려면 플러그인 파일(UnrealEnginePython.uplugin)에서Runtime 을 Editor 로 변경해야 합니다.</p>
+<h2 id="binaries-installation-on-maxosx-macos">Binaries installation on MaxOSX (macOS 바이너리 인스톨)<a class="headerlink" href="#binaries-installation-on-maxosx-macos" title="Permanent link">&para;</a></h2>
+<p>Check in the releases page (https://github.com/20tab/UnrealEnginePython/releases) if there is a binary version that matches your configuration (otherwise open an issue asking us for it [please specify the python version too]) and download it.
+릴리즈 페이지에서 원하는 바이너리 버전을 다운로드 받으시기 바랍니다. (적합한 바이너리가 없다면 파이썬 버전을 명시해 문의 부탁드립니다.)</p>
+<p>Binary releases for MacOSX expects an official python installation (the packages you get from python.org).
+macOS 용 바이너리 릴리즈는 (python.org 에서 받을 수 있는) 파이썬 공식 배포판을 기준으로 설명합니다.</p>
+<p>Create (if it does not already exist) a Plugins directory in your project root directory (at the same level of Content/ and the .uproject file) and unzip the plugin into it. If your project is named FooBar you will end with FooBar/Plugins/UnrealEnginePython.
+프로젝트 루트 디렉토리에 플러그인 디렉토리가 필요합니다. 플러그인 디렉토리가 없다면 프로젝트 파일(.uproject)나 Content 폴더와 같은 위치이에 Plugins 디렉토리를 만들면 됩니다. 프로젝트 이름이 FooBar 라면 FooBar/Plugins/UnrealEnginePython 라는 경로를 갖게 됩니다.</p>
+<p>Open your project and go to the Edit/Plugins menu. Go to the bottom and under "Project/Scripting Languages" enable UnrealEnginePython.
+프로젝트를 열고, 편집 &gt; 플러그인 메뉴로 이동합니다. 플러그인 다이얼로그 하단에 "프로젝트 &gt; Scripting Languages" 에서 UnrealEnginePython 을 활성화시켜주세요.</p>
+<p>Restart your project and you should see the PythonConsole under the "Window/Developer Tools" menu
+프로젝트를 재시작하면 "윈도우 &gt; 개발자 도구" 메뉴에서 파이썬 콘솔을 찾으실 수 있을 겁니다.</p>
+<p>Binary releases are mainly useful for editor scripting, if you want to package your project for distribution and you need the python runtime, you need a source release (see below).
+바이너리 릴리즈는 주로 에디터 스크립팅을 하는데 유용합니다. 배포용 패키지에서 파이썬 런타임이 필요하다면 아래 나오는 소스 릴리즈를 사용하셔야 합니다.</p>
+<p>If instead, you want to package your project without python, just remember to change the UnrealEnginePython.uplugin to have this line: https://github.com/20tab/UnrealEnginePython/blob/master/UnrealEnginePython.uplugin#L20 set as "Editor" instead of "Runtime"
+대신 파이썬 없이 프로젝트를 패키지하려면 UnrealEnginePython.uplugin 에서 Runtime 대신 Editor 로 설정해주셔야 합니다.</p>
+<h2 id="installation-from-sources-on-macosx-macos">Installation from sources on MacOSX (macOS 소스 설치)<a class="headerlink" href="#installation-from-sources-on-macosx-macos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>install the latest official python distribution from python.org (the installation will end in the "/Library/Frameworks/Python.framework/Versions/X.Y" directory).</li>
+<li>python.org 에서 최신 공식 파이써 배포판을 설치 합니다. (설치 경로는 "/Library/Frameworks/Python.framework/Versions/X.Y" 디렉토리 형태 입니다.) </li>
+<li>create a new unreal engine blank c++ project (NOT a blueprint one, otherwise XCode will not be initialized)</li>
+<li>새로운 언리얼 엔진 C++ 프로젝트를 생성합니다. (블루프린트 프로젝트는 Xcode 를 초기화시키지 않으므로 사용할 수 없습니다. )</li>
+<li>create a Plugins directory in the project directory</li>
+<li>프로젝트에 Plugins/ 디렉토리를 생성합니다.</li>
+<li>move to the Plugins directory and clone the plugin repository</li>
+<li>Plugins 디렉토리로 이동해 플러그인 저장소를 클론 합니다. </li>
+</ul>
+<div class="codehilite"><pre><span></span>git clone https://github.com/20tab/UnrealEnginePython
+</pre></div>
+
+
+<ul>
+<li>restart the editor and a popup should appear asking your for confirmation of the build of the plugin.</li>
+<li>에디터를 재실행하고 팝업되는 플러그인 빌드 확인 여부에 답변합니다.</li>
+<li>Once the plugin is built, go to the output log console and filter for 'Python'. You should see the Python VM banner.</li>
+<li>플러그인 빌드가 끝나고 출력창 로그 콘솔 'Python` 필터로 이동하면 파이썬 VM 배너를 볼 수 있습니다.</li>
+</ul>
+<p>The build procedure will try to automatically discover python installations. If you need custom paths, just edit here:</p>
+<p>https://github.com/20tab/UnrealEnginePython/blob/master/Source/UnrealEnginePython/UnrealEnginePython.Build.cs#L10</p>
+<h2 id="upgrading-on-macosx-macos">Upgrading on MacOSX (macOS 플러그인 업그레이드)<a class="headerlink" href="#upgrading-on-macosx-macos" title="Permanent link">&para;</a></h2>
+<p>To upgrade to the latest development version of UnrealEnginePython:
+언리얼 엔진 파이썬 최신 개발 버전으로 업그레이드 하는 방법</p>
+<ul>
+<li>move to the Plugins directory in the project directory and use git pull</li>
+<li>프로젝트 내 Plugins 디렉토리로 이동해 git pull 을 사용 합니다.</li>
+</ul>
+<div class="codehilite"><pre><span></span>git pull
+</pre></div>
+
+
+<ul>
+<li>move to UnrealEnginePython/Binaries/Mac from the Plugin directory</li>
+<li>
+<p>플러그인 디렉토리내 UnrealEnginePython/Binaries/Mac 으로 이동합니다.</p>
+</li>
+<li>
+<p>remove the plugin libraries to warn UnrealEngine to recompile the plugin</p>
+</li>
+<li>언리얼 엔진이 플러그인을 재컴파일 하도록 플러그인 라이브러리를 삭제합니다.</li>
+</ul>
+<div class="codehilite"><pre><span></span>rm *.dylib
+</pre></div>
+
+
+<ul>
+<li>restart the editor and a popup should appear asking your for confirmation of the build of the plugin.</li>
+<li>에디터를 재실행하고 팝업되는 플러그인 빌드 확인 여부에 답변합니다.</li>
+<li>Once the plugin is built, go to the output log console and filter for 'Python'. You should see the Python VM banner.</li>
+<li>플러그인 빌드가 끝나고 출력창 로그 콘솔 'Python` 필터로 이동하면 파이썬 VM 배너를 볼 수 있습니다.</li>
+</ul>
+<h2 id="installation-from-sources-on-linux-64-bit">Installation from sources On Linux (64 bit)<a class="headerlink" href="#installation-from-sources-on-linux-64-bit" title="Permanent link">&para;</a></h2>
+<p>Currently the suggested distribution is Ubuntu Xenial (LTS 16.04) 64bit. Obviously you need to already have an Unreal Engine build (note that on ubuntu xenial you need to install the clang-3.5 package to build the editor). Both python2.7 and python3.5 are supported and the default configuration assumes python3 (so ensure to install the python3-dev package).</p>
+<ul>
+<li>Create a new C++ project and close the editor once the project is fully started</li>
+<li>go to the just created project directory and create the Plugins folder</li>
+<li>move to the Plugins folder and clone the plugin repository:</li>
+</ul>
+<div class="codehilite"><pre><span></span>git clone https://github.com/20tab/UnrealEnginePython
+</pre></div>
+
+
+<ul>
+<li>re-open your project, this time you will get a popup asking you for re-building the python plugin. Choose yes and wait.</li>
+</ul>
+<p>NOTE: always run your project from a terminal so you can see startup logs (they are really useful when building the plugin the first time, if you cannot build the plugin, open an issue on github pasting the related log lines).</p>
+<p>If you want to use python2 (or another specific version) just edit the Source/UnrealEnginePython/UnrealEnginePython.Build.cs file and change the pythonHome string accordingly (ensure to have the python2.7-dev package installed).</p>
+<h2 id="upgrade-the-plugin-on-linux">Upgrade the plugin on Linux<a class="headerlink" href="#upgrade-the-plugin-on-linux" title="Permanent link">&para;</a></h2>
+<p>Just remove the .so files in Plugins/UnrealEnginePython/Binaries/Linux and pull the latest code.</p>
+<p>At the next run the build procedure wil be started again.</p>
+<h2 id="android-deployment">Android Deployment (안드로이드 개발)<a class="headerlink" href="#android-deployment" title="Permanent link">&para;</a></h2>
+<p>Check https://github.com/20tab/UnrealEnginePython/blob/master/docs/Android.md
+안드로이드 문서를 참고 해주세요.</p>
+<h2 id="installation-on-other-platforms">Installation on other platforms (기타 플랫폼 설치)<a class="headerlink" href="#installation-on-other-platforms" title="Permanent link">&para;</a></h2>
+<p>Currently only Windows, MacOSX, Linux and Android are supported.
+현재는 Windows, macOS, Linux, Android 만 지원합니다.</p>
+<h2 id="using-python-with-unreal-engine-finally">Using Python with Unreal Engine (finally) 언리얼 엔진에서 파이썬 사용하기<a class="headerlink" href="#using-python-with-unreal-engine-finally" title="Permanent link">&para;</a></h2>
+<p>If your objective is to script the editor, you can directly jump to
+에디터 스크립팅이 목적일 경우 아래 문서들을 참고해주세요.</p>
+<p>https://github.com/20tab/UnrealEnginePython/tree/master/docs</p>
+<p>and</p>
+<p>https://github.com/20tab/UnrealEnginePython/tree/master/examples</p>
+<p>The first directory contains the official documentation for specific areas, while the second one is a collection of python scripts doing any sort of 'magic' with your project ;)
+첫번째 디렉토리는 공식 문서이고, 두번째 디렉토리는 프로젝트에 유용한 파이썬 스크립트 모음입니다.</p>
+<h2 id="creating-a-new-blueprint-class-managed-by-python">Creating a new blueprint class managed by python (파이썬으로 관리되는 블루프린트 만들기)<a class="headerlink" href="#creating-a-new-blueprint-class-managed-by-python" title="Permanent link">&para;</a></h2>
+<p>We are going to create a new Actor based on python (instead of C++ or blueprints)
+(C++ 이나 블루프린트 대신)파이썬 기반에 액터를 생성해 보도록 하겠습니다.</p>
+<p>This is the "gentle" approach, using a 'proxy' python class to speak with the UE4 api. Once you get familiar with the system, you can
+go further and start working withe native subclassing api (https://github.com/20tab/UnrealEnginePython/blob/master/docs/Subclassing_API.md) 
+UE4 API 를 사용하기 위해 '프락시' 파이썬 클래스를 사용하는 "젠틀한" 방법입니다. 시스템에 대한 이해도가 높아지면  네이티브 서브 클래싱 API 를 사용하실 수 있게 될 것입니다.</p>
+<p>In the content browser click on 'add new' and choose 'blueprint class'
+컨텐츠 브라우저에서 'Add New'를 클릭한 다음 'Blueprint class'를 선택합니다.</p>
+<p>In the classes menu choose 'PyActor':
+클래스 리스트 메뉴에서 'PyActor'를 선택합니다.</p>
+<p><img alt="Alt text" src="screenshots/unreal_screenshot1.png?raw=true" title="Screenshot 1" /></p>
+<p>You now have a new asset, give it a meaningful name, and double click on it to start configuring it in the blueprint editor
+새로운 애셋에 이름을 지어준 다음 더블 클릭해 블루프린트 에디터를 열어 설정을 시작합니다.</p>
+<p><img alt="Alt text" src="screenshots/unreal_screenshot2.png?raw=true" title="Screenshot 2" /></p>
+<p>On the right (in the 'Details' tab) you will find the Python section.
+우측 ('디테일' 탭 내부)에서 파이썬 섹션을 찾을 수 있습니다.</p>
+<p>For now only 'Python Module' and 'Python Class' are meaningful.
+'Python Module' 과 'Python Class' 만 의미가 있습니다.</p>
+<p>Go to the Content directory of your project and create a directory named 'Scripts'. This is where all of your python modules will reside. With your favourite text editor create a new python module (like funnygameclasses.py), and define a new class into it:
+프로젝트 디렉토리로 이동해 'Scripts' 디렉토리를 생성합니다. 파이썬 모듈들을 모아 놓는 곳입니다. 선호하는 텍스트 에디터를 사용해 (funnygameclasses.py 같은) 파이썬 모듈을 하나 생성한 다음 아래처럼 작성합니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+
+<span class="n">ue</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;Hello i am a Python module&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Hero</span><span class="p">:</span>
+
+    <span class="c1"># this is called on game start</span>
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">ue</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;Begin Play on Hero class&#39;</span><span class="p">)</span>
+
+    <span class="c1"># this is called at every &#39;tick&#39;    </span>
+    <span class="k">def</span> <span class="nf">tick</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delta_time</span><span class="p">):</span>
+        <span class="c1"># get current location</span>
+        <span class="n">location</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_actor_location</span><span class="p">()</span>
+        <span class="c1"># increase Z honouring delta_time</span>
+        <span class="n">location</span><span class="o">.</span><span class="n">z</span> <span class="o">+=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">delta_time</span>
+        <span class="c1"># set new location</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">set_actor_location</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Now, go back to the blueprint editor and set 'funnygameclasses' in the 'Python Module' field, and 'Hero' in 'Python Class'
+블루프린트 에디터로 돌아가서 'Python Module' 필드에 'funnygameclasses', 'Python Class' 필드에 'Hero'라고 설정합니다.</p>
+<p>As you can see the actor will simply move over the z axis, but we need to give it some kind of visual representation to have a feedback in the scene. In the blueprint editor click on 'add component' and add some shape (a sphere, or a cube, or whatever you want). Save and Compile your blueprint.
+방금 만든 파이썬 모듈은 z 축위로 이동하는 액터이지만 움직임을 확인하기 위해서는 시각적인 표현을 붙여줘야 합니다. 블루프린트 에디터에서 'Add Component'를 클릭해 (Sphere 나 Cube 등) 원하는 모양을 축해줍니다. 블루프린트를 컴파일하고 저장하니다.</p>
+<p>Now you can drag the bluprint from the content browser to the scene and just click 'Play'.
+컨텐츠 브라우저의 블루프린트를 씬에 드래그 한 다음 'Play' 버튼을 클릭합니다.</p>
+<p>You should see your actor moving along the 'z' axis at a speed of 1 meter per second
+초당 1초의 속도로 z축을 따라 이동하는 액터를 보실 수 있을겁니다.</p>
+<p>By default a 'begin_play' and a 'tick' method are expected (they will be automatically taken into account if found). In addition to them an 'automagic' system for defining event is available:
+디폹트로 <code>begin_play</code> 와 <code>tick</code> 메소드가 (파이썬 클래스내 작성되어 있다면 자동으로) 사용 됩니다. 추가적으로 'automagic' 시스템을 사용할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">on_actor_begin_overlap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="n">other_actor</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">on_actor_end_overlap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="n">other_actor</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">on_actor_hit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="n">other_actor</span><span class="p">,</span> <span class="n">normal_impulse</span><span class="p">,</span> <span class="n">hit_result</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="o">...</span>
+</pre></div>
+
+
+<p>Basically for each method startwing with <code>on_</code> the related delegate/event is automatically configured (if available).
+기본적으로 <code>on_</code>으로 시작되는 메소드들은 (사용가능하다면) 자동으로 관련된 델리게이트나 이벤트로 설정됩니다.</p>
+<p>If you instead prefer to manually setup events, the following functions are exposed:
+이벤트들을 수동으로 설정하는 것을 선호한다면 아래 방식을 사용하시면 됩니다.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Ball</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">bind_event</span><span class="p">(</span><span class="s1">&#39;OnActorBeginOverlap&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">manage_overlap</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">bind_action</span><span class="p">(</span><span class="s1">&#39;Jump&#39;</span><span class="p">,</span> <span class="n">ue</span><span class="o">.</span><span class="n">IE_PRESSED</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">jump</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">bind_key</span><span class="p">(</span><span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="n">ue</span><span class="o">.</span><span class="n">IE_PRESSED</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">you_pressed_K</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;MoveForward&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">move_forward</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">manage_overlap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">me</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="n">ue</span><span class="o">.</span><span class="n">print_string</span><span class="p">(</span><span class="s1">&#39;overlapping &#39;</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">get_name</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">you_pressed_K</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">ue</span><span class="o">.</span><span class="n">log_warning</span><span class="p">(</span><span class="s1">&#39;you pressed K&#39;</span><span class="p">)</span>
+
+     <span class="k">def</span> <span class="nf">move_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="n">ue</span><span class="o">.</span><span class="n">print_string</span><span class="p">(</span><span class="s1">&#39;axis value: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">amount</span><span class="p">))</span>
+</pre></div>
+
+
+<h2 id="what-is-selfuobject-selfuobject">What is 'self.uobject' ? (self.uobject 란?)<a class="headerlink" href="#what-is-selfuobject-selfuobject" title="Permanent link">&para;</a></h2>
+<p>To allow seamless Python integration, each UObject of the engine is automatically mapped to a special Python Object (ue_PyUObject).
+매끄러운 파이썬 통합을 위해 엔진내 UObject 들은 자동으로 특정 파이썬 오브젝트(<code>ue_PyUObject</code>)로 맵핑됩니다.</p>
+<p>Whenever you want to access a UObject from python, you effectively get a reference to a ue_PyUObject exposing (via its methods) the features of the UObject (properties, functions, ....) 파이썬에서 UObject 접근시 (프로퍼티, 펑션 등) UObject 기능을 사용할 수 있는 <code>ue_PyUObject</code>레퍼런스를 얻을 수 있습니다.</p>
+<p>This special python object is cached into a c++ map in memory. (The key is the UObject pointer, the value is the ue_PyUObject pointer)
+이 특별한 파이썬 오브젝트는 메모리상 c++ map 으로 캐시되어 있습니다. (키는 UObject 포인터이고, 값은 <code>ue_PyUObject</code>포인터입니다.)</p>
+<p>To be more clear, a call to:
+좀 더 명확하게 설명하자면, 아래 같은 호출이 있을 경우</p>
+<div class="codehilite"><pre><span></span><span class="n">text_render_component</span> <span class="o">=</span> <span class="n">unreal_engine</span><span class="o">.</span><span class="n">find_class</span><span class="p">(</span><span class="s1">&#39;TextRenderComponent&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>will internally search for the 'TextRenderComponent' class (via unreal c++ reflection) and when found will check if it is available in the cache, otherwise it will create a new ue_PyUObject object that will be placed in the cache.
+내부적으로 'TextRenderComponent' 클래스를 (언리얼 c++ 리플렉션을 통해) 검색합니다. 해당 클래스를 찾아내면 캐시로 사용 가능한지 체크하고 아니면 새로운 <code>ue_PyUObject</code> 를 생성해 캐쉬에 넣습니다.</p>
+<p>From the previous example the 'text_render_component' maintains a mapping to the UObject (well a UClass in this example).
+위 예제에서 <code>text_render_component</code> 는 UObjectd 의 맵핑(여기에서는 UClass)를 관리하게 됩니다.</p>
+<p>Pay attention: the python class you map to the PyActor (or PyPawn, PyCharacter or PyComponent), is not a ue_PyUObject. It is a classic python class that holds a reference (via the 'uobject' field) to the related ue_PyUObject mapped object. The best technical term to describe those classes is 'proxy'.
+주의: PyActor (또는 PyPawn, PyCharacter 또는 PyComponent)에 매핑하는 파이썬 클래스는 <code>ue_PyUObject</code>가 아닙니다. 이것은 클래식 파이썬 클래스로 <code>ue_PyUObject</code> 매핑된 객체에 대한 참조를 ('uobject'필드를 통해) 보유하고 있습니다. 전문적인 용어로는 '프록시'라고 합니다.</p>
+<h2 id="note-about-uobject-from-now-on-uobject">Note about 'uobject' from now on (이후 등장하는 'uobject' 에 대한 참고 사항)<a class="headerlink" href="#note-about-uobject-from-now-on-uobject" title="Permanent link">&para;</a></h2>
+<p>In the following lines, whenever you find a reference to 'uobject' it is meant as a ue_PyUObject object.
+이후 등장하는 'uobject' 는 <code>ue_PyUObject</code> 객체를 의미합니다.</p>
+<h2 id="adding-a-python-component-to-an-actor">Adding a python component to an Actor (액터에 파이썬 컴포넌트 추가하기)<a class="headerlink" href="#adding-a-python-component-to-an-actor" title="Permanent link">&para;</a></h2>
+<p>This works in the same way as the PyActor class, but it is, well, a component. You can attach it (search for the 'Python' component) to any actor.
+PyActor 클래스와 비슷합니다. 단지 컴포넌트라는 차이만 있을 뿐입니다. 어떤 액터라도 'Python' 컴포넌트를 검색해 붙일 수 있습니다.</p>
+<p>Remember that for components, the self.uobject field point to the component itself, not the actor.
+컴포넌트에서 self.uobject 는 액터가 아니라 컴포넌트 자체를 말합니다.</p>
+<p>To access the actor you can use:
+액터에 접근하는 방법입니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">actor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_owner</span><span class="p">()</span>
+</pre></div>
+
+
+<p>The following example implements the third person official blueprint as a python component:
+다음 에제는 3 인칭 공식 블루프린트를 파이썬으로 구현한 것입니다.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Player</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># get a reference to the owing pawn (a character) 자기 폰 (캐릭터)에 대한 레퍼런스 얻음</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_owner</span><span class="p">()</span>
+
+        <span class="c1"># the following two values were originally implemented as blueprint variable 아래 2가지 값은 원래 블루프린트 변수로 구현되었음</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_turn_rate</span> <span class="o">=</span> <span class="mf">45.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_look_up_rate</span> <span class="o">=</span> <span class="mf">45.0</span>
+
+        <span class="c1"># bind axis events 축 이벤트 연동</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;TurnRate&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">turn</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;LookUpRate&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">look_up</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;Turn&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">add_controller_yaw_input</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;LookUp&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">add_controller_pitch_input</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;MoveForward&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">move_forward</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_axis</span><span class="p">(</span><span class="s1">&#39;MoveRight&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">move_right</span><span class="p">)</span>
+
+        <span class="c1"># bind actions 액션 연동</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_action</span><span class="p">(</span><span class="s1">&#39;Jump&#39;</span><span class="p">,</span> <span class="n">ue</span><span class="o">.</span><span class="n">IE_PRESSED</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">jump</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">bind_action</span><span class="p">(</span><span class="s1">&#39;Jump&#39;</span><span class="p">,</span> <span class="n">ue</span><span class="o">.</span><span class="n">IE_RELEASED</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">stop_jumping</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">turn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axis_value</span><span class="p">):</span>
+        <span class="n">turn_rate</span> <span class="o">=</span> <span class="n">axis_value</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_turn_rate</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_world_delta_seconds</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">add_controller_yaw_input</span><span class="p">(</span><span class="n">turn_rate</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">look_up</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axis_value</span><span class="p">):</span>
+        <span class="n">look_up_rate</span> <span class="o">=</span> <span class="n">axis_value</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_look_up_rate</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_world_delta_seconds</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">add_controller_pitch_input</span><span class="p">(</span><span class="n">look_up_rate</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">move_forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axis_value</span><span class="p">):</span>
+        <span class="n">rot</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">get_control_rotation</span><span class="p">()</span>
+        <span class="n">fwd</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_forward_vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rot</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">add_movement_input</span><span class="p">(</span><span class="n">fwd</span><span class="p">,</span> <span class="n">axis_value</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">move_right</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axis_value</span><span class="p">):</span>
+        <span class="n">rot</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">get_control_rotation</span><span class="p">()</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_right_vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rot</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pawn</span><span class="o">.</span><span class="n">add_movement_input</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">axis_value</span><span class="p">)</span>
+</pre></div>
+
+
+<h2 id="native-methods-vs-reflection-vs">Native methods VS reflection 네이티브 메소드 vs 리플렉션<a class="headerlink" href="#native-methods-vs-reflection-vs" title="Permanent link">&para;</a></h2>
+<p>By default the UObject class defines <strong>getattr</strong> and <strong>setattr</strong> as wrappers for unreal properties and functions.
+기본적으로 UObject 클래스는 언리얼 프로퍼티와 펑션을 <code>__getattr__</code> 과 <code>__setattr__</code> 로 랩핑 합니다. </p>
+<p>This means that calling:
+이런 접근은</p>
+<div class="codehilite"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">bCanBeDamaged</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+
+
+<p>it is the same as
+아래와 동일합니다.</p>
+<div class="codehilite"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s1">&#39;bCanBeDamaged&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<p>As well as function calls:
+함수 호출은</p>
+<div class="codehilite"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">GetActorRightForward</span><span class="p">()</span>
+</pre></div>
+
+
+<p>means
+아래처럼 처리됩니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">call_function</span><span class="p">(</span><span class="s1">&#39;GetActorRightForward&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>And more important (and handy) <code>K2_</code> functions are automagically exposed too:
+그리고 더 중요한 (그리고 편리한) <code>K2_</code> 함수는 자동으로 노출됩니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">GetActorLocation</span><span class="p">()</span>
+</pre></div>
+
+
+<p>is equal to:
+위와 같은 호출은 아래와 동일합니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">call_function</span><span class="p">(</span><span class="s1">&#39;K2_GetActorLocation&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Obviously you can combine methods/properties:
+당연히 메소드/속성은 결합해서 사용할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">CharacterMovement</span><span class="o">.</span><span class="n">MaxWalkSpeed</span> <span class="o">=</span> <span class="mf">600.0</span>
+</pre></div>
+
+
+<p>Albeit the system allows for full unreal api usage, reflection is slower than native methods.
+모든 언리얼 API 을 지원하는 시스템이긴 하지만, 리플렉션은 네이티브 메소드 호출보다는 느립니다.</p>
+<p>Try to use native methods whenever possible, and open pull request whenever you think a function should be exposed as native methods.
+가능하면 네이티브 메소드를 사용하는 것을 추천합니다. 네이티브 메소드로 노출시켜야 한다고 생각한다면 pull request 부탁드립니다.</p>
+<p>So
+즉,</p>
+<div class="codehilite"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_actor_location</span><span class="p">()</span>
+</pre></div>
+
+
+<p>is way faster than
+위 방식은 아래 방식보다 빠릅니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">GetActorLocation</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Reflection based functions are those in camelcase (or with the first capital letter). Native functions instead follow the python style, with lower case, underscore-as-separator function names.
+르플레이션 기반 펑션들은 camelCase (혹은 PascalCase)를 사용니다. 네이티브 펑션들은 파이썬 스타일(<code>snake_case</code>)를 따릅니다.</p>
+<p>Note that, in editor builds, when you change the property of an archetype (included ClassDefaultObject) via <strong>setattr</strong> all of the archtype instances will be updated too.
+참고로 에디터 빌드에서는 (ClassDefaultObject 를 포함한) archtype 프로퍼티를 변경하면 <code>__setattr__</code>을 통해 모든 archtype 인스턴스들이 업데이트 됩니다.</p>
+<p>To be more clear:
+좀 더 명확하게 표현하자면</p>
+<div class="codehilite"><pre><span></span><span class="n">your_blueprint</span><span class="o">.</span><span class="n">GeneratedClass</span><span class="o">.</span><span class="n">get_cdo</span><span class="p">()</span><span class="o">.</span><span class="n">CharacterMovement</span><span class="o">.</span><span class="n">MaxWalkSpeed</span> <span class="o">=</span> <span class="mf">600.0</span>
+</pre></div>
+
+
+<p>is a super shortcut for:
+위 구문은 아래 구문의 단축 형태입니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">your_blueprint</span><span class="o">.</span><span class="n">GeneratedClass</span><span class="o">.</span><span class="n">get_cdo</span><span class="p">()</span><span class="o">.</span><span class="n">CharacterMovement</span><span class="o">.</span><span class="n">pre_edit_change</span><span class="p">(</span><span class="s1">&#39;MaxWalkSpeed&#39;</span><span class="p">)</span>
+<span class="n">your_blueprint</span><span class="o">.</span><span class="n">GeneratedClass</span><span class="o">.</span><span class="n">get_cdo</span><span class="p">()</span><span class="o">.</span><span class="n">CharacterMovement</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s1">&#39;MaxWalkSpeed&#39;</span><span class="p">,</span> <span class="mf">600.0</span><span class="p">)</span>
+<span class="n">your_blueprint</span><span class="o">.</span><span class="n">GeneratedClass</span><span class="o">.</span><span class="n">get_cdo</span><span class="p">()</span><span class="o">.</span><span class="n">CharacterMovement</span><span class="o">.</span><span class="n">post_edit_change_property</span><span class="p">(</span><span class="s1">&#39;MaxWalkSpeed&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">your_blueprint</span><span class="o">.</span><span class="n">GeneratedClass</span><span class="o">.</span><span class="n">get_cdo</span><span class="p">()</span><span class="o">.</span><span class="n">CharacterMovement</span><span class="o">.</span><span class="n">get_archetype_instances</span><span class="p">():</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">pre_edit_change</span><span class="p">(</span><span class="s1">&#39;MaxWalkSpeed&#39;</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s1">&#39;MaxWalkSpeed&#39;</span><span class="p">,</span> <span class="mf">600.0</span><span class="p">)</span>
+    <span class="n">instance</span><span class="o">.</span><span class="n">post_edit_change_property</span><span class="p">(</span><span class="s1">&#39;MaxWalkSpeed&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<h2 id="the-automagic-uclass-ustruct-and-uenums-mappers-uclass-ustruct-uenum">The automagic UClass, UStruct and UEnums mappers 자동 마법 UClass, UStruct, UEnum 맵퍼들<a class="headerlink" href="#the-automagic-uclass-ustruct-and-uenums-mappers-uclass-ustruct-uenum" title="Permanent link">&para;</a></h2>
+<p>Instead of doing a gazilion of unreal_engine.find_class(name) calls, the plugin adds three 'magic' modules called unreal_engine.classes, unreal_engine.structs and unreal_engine.enums. They allows to import unreal classes/structs/enums like python classes:
+<code>unreal_engine.find_class(name)</code> 귀찮음 방지를 위해, 플러그인에서는 3 가지 '마법같은' 모듈들(<code>unreal_engine.classes</code>, <code>unreal_engine.structs</code>, <code>unreal_engine.enums</code>)을 준비했습니다. 이들은 언리얼 클래스/구조체/열거형을 파이썬으로 임포트해줍니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">unreal_engine.classes</span> <span class="kn">import</span> <span class="n">ActorComponent</span><span class="p">,</span> <span class="n">ForceFeedbackEffect</span><span class="p">,</span> <span class="n">KismetSystemLibrary</span>
+
+<span class="o">...</span>
+<span class="n">components</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_owner</span><span class="p">()</span><span class="o">.</span><span class="n">GetComponentsByClass</span><span class="p">(</span><span class="n">ActorComponent</span><span class="p">)</span>
+
+<span class="o">...</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">force_feedback</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">load_object</span><span class="p">(</span><span class="n">ForceFeedbackEffect</span><span class="p">,</span> <span class="s1">&#39;/Game/vibrate&#39;</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_player_controller</span><span class="p">()</span><span class="o">.</span><span class="n">ClientPlayForceFeedback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">force_feedback</span><span class="p">)</span>
+
+<span class="o">...</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">KismetSystemLibrary</span><span class="o">.</span><span class="n">GetObjectName</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">actor</span><span class="p">)</span>
+</pre></div>
+
+
+<p>the last example, shows another magic feature: static classes function calls. Obviously in this specific case using self.actor.get_name() would have been the best approach, but this feature allows you to access your blueprint function libraries too.
+마지막 예제에서는 또 다른 마법같은 기능: 정적 클래스 펑션 호출을 보여줍니다. 이러한 상황에서는 <code>self.actor.get_name()</code>을 사용하는 것이 가장 좋은 접근 방식이겠지만, 이 기능을 사용하면 블루프린트 라이브러리에 접근할 수 있습니다.</p>
+<p>Another example for adding a widget:
+위젯을 추가하는 또 다른 예제입니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">unreal_engine.classes</span> <span class="kn">import</span> <span class="n">WidgetBlueprintLibrary</span>
+
+<span class="k">class</span> <span class="nc">PythonFunnyActor</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">WidgetBlueprintLibrary</span><span class="o">.</span><span class="n">Create</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="p">,</span> <span class="n">ue</span><span class="o">.</span><span class="n">find_class</span><span class="p">(</span><span class="s1">&#39;velocity_C&#39;</span><span class="p">))</span>
+</pre></div>
+
+
+<p>And another complex example using enums, keyword arguments and output values (output values are appended after the return value):
+그리고 열거형과 키워드 인자, (리턴 값 뒤에 추가되는) 출력 값을 사용하는 예제입니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+<span class="kn">from</span> <span class="nn">unreal_engine</span> <span class="kn">import</span> <span class="n">FVector</span><span class="p">,</span> <span class="n">FRotator</span><span class="p">,</span> <span class="n">FTransform</span><span class="p">,</span> <span class="n">FHitResult</span>
+<span class="kn">from</span> <span class="nn">unreal_engine.classes</span> <span class="kn">import</span> <span class="n">ActorComponent</span><span class="p">,</span> <span class="n">ForceFeedbackEffect</span><span class="p">,</span> <span class="n">KismetSystemLibrary</span><span class="p">,</span> <span class="n">WidgetBlueprintLibrary</span>
+<span class="kn">from</span> <span class="nn">unreal_engine.enums</span> <span class="kn">import</span> <span class="n">EInputEvent</span><span class="p">,</span> <span class="n">ETraceTypeQuery</span><span class="p">,</span> <span class="n">EDrawDebugTrace</span>
+
+<span class="o">...</span>
+
+<span class="n">is_hitting_something</span><span class="p">,</span> <span class="n">hit_result</span> <span class="o">=</span> <span class="n">KismetSystemLibrary</span><span class="o">.</span><span class="n">LineTraceSingle_NEW</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">actor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">actor</span><span class="o">.</span><span class="n">get_actor_location</span><span class="p">(),</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="n">ETraceTypeQuery</span><span class="o">.</span><span class="n">TraceTypeQuery1</span><span class="p">,</span> <span class="n">DrawDebugType</span><span class="o">=</span><span class="n">EDrawDebugTrace</span><span class="o">.</span><span class="n">ForOneFrame</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">is_hitting_something</span><span class="p">:</span>
+    <span class="n">ue</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">hit_result</span><span class="p">)</span>
+</pre></div>
+
+
+<p>To create a new struct instance you can do:
+새로운 구조체 인스턴스를 만드는 방법입니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">unreal_engine.structs</span> <span class="kn">import</span> <span class="n">TerrificStruct</span>
+
+<span class="n">ts</span> <span class="o">=</span> <span class="n">TerrificStruct</span><span class="p">()</span>
+</pre></div>
+
+
+<p>or (to initialize some of its fields)
+혹은 (몇가지 필드를 초기화 하는 예제입니다)</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">unreal_engine.structs</span> <span class="kn">import</span> <span class="n">TerrificStruct</span>
+
+<span class="n">ts</span> <span class="o">=</span> <span class="n">TerrificStruct</span><span class="p">(</span><span class="n">Foo</span><span class="o">=</span><span class="s1">&#39;Bar&#39;</span><span class="p">,</span> <span class="n">Test</span><span class="o">=</span><span class="mf">17.22</span><span class="p">)</span>
+</pre></div>
+
+
+<p>To access the fields of a struct just call the fields() method.
+<code>fields()</code> 메소드를 호출해서 구조체 필드에 접근할 수 있습니다.</p>
+<p>A good example of struct usage is available here: https://github.com/20tab/UnrealEnginePython/blob/master/docs/Settings.md
+구조체 활용 예제입니다.</p>
+<p>More details here: https://github.com/20tab/UnrealEnginePython/blob/master/docs/MemoryManagement.md
+자세한 내용은 여기서 볼 수 있습니다.</p>
+<h2 id="the-ue_sitepy-file-ue_sitepy">The ue_site.py file <code>ue_site.py</code> 파일<a class="headerlink" href="#the-ue_sitepy-file-ue_sitepy" title="Permanent link">&para;</a></h2>
+<p>On Editor/Engine start, the ue_site module is tried for import. You should place initialization code there. If the module cannot be imported, you will get a (harmful) message in the logs.
+에디터나 엔진 시작시 <code>ue_site</code> 모듈을 임포트하게 됩니다. 여기에 초기화 코드들을 넣어두면 됩니다. 만약 해당 모듈을 임포트할 수 없으며 로그 창에 (에러) 메시지가 나오게 됩니다.</p>
+<h2 id="pypawn">PyPawn<a class="headerlink" href="#pypawn" title="Permanent link">&para;</a></h2>
+<p>This works like PyActor, but this time you generate a new Pawn class (that you can posses with a controller)
+PyActor 비슷하지만 새로운 Pawn 클래스를 생성합니다. (컨트롤러를 통해 제어할 수 있습니다.)</p>
+<h2 id="the-world-concept">The 'World' concept '월드' 컨셉<a class="headerlink" href="#the-world-concept" title="Permanent link">&para;</a></h2>
+<p>Every actor is mapped to a world (UWorld in c++). Generally when you play on a Level your objects all live in the same world, but at the same time there could be multiple worlds (for example while testing in the editor there is a world for the editor and one for the simulation)
+모든 액터는 월드(C++ 에서 이야기하는 UWorld)에 맵핑됩니다. 일반적으로 레벨을 플레이할 때 오브젝트들은 같은 월드상 존재합니다. 동시에 여러 세계가 존재할 수도 있습니다. (예를 들어 에디터를 테스트하는 동안 에디터용 월드와 시뮬레이션용 월드가 존재하게 됩니다.)</p>
+<p>While it is pretty rare to reference other worlds, you may need to compare the world of two uobject's (for example you may have a reference in your python module to a uobject of a hidden world and you want to check if you need to use it).
+다른 월드를 참조하는 일은 극히 드문일이긴 하지만, 간혹 다른 월드에 있는 오브젝트를 비교해야할 경우가 있습ㄴ다. (에를 들어 파이썬 모듈에서 숨겨진 월드에 있는 객체를 참조해 사용 가능한지 체크해야할 수 있습니다.)</p>
+<p>The uobject.get_world() function returns a uobject representing the world (the C++ UWorld class)
+<code>uobject.get_world()</code> 펑션은 오브젝트가 존재하는 월드(C++ 의 UWorld 클래스)를 리턴해줍니다.</p>
+<h2 id="the-uobject-api">The uobject api<a class="headerlink" href="#the-uobject-api" title="Permanent link">&para;</a></h2>
+<p>Each uobject represent a UObject class of the Engine. This C++ class is basically the root of all the other classes (Actors, Pawns, components, properties ...). Thanks to Unreal Engine reflection system we do not need to implement a python class for each unreal engine class, but for performance reason we expose the most common methods. The uobject system checks for the type of the mapped C++ UObject and will call the method only if it is safe to call it.
+각 오브젝트는 엔진의 UObject 클래스를 나타냅니다. 기본적으로 이 C++ 클래스는 다른 모든 클래스의 부모 클래스입니다. (액터, 폰, 컴포넌트, 프로퍼티, ...) 언리얼 엔진의 리플렉션 시스템 덕분에 각 언리얼 클래스들을 파이썬으로 구현할 필요는 없습니다. 하지만 성능상의 이유로 자주 사용되는 메소드들은 직접 노출시켜야 합니다. uobject 시스템은 맵핑된 C++ UObject 의 타입을 체크해 안전하게 호출이 가능한 경우만 해당 메소드를 호출합니다.</p>
+<p>Sometime methods are implemented for automatically getting the right object. As an example get_actor_location() when called over a component will automatically retrieve the related actor and will call C++ AActor::GetActorLocation() method over it.
+때때로 정확한 오브젝트를 자동으로 얻어내기 위해 구현된 메소드들이 있습니다. 예를 들어 <code>get_actor_location()</code>은 컴포넌트상 호출될 때 자동으로 관련된 액터를 찾은 다음 C++ <code>AActor::GetActorLocation()</code> 메소드를 호출해줍니다.
+When this automagic approach is too risky, the method will check for the uobject type and will raise an exception in the case of inconsistencies.
+이런 자동화된 마법 접근 방식은 위험하다고 판단될 때 uobject 의 타입을 체크해 일치하지않을 경우 예외를 발생시키게 됩니다.</p>
+<p>Remember, there is no need to implement every single engine class method, the reflection system is powerful enough to be governed only via properties and function calls (check the uobject call() method)
+모든 엔진 클래스 메소드를 구현할 필요는 없습니다. 리플렉션 시스템은 프로퍼티와 펑션 호출을 통해서만 제어할 수 있을 정도로 매우 강력합니다. (uobject call() 메소드를 확인해보세요)</p>
+<p>Most-used methods are implemented directly as uobject methods for performance reasons.
+가장 빈번하게 사용되는 메소드는 성능상의 이슈로 uobject 메소드로 직접 구현되었습니다.</p>
+<p>You can get the the list of uobject api methods here: https://github.com/20tab/UnrealEnginePython/blob/master/docs/uobject_API.md
+uobject API 메서드 목록은 다음 링크에서 찾아보실 수 있습니다.</p>
+<h2 id="automatic-module-reloading-editor-only">Automatic module reloading (Editor only) 자동 모듈 리로딩 (에디터 전용)<a class="headerlink" href="#automatic-module-reloading-editor-only" title="Permanent link">&para;</a></h2>
+<p>When in the editor, you can change the code of your modules mapped to proxies without restarting the project. The editor will reload the module every time a PyActor, PyPawn or PythonComponent is instantiated. This is obviously not the best approach. In the future we would like to implement timestamp monitoring on the file to reload only when needed.
+에디터에서는 프로젝트 재시작없이도 프락시에 맵핑된 모듈 코드들을 수정할 수 있습니다. 에디터에서는 PyActor, PyPawn, PythonComponet 가 인스턴스될 때마다 모듈을 재로드합니다. 이것이 매우 좋은 방법은 아니기 때문에 추후에 필요할 때만 리로드하기 위해 타임 스탬프를 통한 모니터링을 구현하려고 합니다.</p>
+<h2 id="primitives-and-math-functions">Primitives and Math functions 프리미티브와 수학 펑션들<a class="headerlink" href="#primitives-and-math-functions" title="Permanent link">&para;</a></h2>
+<p>The plugin exposes FVector, FRotator, FQuat, FColor, FHitResult and a bunch of the internal handles.
+플러그인에서는 FVector, FRotator, FQuat, FColor, FHitResult 및 내부 핸들들을 제공합니다.</p>
+<p>Where meaningful, math operations are exposed:
+수학 처리 예제입니다</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span>
+
+<span class="k">class</span> <span class="nc">ActorGoingUp</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 1 meter by second</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">100</span>
+
+    <span class="k">def</span> <span class="nf">tick</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delta_time</span><span class="p">):</span>
+        <span class="c1"># get the up vector 업 벡터 얻기</span>
+        <span class="n">up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_up_vector</span><span class="p">()</span>
+        <span class="c1"># get current position 현재 위치 얻기</span>
+        <span class="n">position</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_actor_location</span><span class="p">()</span>
+        <span class="c1"># build a direction vector based on speed 속력 기반 방향 벡터 준비</span>
+        <span class="n">up_amount</span> <span class="o">=</span> <span class="n">up</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">*</span> <span class="n">delta_time</span><span class="p">)</span>
+        <span class="c1"># sum the direction to the position 위치에 방향 합산</span>
+        <span class="n">position</span> <span class="o">+=</span> <span class="n">up_amount</span>
+        <span class="c1"># set the new position 새로운 위치 설정</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">set_actor_location</span><span class="p">(</span><span class="n">new_position</span><span class="p">)</span>
+</pre></div>
+
+
+<h2 id="referencing-objects">Referencing objects 오브젝트 참조<a class="headerlink" href="#referencing-objects" title="Permanent link">&para;</a></h2>
+<p>You can use find_class(), find_struct() and find_object() functions to reference already loaded classes/objects.
+<code>find_class(), find_struct(), find_object()</code> 펑션들을 사용해 이미 로드된 클래스나 오브젝트들을 레퍼런스 할 수 있습니다.</p>
+<p>If you need to reference assets (still) not loaded in the engine you can use load_struct(), load_class() or load_object():
+엔진에 아직 로드되지 않은 애셋이라면 <code>load_class(), load_struct(), load_object()</code>을 통해 로드해서 레퍼런스 할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">a_struct_data</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">load_struct</span><span class="p">(</span><span class="s1">&#39;/Game/Data&#39;</span><span class="p">)</span>
+<span class="n">ue</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">a_struct_data</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+</pre></div>
+
+
+<p>or to find a specific asset:
+특정 애셋을 찾아 볼 수도 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">texture_class</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">find_class</span><span class="p">(</span><span class="s1">&#39;Texture2D&#39;</span><span class="p">)</span>
+<span class="n">a_specific_texture</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">load_object</span><span class="p">(</span><span class="n">texture_class</span><span class="p">,</span> <span class="s1">&#39;/Game/Textures/logo2&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>More infos about dealing with assets are available here: https://github.com/20tab/UnrealEnginePython/blob/master/docs/ManagingAssets.md
+애셋을 다루는 자세한 정보는 다음 링크에서 확인할 수 있습니다.</p>
+<h2 id="the-as_dict-method-as_dict">The as_dict() method <code>as_dict()</code> 메소드<a class="headerlink" href="#the-as_dict-method-as_dict" title="Permanent link">&para;</a></h2>
+<p>This special method can be called on any uobject: it will attempt to serialize it to a python dictionary
+<code>as_dict()</code>는 어떤 오브젝트에서든 호출할 수 있는 특이한 메소드로 파이썬 사전 형태로 시리얼라이즈할 수 있습니다.</p>
+<h2 id="blueprints-integration">Blueprints integration 블루프린트 통합<a class="headerlink" href="#blueprints-integration" title="Permanent link">&para;</a></h2>
+<p>You can call blueprints functions (or custom events) via the .call() and .call_function() methods:
+<code>.call()</code> 이나 <code>.call_function()</code>메소드를 통해 블루프린트 펑션(이나 커스텀 이벤트)를 호출 할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">your_funny_blueprint_object</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;AFunctionOrACustomEvent with_a_arg&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Whenever you need to reference external object, avoid using find_object() and similar. Instead add a public variable in your blueprint
+pointing to the specific object. You can then reference this object easily getting the property value
+외부 객체를 레퍼런할스 할때마다 <code>find_object()</code>류를 사용하는 것은 피하는 것이 좋습니다. 대신 특정 오브젝트를 가리키는 퍼블릭 변수를 프린트에 추가해두면
+프로퍼티 값을 통해 오브젝트를 쉽게 레퍼런스할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="n">the_other_object</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_property</span><span class="p">(</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
+<span class="n">the_other_object</span><span class="o">.</span><span class="n">set_actor_location</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+
+<p>.call_function() is more advanced, as it allows for return values and python args:
+<code>.call_function()</code>은 리턴값과 파이썬 인자를 지원하므로 좀 더 쓸만합니다.</p>
+<div class="codehilite"><pre><span></span><span class="c1">## an example of moving an object z with curves: 곡선 형태로 오브젝트 z 를 움직이는 예제</span>
+<span class="k">class</span> <span class="nc">Curver</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">curve</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_owner</span><span class="p">()</span><span class="o">.</span><span class="n">get_property</span><span class="p">(</span><span class="s1">&#39;curve&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accumulator</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">def</span> <span class="nf">tick</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delta_time</span><span class="p">):</span>
+        <span class="n">location</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">get_actor_location</span><span class="p">()</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">curve</span><span class="o">.</span><span class="n">call_function</span><span class="p">(</span><span class="s1">&#39;GetFloatValue&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">accumulator</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">set_actor_location</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">location</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accumulator</span> <span class="o">+=</span> <span class="n">delta_time</span>
+</pre></div>
+
+
+<h2 id="events">Events 이벤트<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<p>You can easily bind events (as seen before) with the bind_event function
+<code>bind_event()</code> 펑션을 사용하면 (에전에 보았듯이) 이벤트를 손쉽게 바인딩할 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">bind_event</span><span class="p">(</span><span class="s1">&#39;OnActorBeginOverlap&#39;</span><span class="p">,</span> <span class="n">a_funny_callback</span><span class="p">)</span>
+</pre></div>
+
+
+<p>You can obviously bind to Event Dispatchers too.
+이벤트 디스패처도 당연히 바인딩할 수 있습니다.</p>
+<p>Triggering events is basically like calling functions, self.uobject.call('OnActorBeginOverlap') will be more than enough.
+이벤트 트리거는 기본적으로 펑션처럼 호출됩니다. <code>self.uobject.call('OnActorBeginOverlap')</code>같은 형태입니다.</p>
+<p>If you want to map events from a blueprint to a python function, the best thing to do is using the 'python call' blueprint functions exposed by the various plugin classes:
+블루프린트에서 파이썬 펑션으로 이벤트를 맵핑하는 가장 좋은 방법은 '파이썬 호출' 블루프린트 함수를 사용하는 것입니다. 다양한 플러그인 클래스들을 노출시킬 수 있습니다.</p>
+<p><img alt="Alt text" src="screenshots/unreal_screenshot3.png?raw=true" title="Screenshot 3" /></p>
+<h2 id="plugin-configuration">Plugin Configuration 플러그인 설정<a class="headerlink" href="#plugin-configuration" title="Permanent link">&para;</a></h2>
+<p>You can tune your python environment adding a [Python] stanza to the Config/DefaultEngine.ini file.
+<code>Config/DefaultEngine.ini</code> 파일 [Python] 스탠자를 추가해 파이썬 환경을 조정할 수 있습니다.</p>
+<p>The following parameters are supported:
+지원되는 파라미터는 다음과 같습니다.</p>
+<ul>
+<li><code>Home</code>: set the path of the python installation, useful for forcing the python vm to search modules in a specific directory (like old-style virtualenvs)</li>
+<li><code>Home</code>: 파이썬 설치 경로로 특정 디렉토리내 모듈을 검색하도록 파이썬 VM 을 강제하는데 유용합니다. (구 virtualenvs 방식과 비슷합니다.)</li>
+<li><code>RelativeHome</code>: like Home but relative to the /Content directory</li>
+<li><code>RelativeHome</code>: Home 과 비슷하지만 /Content 디렉토리 기준 상대 경로입니다.</li>
+<li><code>ProgramName</code>: set the python program name path</li>
+<li><code>ProgramName</code>: 파이썬 프로그램 이름 경로 설정</li>
+<li><code>RelativeProgramName</code>: like ProgramName, but the path is relative to the /Content directory</li>
+<li><code>RelativeProgramName</code>: ProgramName 과 비슷하지만 /Content 디렉토리 기준 상대 경로입니다.</li>
+<li><code>ScriptsPath</code>: change the default path on where Unreal Engine searches for python scripts</li>
+<li><code>ScriptsPath</code>: 언리얼 엔진이 파이썬 스크립트를 검색하는 디폴트 경로 변경시 사용 </li>
+<li><code>RelativeScriptsPath</code>: like ScriptsPath, but relative to the /Content directory</li>
+<li><code>RelativeScriptsPath</code>: ScriptsPath 과 비슷하지만 /Content 디렉토리 기준 상대 경로입니다.</li>
+<li><code>AdditionalModulesPath</code>: add the specified directory to sys.path</li>
+<li><code>AdditionalModulesPath</code>: sys.path 에 특정 디렉토리 추가 </li>
+<li><code>RelativeAdditionalModulesPath</code>: like AdditionalModulesPath, but the path is relative to the /Content directory</li>
+<li><code>RelativeAdditionalModulesPath</code>: AdditionalModulesPath 와 비슷하지만 /Content 디렉토리 기준 상대 경로입니다.</li>
+<li><code>ZipPath</code>: allow to specify a .zip file that is added to sys.path</li>
+<li><code>ZipPath</code>: sys.path 에 특정 zip 파일 추가</li>
+<li><code>RelativeZipPath</code>: like ZipPath, but the path is relative to the /Content directory</li>
+<li><code>RelativeZipPath</code>: ZipPath 와 비슷하지만 /Content 디렉토리 기준 상대 경로입니다.</li>
+<li>`ImportModules: comma/space/semicolon separated list of modules to import on startup (after ue_site)</li>
+<li><code>ImportModules: 시작시 (</code>ue_site` 이후) 임포트하는 모듈 리스트로 콤마, 스페이스, 세미콜론으로 구분</li>
+</ul>
+<p>Example:
+예제:</p>
+<div class="codehilite"><pre><span></span><span class="k">[Python]</span>
+<span class="na">Home</span> <span class="o">=</span> <span class="s">C:/FooBar/Python36</span>
+</pre></div>
+
+
+<h2 id="packaging">Packaging 패키징<a class="headerlink" href="#packaging" title="Permanent link">&para;</a></h2>
+<p>When you package your projects, remember to include the libpython (dll or dylib or .so based on your operating system) in the binaries folder and the Scripts directory (if you do not want to force the user to have python installed in its system). For Windows system you can use the embedded distributions available in the official python.org site. Just uncompress the zip in the plugin binary folder (at the same level of UnrealEnginePython.dll)
+프로젝트 패키징시에는 (사용자 시스템에 파이썬 설치를 강요하는 걸 원치 않는다면) libpython (운영체제에 따라 .dll, .dylib, .so 등)이 포함된 바이너리 폴더와 스크립트 디렉토리를 포함시켜야 합니다. 윈도우 시스템의 경우 공식 python.org 사이트에서 제공되는 임베디드 배포판을 사용할 수 있습니다. (UnrealEnginePython.dll 과 같은 위치인) 플러그인 바이너리 폴더에 zip 압축을 풀어주면 됩니다.</p>
+<p>If you do not want to distribute python sources, you can include only the <code>__pycache__</code> directory with the bytecode.
+파이썬 소스 배포를 원하지 않는다면 바이트 코드가 있는 <code>__pycache__</code> 디렉토리만 포함시켜도 됩니다.</p>
+<p>Do not forget to include python third party modules (if you use any of them in your project)
+(프로젝트에서 사용중인) 파이썬 써드 파티 모듈을 포함해야 한다는 점 잊지 마시길 바랍니다. </p>
+<h2 id="quick-examples">Quick Examples 쾌속 예제<a class="headerlink" href="#quick-examples" title="Permanent link">&para;</a></h2>
+<p>This is a PyActor destroying itself whenever another actor overlap it. Remember to add a mesh component to it (like a sphere) and set its collision behaviour as 'OverlapAll'. This could be tested with the third person official template. 다른 액터에 겹칠때마다 스스로 파괴되는 PyActor 입니다. (구형 같은) 메쉬 컴포넌트를 추가하고 Collision Behaviour 를 'OverlapAll' 로 설정해야 한다는 점 기억해두시기 바랍니다. 공식 3 인칭 템플릿으로 테스트해 볼 수 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Ball</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">ue</span><span class="o">.</span><span class="n">print_string</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">on_actor_begin_overlap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_actor</span><span class="p">):</span>
+        <span class="n">ue</span><span class="o">.</span><span class="n">print_string</span><span class="p">(</span><span class="s1">&#39;Collided with &#39;</span> <span class="o">+</span> <span class="n">other_actor</span><span class="o">.</span><span class="n">get_name</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">actor_destroy</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Now we create (at runtime !!!) a whole new PyActor:
+자 (런타임에!!!) PyActor 를 완전히 새롭게 작성해보겠습니다.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">SuperHero</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">begin_play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># spawn a new PyActor 새로운 PyActor 스폰</span>
+        <span class="n">new_actor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">actor_spawn</span><span class="p">(</span><span class="n">ue</span><span class="o">.</span><span class="n">find_class</span><span class="p">(</span><span class="s1">&#39;PyActor&#39;</span><span class="p">),</span> <span class="n">Fvector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span><span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">))</span>
+        <span class="c1"># add a sphere component as the root one 루트에 구형 컴포넌트 추가</span>
+        <span class="n">static_mesh</span> <span class="o">=</span> <span class="n">new_actor</span><span class="o">.</span><span class="n">add_actor_root_component</span><span class="p">(</span><span class="n">ue</span><span class="o">.</span><span class="n">find_class</span><span class="p">(</span><span class="s1">&#39;StaticMeshComponent&#39;</span><span class="p">),</span> <span class="s1">&#39;SphereMesh&#39;</span><span class="p">)</span>
+        <span class="c1"># set the mesh as the Sphere asset 구형 애셋 메쉬 설정</span>
+        <span class="n">static_mesh</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;SetStaticMesh /Engine/EngineMeshes/Sphere.Sphere&#39;</span><span class="p">)</span>
+        <span class="c1"># set the python module 파이썬 모듈 설정</span>
+        <span class="n">new_actor</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s1">&#39;PythonModule&#39;</span><span class="p">,</span> <span class="s1">&#39;gameclasses&#39;</span><span class="p">)</span>
+        <span class="c1"># set the python class 파이썬 클래스 설정</span>
+        <span class="n">new_actor</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s1">&#39;PythonClass&#39;</span><span class="p">,</span> <span class="s1">&#39;Vertical&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>For more examples: https://github.com/20tab/UnrealEnginePython/tree/master/examples
+추가 예제는 다음 링크에서 보실 수 있습니다.</p>
+<h2 id="spawning-notes">Spawning Notes 노트 스폰<a class="headerlink" href="#spawning-notes" title="Permanent link">&para;</a></h2>
+<p>Remember that only Actors can be spawned in a world, and that even the editor is a valid world:
+월드에는 오직 액터만 스폰될 수 있습니다. 에디터도 월드입니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+<span class="kn">from</span> <span class="nn">unreal_engine.classes</span> <span class="kn">import</span> <span class="n">Actor</span><span class="p">,</span> <span class="n">Character</span>
+<span class="kn">from</span> <span class="nn">unreal_engine</span> <span class="kn">import</span> <span class="n">FVector</span><span class="p">,</span> <span class="n">FRotator</span>
+
+<span class="n">world</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_editor_world</span><span class="p">()</span>
+<span class="n">actor000</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">actor_spawn</span><span class="p">(</span><span class="n">Actor</span><span class="p">,</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">character000</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">actor_spawn</span><span class="p">(</span><span class="n">Character</span><span class="p">,</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+
+
+<p>Remember that the Blueprint asset is not a valid actor by itself, you need to get the class generated by the blueprint:
+블루프린트 애셋 자체는 액터가 아니므로, 블루프린트로 생성된 클래스가 필요합니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+<span class="kn">from</span> <span class="nn">unreal_engine.classes</span> <span class="kn">import</span> <span class="n">Blueprint</span>
+<span class="kn">from</span> <span class="nn">unreal_engine</span> <span class="kn">import</span> <span class="n">FVector</span><span class="p">,</span> <span class="n">FRotator</span>
+
+<span class="n">world</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_editor_world</span><span class="p">()</span>
+
+<span class="n">blueprint</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">load_object</span><span class="p">(</span><span class="n">Blueprint</span><span class="p">,</span> <span class="s1">&#39;/Game/TestBall.TestBall&#39;</span><span class="p">)</span>
+<span class="n">actor000</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">actor_spawn</span><span class="p">(</span><span class="n">blueprint</span><span class="o">.</span><span class="n">GeneratedClass</span><span class="p">,</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+
+
+<p>otherwise you can directly reference the BlueprintGeneratedClass
+BlueprintGeneratedClass 레퍼런스를 직접 참조할 수도 있습니다.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+<span class="kn">from</span> <span class="nn">unreal_engine.classes</span> <span class="kn">import</span> <span class="n">BlueprintGeneratedClass</span>
+<span class="kn">from</span> <span class="nn">unreal_engine</span> <span class="kn">import</span> <span class="n">FVector</span><span class="p">,</span> <span class="n">FRotator</span>
+
+<span class="n">world</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_editor_world</span><span class="p">()</span>
+
+<span class="n">blueprint_actor</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">load_object</span><span class="p">(</span><span class="n">BlueprintGeneratedClass</span><span class="p">,</span> <span class="s1">&#39;/Game/TestBall.TestBall_C&#39;</span><span class="p">)</span>
+<span class="n">actor000</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">actor_spawn</span><span class="p">(</span><span class="n">blueprint_actor</span><span class="p">,</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+
+
+<h2 id="the-python-editor">The Python Editor 파이썬 에디터<a class="headerlink" href="#the-python-editor" title="Permanent link">&para;</a></h2>
+<p>Starting from version 20170301 a handy editor has been added to the plugin:
+20170301 버전부터 플러그인에 간단한 에디터가 추가되었습니다.</p>
+<p><img alt="Alt text" src="screenshots/python_editor_screenshot001.png?raw=true" title="Python Editor Screenshot" /></p>
+<p>It allows you to run, create, modify and delete scripts directly from the UE editor
+언리얼 에디터에서 스크립트 실행, 생성, 수정, 삭제등을 할 수 있습니다.</p>
+<p>The first pull request for the editor has been issued by https://github.com/sun5471 so many thanks to him ;)
+에디터에 첫 풀 리퀘스트는 sun5471 님이 많은 도움을 주셨습니다.</p>
+<h2 id="integration-with-qt4qt5pyside2">Integration with Qt4/Qt5/PySide2<a class="headerlink" href="#integration-with-qt4qt5pyside2" title="Permanent link">&para;</a></h2>
+<p>Thanks to solid GIL management, you can integrate Qt python apps in Unreal Engine 4.</p>
+<p>Pay attention to not call app.exec_() as it will result in Qt taking control of the UE loop. Instead use a ticker to integrate the Qt loop in the editor loop:</p>
+<div class="codehilite"><pre><span></span><span class="c1">## save it as ueqt.py</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+<span class="kn">import</span> <span class="nn">PySide2</span>
+<span class="kn">from</span> <span class="nn">PySide2</span> <span class="kn">import</span> <span class="n">QtWidgets</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">ticker_loop</span><span class="p">(</span><span class="n">delta_time</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">processEvents</span><span class="p">()</span>
+    <span class="k">return</span> <span class="bp">True</span>
+
+<span class="n">ticker</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">add_ticker</span><span class="p">(</span><span class="n">ticker_loop</span><span class="p">)</span>
+</pre></div>
+
+
+<p>now you can start writing your gui (this is a simple example loading asset thumbnail):</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">ueqt</span>
+<span class="kn">from</span> <span class="nn">PySide2</span> <span class="kn">import</span> <span class="n">QtCore</span><span class="p">,</span> <span class="n">QtWidgets</span><span class="p">,</span> <span class="n">QtGui</span>
+<span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+
+<span class="kn">from</span> <span class="nn">unreal_engine</span> <span class="kn">import</span> <span class="n">FARFilter</span>
+
+<span class="n">_filter</span> <span class="o">=</span> <span class="n">FARFilter</span><span class="p">()</span>
+<span class="n">_filter</span><span class="o">.</span><span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SkeletalMesh&#39;</span><span class="p">,</span> <span class="s1">&#39;Material&#39;</span><span class="p">]</span>
+
+<span class="k">class</span> <span class="nc">MyWidget</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QWidget</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vertical</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QVBoxLayout</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scroll</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QScrollArea</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QWidget</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scroll</span><span class="o">.</span><span class="n">setWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scroll</span><span class="o">.</span><span class="n">setWidgetResizable</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layout</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QVBoxLayout</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">asset_data</span> <span class="ow">in</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_assets_by_filter</span><span class="p">(</span><span class="n">_filter</span><span class="p">,</span> <span class="bp">True</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">thumbnail</span> <span class="o">=</span> <span class="n">asset_data</span><span class="o">.</span><span class="n">get_thumbnail</span><span class="p">()</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="n">label</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QLabel</span><span class="p">()</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">thumbnail</span><span class="o">.</span><span class="n">get_uncompressed_image_data</span><span class="p">()</span>
+            <span class="n">image</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QImage</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QImage</span><span class="o">.</span><span class="n">Format_RGB32</span><span class="p">)</span>
+            <span class="n">label</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QPixmap</span><span class="o">.</span><span class="n">fromImage</span><span class="p">(</span><span class="n">image</span><span class="p">)</span><span class="o">.</span><span class="n">scaled</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vertical</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">scroll</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vertical</span><span class="p">)</span>
+
+
+
+<span class="n">widget</span> <span class="o">=</span> <span class="n">MyWidget</span><span class="p">()</span>
+<span class="n">widget</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">)</span>
+<span class="n">widget</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">root_window</span> <span class="o">=</span> <span class="n">ue</span><span class="o">.</span><span class="n">get_editor_window</span><span class="p">()</span>
+<span class="n">root_window</span><span class="o">.</span><span class="n">set_as_owner</span><span class="p">(</span><span class="n">widget</span><span class="o">.</span><span class="n">winId</span><span class="p">())</span>
+</pre></div>
+
+
+<p>(no need to allocate a new Qt app, or start it, as the UE4 Editor, thanks to to ueqt module is now the Qt app itself)</p>
+<p>Note the 2 final lines: they 'attach' the Qt window as a 'child' of the editor root window. Note that on windows platform this is not simple parenting but 'ownership'.</p>
+<h2 id="memory-management">Memory management<a class="headerlink" href="#memory-management" title="Permanent link">&para;</a></h2>
+<p>Dealing with 2 different GC's is really challenging.</p>
+<p>Starting from release 20180226 a new memory management system has been added (FUnrealEnginePythonHouseKeeper, available here https://github.com/20tab/UnrealEnginePython/blob/master/Source/UnrealEnginePython/Public/PythonHouseKeeper.h). This new system is completely integrated with the Unreal Engine reflection-based GC and will hold track of each ue_PyUObject abd the related UObject to understand when a python object can be safely destroyed.</p>
+<p>The same system works for delegates, as well as Slate.</p>
+<p>More details here: https://github.com/20tab/UnrealEnginePython/blob/master/docs/MemoryManagement.md</p>
+<h2 id="unit-testing">Unit Testing<a class="headerlink" href="#unit-testing" title="Permanent link">&para;</a></h2>
+<p>The repository includes the tests/ directory from which unit tests will be run.</p>
+<p>To run the unit tests (ensure to run them on an empty/useless project to avoid messing with assets) run the following commands from the ue4 python console:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+<span class="n">ue</span><span class="o">.</span><span class="n">py_exec</span><span class="p">(</span><span class="n">ue</span><span class="o">.</span><span class="n">find_plugin</span><span class="p">(</span><span class="s1">&#39;UnrealEnginePython&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_base_dir</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;/run_tests.py&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>if you plan to add new features to the plugin, including a test suite in your pull request will be really appreciated ;)</p>
+<h2 id="threading">Threading<a class="headerlink" href="#threading" title="Permanent link">&para;</a></h2>
+<p>Since release 20180624 threading is fully supported.</p>
+<p>As with native threads, do not modify (included deletion) UObjects from non-main threads.</p>
+<h2 id="accessing-python-proxy-from-uobject">Accessing Python Proxy From UObject<a class="headerlink" href="#accessing-python-proxy-from-uobject" title="Permanent link">&para;</a></h2>
+<p>Sometimes you may have a UObject and know that it is backed by a python object. To get the python object from the UObject, use the <code>get_py_proxy</code> method. For example, imagine you have the following situation:</p>
+<ol>
+<li>There is a <code>PyActor</code> sub-class called <code>PyExplosiveActor</code> which has <code>Explosive</code> as its python class.</li>
+<li>The <code>Explosive</code> has a <code>go_boom</code> python method.</li>
+<li>There is a <code>PyActor</code> sub-class called <code>PyBadGuyActor</code> which has a Blueprint property called <code>MyBomb</code> and a python class called <code>BadGuy</code>.</li>
+<li>The <code>BadGuy</code> instance in python knows that its UObject has its <code>MyBomb</code> as an instance of <code>PyExplosiveActor</code> and wants to call the <code>go_boom</code> python method.</li>
+</ol>
+<p>This would be resolved as shown below:</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unreal_engine</span> <span class="kn">as</span> <span class="nn">ue</span>
+
+<span class="k">class</span> <span class="nc">Explosive</span><span class="p">:</span>
+    <span class="s1">&#39;Python representation for PyExplosiveActor in UE4&#39;</span>
+
+    <span class="k">def</span> <span class="nf">go_boom</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># do python stuff to explode</span>
+        <span class="o">...</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">destory</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">BadGuy</span><span class="p">:</span>
+    <span class="s1">&#39;Python reprsentation for PyBadGuyActor in UE4&#39;</span>
+
+    <span class="k">def</span> <span class="nf">ignite_bomb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delay</span><span class="p">):</span>
+        <span class="n">bomb</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uobject</span><span class="o">.</span><span class="n">MyBomb</span>
+        <span class="n">py_bomb</span> <span class="o">=</span> <span class="n">bomb</span><span class="o">.</span><span class="n">get_py_proxy</span><span class="p">()</span>
+        <span class="n">py_bomb</span><span class="o">.</span><span class="n">go_boom</span><span class="p">()</span>
+</pre></div>
+
+
+<p>What is going on here in <code>BadGuy</code> is that self.uobject is a reference to the PyActor UObject and <code>self.uobject.MyBomb</code> is a reference to the <code>PyExplosive</code> uobject. But instead you want to access its proxy class (<code>Explosive</code>). The <code>get_py_proxy()</code> method returns the python custom class, <code>Explosive</code> that the <code>PyExplosiveActor</code> object is mapped to.</p>
+<h2 id="status-and-known-issues">Status and Known issues<a class="headerlink" href="#status-and-known-issues" title="Permanent link">&para;</a></h2>
+<p>Exposing the full ue4 api is a huge amount of work, feel free to make pull requests for your specific needs.</p>
+<p>We still do not have a plugin icon ;)</p>
+<p>We try to do our best to "protect" the user, but you can effectively crash UE from python as you are effectively calling the C/C++ api</p>
+<h2 id="contacts-and-commercial-support">Contacts and Commercial Support<a class="headerlink" href="#contacts-and-commercial-support" title="Permanent link">&para;</a></h2>
+<p>If you need commercial support for UnrealEnginePython just drop a mail to info at 20tab.com</p>
+<p>Follow @unbit on twitter for news about the project</p>
+<h2 id="special-thanks">Special Thanks<a class="headerlink" href="#special-thanks" title="Permanent link">&para;</a></h2>
+<p>Such a big project requires constant sponsorship, special thanks go to:</p>
+<ul>
+<li>
+<p>Kite &amp; Lighting http://kiteandlightning.la/ (they are sponsoring various areas of the project, expecially the slate api)</p>
+</li>
+<li>
+<p>GoodTH.INC https://www.goodthinc.com/ (they are sponsoring the sequencer api)</p>
+</li>
+<li>
+<p>Quixel AB https://megascans.se/ (built their integration tool over UnrealEnginePython giving us tons of useful feedbacks and ideas)</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../ue4_min_files_using_precompiled_header/" title="min files using precompiled header" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                min files using precompiled header
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pyjs/about/" title="pyjs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                pyjs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
