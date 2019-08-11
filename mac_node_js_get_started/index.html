@@ -36,7 +36,7 @@
     
     
       
-        <title>myevan.net</title>
+        <title>node.js - myevan.net</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#home" tabindex="1" class="md-skip">
+      <a href="#js-nodejs-get-started-on-macos" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Home
+                node.js
               
             </span>
           
@@ -768,10 +768,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       tutorial
@@ -919,11 +921,85 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../mac_node_js_get_started/" title="node.js" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="node.js" class="md-nav__link md-nav__link--active">
       node.js
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="설치 (Installation)" class="md-nav__link">
+    설치 (Installation)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#runtime" title="런타임 (Runtime)" class="md-nav__link">
+    런타임 (Runtime)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npm" title="모듈 (NPM)" class="md-nav__link">
+    모듈 (NPM)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-modules" title="전역 (Global Modules)" class="md-nav__link">
+    전역 (Global Modules)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-modules" title="로컬 (Local Modules)" class="md-nav__link">
+    로컬 (Local Modules)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1677,7 +1753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="UnrealEnginePython/" title="UnrealEnginePython" class="md-nav__link">
+    <a href="../rosetta/UnrealEnginePython/" title="UnrealEnginePython" class="md-nav__link">
       UnrealEnginePython
     </a>
   </li>
@@ -1689,7 +1765,7 @@
 
 
   <li class="md-nav__item">
-    <a href="pyjs/about/" title="pyjs" class="md-nav__link">
+    <a href="../rosetta/pyjs/about/" title="pyjs" class="md-nav__link">
       pyjs
     </a>
   </li>
@@ -1712,8 +1788,35 @@
               
                 
                 
-                <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<p>영어-한글 번역 모음입니다.</p>
+                <h1 id="js-nodejs-get-started-on-macos">맥 노드JS 시작하기 (node.js get started on macOS)<a class="headerlink" href="#js-nodejs-get-started-on-macos" title="Permanent link">&para;</a></h1>
+<p><a href="https://nodejs.org/ko/">https://nodejs.org/ko/</a></p>
+<h2 id="installation">설치 (Installation)<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<h3 id="runtime">런타임 (Runtime)<a class="headerlink" href="#runtime" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>$ brew install node
+</pre></div>
+
+
+<h3 id="npm">모듈 (NPM)<a class="headerlink" href="#npm" title="Permanent link">&para;</a></h3>
+<h4 id="global-modules">전역 (Global Modules)<a class="headerlink" href="#global-modules" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>$ npm install -g <span class="nv">$MODULE</span>
+</pre></div>
+
+
+<h4 id="local-modules">로컬 (Local Modules)<a class="headerlink" href="#local-modules" title="Permanent link">&para;</a></h4>
+<p>현재 폴더 내 <code>.node_moduels</code> 서브 폴더로 설치 됩니다.</p>
+<div class="codehilite"><pre><span></span>$ npm install <span class="nv">$MODULE</span>
+</pre></div>
+
+
+<p>로컬 모듈 실행을 위해서는 환경 변수 PATH 설정이 필요합니다.</p>
+<div class="codehilite"><pre><span></span>$ vim .bash_profile
+<span class="nb">alias</span> npm-run<span class="o">=</span><span class="s2">&quot;PATH=</span><span class="k">$(</span>npm bin<span class="k">)</span><span class="s2">:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</pre></div>
+
+
+<p><code>$(pwd)/.node_modues/.bin</code>에 있는 파일을 실행하게 됩니다.</p>
+<div class="codehilite"><pre><span></span>$ npm-run <span class="nv">$MODULE</span>
+</pre></div>
                 
                   
                 
@@ -1730,6 +1833,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../python_tcod/" title="tcod" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                tcod
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../emscripten_get_started/" title="emscripten" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                emscripten
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

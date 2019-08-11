@@ -36,7 +36,7 @@
     
     
       
-        <title>myevan.net</title>
+        <title>emscripten - myevan.net</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#home" tabindex="1" class="md-skip">
+      <a href="#emscripten-get-started" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Home
+                emscripten
               
             </span>
           
@@ -768,10 +768,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       tutorial
@@ -931,11 +933,133 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../emscripten_get_started/" title="emscripten" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="emscripten" class="md-nav__link md-nav__link--active">
       emscripten
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#toolchain-requirements" title="준비 (Toolchain Requirements)" class="md-nav__link">
+    준비 (Toolchain Requirements)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#all-platforms" title="플랫폼 공통 (All Platforms)" class="md-nav__link">
+    플랫폼 공통 (All Platforms)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="윈도우 (Windows)" class="md-nav__link">
+    윈도우 (Windows)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="맥 (macOS)" class="md-nav__link">
+    맥 (macOS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" title="리눅스 (Linux)" class="md-nav__link">
+    리눅스 (Linux)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-instructions" title="설치 (Installation instructions)" class="md-nav__link">
+    설치 (Installation instructions)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running" title="실행 (Running)" class="md-nav__link">
+    실행 (Running)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-code" title="테스트 코드 (Test Code)" class="md-nav__link">
+    테스트 코드 (Test Code)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" title="빌드 (Build)" class="md-nav__link">
+    빌드 (Build)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#javascript-build" title="자바스크립트 빌드 (JavaScript Build)" class="md-nav__link">
+    자바스크립트 빌드 (JavaScript Build)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-html-build" title="HTML 빌드 (HTML Build)" class="md-nav__link">
+    HTML 빌드 (HTML Build)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1677,7 +1801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="UnrealEnginePython/" title="UnrealEnginePython" class="md-nav__link">
+    <a href="../rosetta/UnrealEnginePython/" title="UnrealEnginePython" class="md-nav__link">
       UnrealEnginePython
     </a>
   </li>
@@ -1689,7 +1813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="pyjs/about/" title="pyjs" class="md-nav__link">
+    <a href="../rosetta/pyjs/about/" title="pyjs" class="md-nav__link">
       pyjs
     </a>
   </li>
@@ -1712,8 +1836,70 @@
               
                 
                 
-                <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<p>영어-한글 번역 모음입니다.</p>
+                <h1 id="emscripten-get-started">emscripten 시작하기 (get started)<a class="headerlink" href="#emscripten-get-started" title="Permanent link">&para;</a></h1>
+<h2 id="toolchain-requirements">준비 (Toolchain Requirements)<a class="headerlink" href="#toolchain-requirements" title="Permanent link">&para;</a></h2>
+<p><a href="https://emscripten.org/docs/building_from_source/toolchain_what_is_needed.html">https://emscripten.org/docs/building_from_source/toolchain_what_is_needed.html</a></p>
+<h3 id="all-platforms">플랫폼 공통 (All Platforms)<a class="headerlink" href="#all-platforms" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Node.js (0.8 이상)</li>
+<li>Python (2.7.12 이상 | 3.5 이상)</li>
+<li>Java (<code>1.6.0_31</code> 이상)</li>
+<li>Git</li>
+<li>LLVM</li>
+<li>Binaryen</li>
+<li>cmake</li>
+</ul>
+<h3 id="windows">윈도우 (Windows)<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<ul>
+<li>VS2017</li>
+</ul>
+<h3 id="macos">맥 (macOS)<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Xcode (Command Line Tools)</li>
+</ul>
+<h3 id="linux">리눅스 (Linux)<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<ul>
+<li>gcc (ubuntu: build-essential)</li>
+</ul>
+<h2 id="installation-instructions">설치 (Installation instructions)<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>$ git clone https://github.com/emscripten-core/emsdk.git
+$ <span class="nb">cd</span> emsdk
+$ git pull
+$ ./emsdk install latest
+$ ./emsdk activate latest
+$ <span class="nb">source</span> ./emsdk_env.sh
+</pre></div>
+
+
+<p>환경 설정이 완료되면 PATH 를 통해 emcc 접근이 가능합니다.</p>
+<div class="codehilite"><pre><span></span>./emcc -v
+</pre></div>
+
+
+<p>사전 패키지가 모두 준비되어 있지 않으면 설치가 제대로 되지 않습니다.</p>
+<h2 id="running">실행 (Running)<a class="headerlink" href="#running" title="Permanent link">&para;</a></h2>
+<h3 id="test-code">테스트 코드 (Test Code)<a class="headerlink" href="#test-code" title="Permanent link">&para;</a></h3>
+<p>main.cpp</p>
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="n">puts</span><span class="p">(</span><span class="s">&quot;hello, world!&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="build">빌드 (Build)<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
+<h4 id="javascript-build">자바스크립트 빌드 (JavaScript Build)<a class="headerlink" href="#javascript-build" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>$ ./emcc main.cpp
+$ node a.out.js
+</pre></div>
+
+
+<h3 id="html-html-build">HTML 빌드 (HTML Build)<a class="headerlink" href="#html-html-build" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>$ ./emcc main.cpp -o main.html
+</pre></div>
                 
                   
                 
@@ -1730,6 +1916,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../mac_node_js_get_started/" title="node.js" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                node.js
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../vscode_ext_get_started/" title="vs code ext" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                vs code ext
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

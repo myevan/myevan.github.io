@@ -36,7 +36,7 @@
     
     
       
-        <title>myevan.net</title>
+        <title>vs code ext - myevan.net</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#home" tabindex="1" class="md-skip">
+      <a href="#vscode-vscode-extension-getstarted" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Home
+                vs code ext
               
             </span>
           
@@ -768,10 +768,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       tutorial
@@ -943,11 +945,73 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../vscode_ext_get_started/" title="vs code ext" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="vs code ext" class="md-nav__link md-nav__link--active">
       vs code ext
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" title="준비 (Requirements)" class="md-nav__link">
+    준비 (Requirements)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="설치 (Installation)" class="md-nav__link">
+    설치 (Installation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-generator" title="생성 (Run Generator)" class="md-nav__link">
+    생성 (Run Generator)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug" title="디버그 (Debug)" class="md-nav__link">
+    디버그 (Debug)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review" title="리뷰 (Review)" class="md-nav__link">
+    리뷰 (Review)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1677,7 +1741,7 @@
 
 
   <li class="md-nav__item">
-    <a href="UnrealEnginePython/" title="UnrealEnginePython" class="md-nav__link">
+    <a href="../rosetta/UnrealEnginePython/" title="UnrealEnginePython" class="md-nav__link">
       UnrealEnginePython
     </a>
   </li>
@@ -1689,7 +1753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="pyjs/about/" title="pyjs" class="md-nav__link">
+    <a href="../rosetta/pyjs/about/" title="pyjs" class="md-nav__link">
       pyjs
     </a>
   </li>
@@ -1712,8 +1776,42 @@
               
                 
                 
-                <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<p>영어-한글 번역 모음입니다.</p>
+                <h1 id="vscode-vscode-extension-getstarted">VSCode 확장 시작하기 (VSCode Extension GetStarted)<a class="headerlink" href="#vscode-vscode-extension-getstarted" title="Permanent link">&para;</a></h1>
+<h2 id="requirements">준비 (Requirements)<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<p><a href="/mac_node_js_get_started">node.js</a> 를 설치합니다.</p>
+<h2 id="installation">설치 (Installation)<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>npm 모듈 Yeoman 와 VS Code Extension Generator 를 설치합니다.</p>
+<div class="codehilite"><pre><span></span>$ npm install -g yo
+$ npm install -g generator-code
+</pre></div>
+
+
+<h2 id="run-generator">생성 (Run Generator)<a class="headerlink" href="#run-generator" title="Permanent link">&para;</a></h2>
+<p><a href="https://code.visualstudio.com/api/get-started/your-first-extension">https://code.visualstudio.com/api/get-started/your-first-extension</a></p>
+<div class="codehilite"><pre><span></span>$ yo code
+</pre></div>
+
+
+<ul>
+<li>확장 언어 선택 What type of extension do you want to create? <code>New Extension (TypeScript)</code></li>
+<li>확장 이름 입력 What's the name of your extension? <code>HelloWorld</code></li>
+<li>확장 ID 입력 What's the identifier of your extension? <code>helloworld</code></li>
+<li>확장 설명 입력 What's the description of your extension? (공백)</li>
+<li>git 리포 초기화 여부 Initialize a git repository? <code>Yes</code></li>
+<li>패키지 매니저 선택 Which package manager to use? <code>npm</code></li>
+</ul>
+<h2 id="debug">디버그 (Debug)<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h2>
+<ul>
+<li>VSCode 로 확장 프로젝트를 오픈합니다.</li>
+<li>메인 메뉴 Debug &gt; Start Debugging (F5)를 실행합니다.</li>
+<li>새로운 VSCode 가 실행되면 커맨드 팔레트(win: ctrl+shift+p, mac:command+shift+p)를 오픈합니다.</li>
+<li><code>Hello World</code> 를 찾아 실행합니다.</li>
+<li>화면 우측 하단에 알림 상자를 확인할 수 있습니다.</li>
+</ul>
+<h2 id="review">리뷰 (Review)<a class="headerlink" href="#review" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="/vscode_ext_hello_world">HelloWorld</a></li>
+</ul>
                 
                   
                 
@@ -1730,6 +1828,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../emscripten_get_started/" title="emscripten" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                emscripten
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../screen/" title="screen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                screen
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
