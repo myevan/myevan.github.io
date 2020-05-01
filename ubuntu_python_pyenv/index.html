@@ -502,27 +502,48 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    가상 환경 생성
+    로컬 버전 선택
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    가상 환경 시작
+    가상 환경 생성
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    가상 환경 종료
+    가상 환경 실행
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
+    가상 환경 패키지
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    가상 환경 입장
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    가상 환경 종료
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     가상 환경 제거
   </a>
   
@@ -1836,27 +1857,48 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    가상 환경 생성
+    로컬 버전 선택
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    가상 환경 시작
+    가상 환경 생성
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    가상 환경 종료
+    가상 환경 실행
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
+    가상 환경 패키지
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    가상 환경 입장
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    가상 환경 종료
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     가상 환경 제거
   </a>
   
@@ -1906,36 +1948,46 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
 <p>터미널에 재접속하면 pyenv 를 사용할 수 있습니다.</p>
 <h2 id="_4">파이썬 설치<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>$ pyenv install <span class="m">3</span>.6.2 
+<div class="codehilite"><pre><span></span><code>$ pyenv install <span class="m">3</span>.6.8
 $ pyenv versions
-$ pyenv shell <span class="m">3</span>.6.2
-$ python
-Python <span class="m">3</span>.6.2 <span class="o">(</span>default, Aug <span class="m">26</span> <span class="m">2017</span>, <span class="m">22</span>:26:02<span class="o">)</span> 
-<span class="o">[</span>GCC <span class="m">4</span>.2.1 Compatible Apple LLVM <span class="m">8</span>.1.0 <span class="o">(</span>clang-802.0.42<span class="o">)]</span> on darwin
-Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
-&gt;&gt;&gt;
+$ pyenv shell <span class="m">3</span>.6.8
 </code></pre></div>
 
 
-<h2 id="_5">가상 환경 생성<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>$ pyenv virtualenv <span class="m">3</span>.6.2 <span class="nb">test</span>
+<h2 id="_5">로컬 버전 선택<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ pyenv <span class="nb">local</span> <span class="m">3</span>.6.8
 </code></pre></div>
 
 
-<h2 id="_6">가상 환경 시작<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>$ pyenv activate <span class="nb">test</span>
-<span class="o">(</span><span class="nb">test</span><span class="o">)</span> $
+<h2 id="_6">가상 환경 생성<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ python -m venv venv
 </code></pre></div>
 
 
-<h2 id="_7">가상 환경 종료<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="o">(</span><span class="nb">test</span><span class="o">)</span> $ <span class="nb">source</span> deactivate
+<h2 id="_7">가상 환경 실행<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ venv/bin/python
+</code></pre></div>
+
+
+<h2 id="_8">가상 환경 패키지<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ venv/bin/pip
+</code></pre></div>
+
+
+<h2 id="_9">가상 환경 입장<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ pyenv activate venv
+<span class="o">(</span>venv<span class="o">)</span> $
+</code></pre></div>
+
+
+<h2 id="_10">가상 환경 종료<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="o">(</span>venv<span class="o">)</span> $ <span class="nb">source</span> deactivate
 $
 </code></pre></div>
 
 
-<h2 id="_8">가상 환경 제거<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>$ pyenv uninstall <span class="nb">test</span>
+<h2 id="_11">가상 환경 제거<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ pyenv uninstall venv
 </code></pre></div>
                 
               
