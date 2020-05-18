@@ -1724,6 +1724,26 @@
     디펜던시 업데이트(Update GitDependencies)
   </a>
   
+    <nav class="md-nav" aria-label="디펜던시 업데이트(Update GitDependencies)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html5" class="md-nav__link">
+    HTML5 제외
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    프락시 설정
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1774,8 +1794,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deriveddatacache" class="md-nav__link">
-    파생 데이터 캐시 (DerivedDataCache)
+  <a href="#ddc-deriveddatacache" class="md-nav__link">
+    파생 데이터 캐시 (DDC: DerivedDataCache)
   </a>
   
 </li>
@@ -1804,26 +1824,6 @@
   <a href="#fakeinstalledbuild" class="md-nav__link">
     가짜 인스톨드 빌드 (FakeInstalledBuild)
   </a>
-  
-    <nav class="md-nav" aria-label="가짜 인스톨드 빌드 (FakeInstalledBuild)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#makebinarybuild" class="md-nav__link">
-    바이너리 빌드 변경 (MakeBinaryBuild)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#makesourcebuild" class="md-nav__link">
-    소스 빌드 변경 (MakeSourceBuild)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2104,6 +2104,26 @@
     디펜던시 업데이트(Update GitDependencies)
   </a>
   
+    <nav class="md-nav" aria-label="디펜던시 업데이트(Update GitDependencies)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html5" class="md-nav__link">
+    HTML5 제외
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    프락시 설정
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -2154,8 +2174,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deriveddatacache" class="md-nav__link">
-    파생 데이터 캐시 (DerivedDataCache)
+  <a href="#ddc-deriveddatacache" class="md-nav__link">
+    파생 데이터 캐시 (DDC: DerivedDataCache)
   </a>
   
 </li>
@@ -2185,26 +2205,6 @@
     가짜 인스톨드 빌드 (FakeInstalledBuild)
   </a>
   
-    <nav class="md-nav" aria-label="가짜 인스톨드 빌드 (FakeInstalledBuild)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#makebinarybuild" class="md-nav__link">
-    바이너리 빌드 변경 (MakeBinaryBuild)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#makesourcebuild" class="md-nav__link">
-    소스 빌드 변경 (MakeSourceBuild)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -2231,7 +2231,7 @@
                 <h1 id="unrealengine-setup-on-windows">언리얼 엔진 윈도우 환경 셋업 (UnrealEngine Setup on Windows)<a class="headerlink" href="#unrealengine-setup-on-windows" title="Permanent link">&para;</a></h1>
 <h2 id="prepare">준비 (Prepare)<a class="headerlink" href="#prepare" title="Permanent link">&para;</a></h2>
 <h3 id="clone">클론 (Clone)<a class="headerlink" href="#clone" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames</span><span class="c1">&gt;git clone https://github.com/EpicGames/UnrealEngine.git UE_4.git</span>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames</span><span class="c1">&gt;git clone https://github.com/EpicGames/UnrealEngine.git UE_4_Dev</span>
 </code></pre></div>
 
 
@@ -2241,102 +2241,68 @@
 
 
 <h3 id="remote">리모트 (Remote)<a class="headerlink" href="#remote" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/myevan/UnrealEngine">https://github.com/myevan/UnrealEngine</a></p>
 <div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames</span><span class="c1">&gt;git remote add custom https://github.com/GROUP/UnrealEngine.git</span>
 </code></pre></div>
 
 
 <h3 id="update-gitdependencies">디펜던시 업데이트(Update GitDependencies)<a class="headerlink" href="#update-gitdependencies" title="Permanent link">&para;</a></h3>
-<ul>
-<li>환경 변수: <code>UE4-Proxy</code></li>
-<li>프락시 형식: <code>xxx.xxx.xxx.xxx:port</code></li>
-</ul>
-<p><code>_GitDependencies.bat</code></p>
-<div class="codehilite"><pre><span></span><code><span class="p">@</span><span class="k">echo</span> off
-<span class="k">set</span> <span class="nv">PROXY</span><span class="p">=</span><span class="nv">%UE4-Proxy%</span>
-<span class="k">set</span> <span class="nv">EXCLUDE</span><span class="p">=</span>HTML5
-<span class="k">if</span> <span class="s2">&quot;</span><span class="nv">%PROXY%</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="p">(</span>
-    <span class="nv">%~dp0</span>Engine\Binaries\DotNET\GitDependencies.exe -exclude=<span class="nv">%EXCLUDE%</span>
-<span class="p">)</span> <span class="k">else</span> <span class="p">(</span>
-    <span class="k">echo</span> Proxy: <span class="nv">%PROXY%</span>
-    <span class="nv">%~dp0</span>Engine\Binaries\DotNET\GitDependencies.exe -exclude=<span class="nv">%EXCLUDE%</span> -proxy=<span class="nv">%PROXY%</span>
-<span class="p">)</span>
-<span class="k">pause</span>
+<p><a href="https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_GitDependencies.bat">https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_GitDependencies.bat</a></p>
+<h4 id="html5">HTML5 제외<a class="headerlink" href="#html5" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; Engine\Binaries\DotNET\GitDependencies.exe -exclude=HTML5</span>
+</code></pre></div>
+
+
+<h4 id="_1">프락시 설정<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; Engine\Binaries\DotNET\GitDependencies.exe -proxy=xxx.xxx.xxx.xxx:0000</span>
 </code></pre></div>
 
 
 <h2 id="build">빌드 (Build)<a class="headerlink" href="#build" title="Permanent link">&para;</a></h2>
 <h3 id="setupengine">엔진 셋업 (SetupEngine)<a class="headerlink" href="#setupengine" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4.git</span><span class="c1">&gt;Setup.bat</span>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; Setup.bat</span>
 </code></pre></div>
 
 
 <h3 id="makeengineproject">엔진 프로젝트 생성 (MakeEngineProject)<a class="headerlink" href="#makeengineproject" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4.git</span><span class="c1">&gt;GenerateProjectFiles.bat</span>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; GenerateProjectFiles.bat</span>
 </code></pre></div>
 
 
 <h3 id="buildeditor">에디터 빌드 (BuildEditor)<a class="headerlink" href="#buildeditor" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4.git</span><span class="c1">&gt;Engine\Build\BatchFiles\MSBuild.bat UE4.sln /m /p:Platform=Win64 /t:Build /p:Configuration=&quot;Development Editor&quot;</span>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; Engine\Build\BatchFiles\MSBuild.bat UE4.sln /m /p:Platform=Win64 /t:Build /p:Configuration=&quot;Development Editor&quot;</span>
 </code></pre></div>
 
 
 <h2 id="run">실행 (Run)<a class="headerlink" href="#run" title="Permanent link">&para;</a></h2>
-<h3 id="deriveddatacache">파생 데이터 캐시 (DerivedDataCache)<a class="headerlink" href="#deriveddatacache" title="Permanent link">&para;</a></h3>
+<h3 id="ddc-deriveddatacache">파생 데이터 캐시 (DDC: DerivedDataCache)<a class="headerlink" href="#ddc-deriveddatacache" title="Permanent link">&para;</a></h3>
+<p>협업시 중복된 셰이더 컴파일을 줄이기 위해 필요합니다.</p>
 <ul>
 <li>환경 변수: <code>UE-SharedDataCachePath</code></li>
 <li>공유 폴더: <code>\\SHARE\UE4\DDC</code></li>
 </ul>
-<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4.git</span><span class="c1">&gt;setx UE-SharedDataCachePath &quot;\\SHARE\UE4\DDC&quot;</span>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; setx UE-SharedDataCachePath &quot;\\SHARE\UE4\DDC&quot;</span>
 </code></pre></div>
 
 
 <h3 id="runeditor">에디터 실행 (RunEditor)<a class="headerlink" href="#runeditor" title="Permanent link">&para;</a></h3>
-<p>DDC 환경 변수가 존재할 때만 실행합니다.</p>
-<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4.git</span><span class="c1">&gt;start Engine\Binaries\Win64\UE4Editor.exe</span>
+<p><a href="https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_BuidEditor_Development.bat">https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_BuidEditor_Development.bat</a></p>
+<div class="codehilite"><pre><span></span><code>C<span class="p">:</span><span class="nl">\EpicGames\UE_4_Dev</span><span class="c1">&gt; Engine\Binaries\Win64\UE4Editor.exe</span>
 </code></pre></div>
 
 
 <h2 id="installedbuild">인스톨드 빌드 (InstalledBuild)<a class="headerlink" href="#installedbuild" title="Permanent link">&para;</a></h2>
 <h3 id="fakeinstalledbuild">가짜 인스톨드 빌드 (FakeInstalledBuild)<a class="headerlink" href="#fakeinstalledbuild" title="Permanent link">&para;</a></h3>
 <p>인스톨드 빌드 테스트용입니다. 
-바이너리 빌드 상태일 때는 엔진 수정이 되지 않습니다.
-엔진 수정이 필요하면 소스 빌드로 변경해주어야 합니다.</p>
-<h4 id="makebinarybuild">바이너리 빌드 변경 (MakeBinaryBuild)<a class="headerlink" href="#makebinarybuild" title="Permanent link">&para;</a></h4>
+바이너리 빌드 상태일 때는 엔진 수정이 되지 않습니다.</p>
+<p><a href="https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_MakeEngine_BinaryBuild.bat">https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_MakeEngine_BinaryBuild.bat</a></p>
 <ul>
 <li>GeneratedProjectFiles.bat 삭제</li>
 <li>Build\SourceDistribution.txt 삭제</li>
 <li>Build\InstalledBuild.txt 빈 파일 생성</li>
 </ul>
-<p><code>_MakeBinaryBuild.bat</code></p>
-<div class="codehilite"><pre><span></span><code><span class="p">@</span><span class="k">echo</span> off
-<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>Engine\Build\InstalledBuild.txt <span class="p">(</span>
-    <span class="k">echo</span> Already changed the binary build
-    <span class="k">goto</span> <span class="nl">finish</span>
-<span class="p">)</span>
-<span class="k">echo</span> Change to the binary build
-<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>GenerateProjectFiles.bat <span class="k">del</span> <span class="nv">%~dp0</span>GenerateProjectFiles.bat
-<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>Engine\Build\SourceDistribution.txt <span class="k">del</span> <span class="nv">%~dp0</span>Engine\Build\SourceDistribution.txt
-<span class="k">copy</span> NUL <span class="nv">%~dp0</span>Engine\Build\InstalledBuild.txt
-
-<span class="p">:</span><span class="nl">finish</span>
-<span class="k">pause</span>
-</code></pre></div>
-
-
-<h4 id="makesourcebuild">소스 빌드 변경 (MakeSourceBuild)<a class="headerlink" href="#makesourcebuild" title="Permanent link">&para;</a></h4>
-<p><code>_MakeSourceBuild.bat</code></p>
-<div class="codehilite"><pre><span></span><code><span class="p">@</span><span class="k">echo</span> off
-<span class="k">if</span> <span class="k">not</span> <span class="k">exist</span> <span class="nv">%~dp0</span>Engine\Build\InstalledBuild.txt <span class="p">(</span>
-    <span class="k">echo</span> Already changed the source build
-    <span class="k">goto</span> <span class="nl">finish</span>
-<span class="p">)</span>
-<span class="k">echo</span> Change to the source build
-git restore <span class="nv">%~dp0</span>GenerateProjectFiles.bat <span class="nv">%~dp0</span>Engine\Build\SourceDistribution.txt
-<span class="k">if</span> <span class="k">exist</span> <span class="nv">%~dp0</span>Engine\Build\InstalledBuild.txt <span class="k">del</span> <span class="nv">%~dp0</span>Engine\Build\InstalledBuild.txt
-
-<span class="p">:</span><span class="nl">finish</span>
-<span class="k">pause</span>
-</code></pre></div>
+<p>엔진 수정이 필요하면 소스 빌드로 변경해주어야 합니다.</p>
+<p><a href="https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_MakeEngine_SourceBuild.bat">https://github.com/myevan/UnrealEngine/blob/4.24.3-custom/_MakeEngine_SourceBuild.bat</a></p>
                 
               
               
