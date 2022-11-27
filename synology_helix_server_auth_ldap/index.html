@@ -810,14 +810,14 @@
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    퍼미션 설정
+    유저 자동 생성 방지
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    유저 자동 생성 방지
+    퍼미션 설정
   </a>
   
 </li>
@@ -825,6 +825,13 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     유저 수동 생성
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    퍼포스 서버 재시작
   </a>
   
 </li>
@@ -2697,14 +2704,14 @@
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    퍼미션 설정
+    유저 자동 생성 방지
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    유저 자동 생성 방지
+    퍼미션 설정
   </a>
   
 </li>
@@ -2712,6 +2719,13 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     유저 수동 생성
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    퍼포스 서버 재시작
   </a>
   
 </li>
@@ -2757,11 +2771,11 @@
 <h2 id="ldap_1">LDAP 설정<a class="headerlink" href="#ldap_1" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="p">&gt;</span> p4 ldap ldap.HOST.TLD
 Name: ldap.HOST.TLD
-Host: p4d.HOST.TLD
+Host: ldap.HOST.TLD
 Port: 389
 Encryption: tls
 BindMethod: simple
-SimplePattern: uid=<span class="nv">%USER%</span>,cn=users,dc=ldap,dc=HOST,dc=TLD
+SimplePattern: uid=<span class="nv">%user%</span>,cn=users,dc=ldap,dc=HOST,dc=TLD
 SearchScope: subtree
 GroupSearchScope: subtree
 </code></pre></div>
@@ -2783,16 +2797,16 @@ AuthMethod: perforce
 </code></pre></div>
 
 <h2 id="_2">관리 설정<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">퍼미션 설정<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>모든 유저는 디폴트 디포 리스트 확인만 가능</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&gt;</span> p4 protect
-list user * * //depot/...
-</code></pre></div>
-
-<h3 id="_4">유저 자동 생성 방지<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_3">유저 자동 생성 방지<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><a href="https://portal.perforce.com/s/article/2544">https://portal.perforce.com/s/article/2544</a></p>
 <p>관리자만 생성할 수 있도록 제한</p>
 <div class="codehilite"><pre><span></span><code><span class="p">&gt;</span> p4 configure set dm.user.noautocreate=2
+</code></pre></div>
+
+<h3 id="_4">퍼미션 설정<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>모든 유저는 디폴트 디포 리스트 확인만 가능</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&gt;</span> p4 protect
+list user * * //depot/...
 </code></pre></div>
 
 <h3 id="_5">유저 수동 생성<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
@@ -2804,6 +2818,10 @@ Email: NAME@HOST
 FullName: NAME
 
 AuthMethod: ldap
+</code></pre></div>
+
+<h3 id="_6">퍼포스 서버 재시작<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="p">&gt;</span> p4 admin restart
 </code></pre></div>
 
 

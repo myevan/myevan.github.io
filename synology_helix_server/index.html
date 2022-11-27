@@ -793,6 +793,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    설정
+  </a>
+  
+    <nav class="md-nav" aria-label="설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typemap" class="md-nav__link">
+    타입 맵 (TypeMap)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     참고 (Reference)
   </a>
@@ -2686,6 +2706,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    설정
+  </a>
+  
+    <nav class="md-nav" aria-label="설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typemap" class="md-nav__link">
+    타입 맵 (TypeMap)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     참고 (Reference)
   </a>
@@ -2745,6 +2785,47 @@
 <li>파일/폴더: /docker/helix-server/p4depot</li>
 <li>마운트 경로: /data/p4depot</li>
 </ul>
+<h2 id="_4">설정<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="typemap">타입 맵 (TypeMap)<a class="headerlink" href="#typemap" title="Permanent link">&para;</a></h3>
+<ul>
+<li>binary+Fl 이미 압축 됨</li>
+<li>binary+l 머지 어려움</li>
+<li>binary+w 빌드 결과물</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>&gt; p4 typemap
+    binary+Fl //....bz2
+    binary+Fl //....zip
+    binary+Fl //....rar
+    binary+Fl //....gz
+    binary+Fl //....gif
+    binary+Fl //....tif
+    binary+Fl //....png
+    binary+Fl //....jpg
+    binary+Fl //....psd
+    binary+Fl //....aac
+    binary+Fl //....avi
+    binary+Fl //....wmv
+    binary+Fl //....wma
+    binary+Fl //....m4a
+    binary+Fl //....mov
+    binary+Fl //....mp4
+    binary+Fl //....mp3
+    binary+Fl //....ogg
+    binary+Fl //....jar
+    binary+l //....doc*
+    binary+l //....xls*
+    binary+l //....ppt*
+    binary+w //....dylib
+    binary+w //....lib
+    binary+w //....dll
+    binary+w //....exe
+    binary+w //....so
+    binary+w //....o
+    binary+w //....obj
+    binary+w //....pdb
+    binary+w //....dSYM
+</code></pre></div>
+
 <h2 id="reference">참고 (Reference)<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
 <h3 id="caseinsensitive">대소문자 무시 (CaseInsensitive)<a class="headerlink" href="#caseinsensitive" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/ambakshi/docker-perforce/blob/master/perforce-server/setup-perforce.sh#L30">https://github.com/ambakshi/docker-perforce/blob/master/perforce-server/setup-perforce.sh#L30</a></p>
