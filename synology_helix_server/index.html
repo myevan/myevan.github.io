@@ -807,8 +807,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    패러럴
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    백업 체크포인트
+  </a>
   
 </li>
       
@@ -2720,8 +2734,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    패러럴
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    백업 체크포인트
+  </a>
   
 </li>
       
@@ -2824,6 +2852,18 @@
     binary+w //....obj
     binary+w //....pdb
     binary+w //....dSYM
+</code></pre></div>
+
+<h3 id="_5">패러럴<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>최대 스레드 숫자만큼 설정</p>
+<div class="codehilite"><pre><span></span><code>p4 configure set net.parallel.max=4
+p4 configure set net.parallel.threads=4
+p4 configure set net.parallel.submit.threads=4
+</code></pre></div>
+
+<h2 id="_6">백업 체크포인트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>Docker 컨테이너 터미널</p>
+<div class="codehilite"><pre><span></span><code>$ runuser -l perforce -c <span class="s2">&quot;cd /data/p4depot; p4d -r root -jc&quot;</span>
 </code></pre></div>
 
 <h2 id="reference">참고 (Reference)<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
