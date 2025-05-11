@@ -646,10 +646,30 @@
     설정
   </a>
   
+    <nav class="md-nav" aria-label="설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    유저 서비스
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    터미널 종료시에도 서비스 유지
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     제어
   </a>
   
@@ -657,36 +677,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     로드
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     시작
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     상태
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     정지
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     부팅시 자동 시작
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    시작 실패한 서비스 제거
   </a>
   
 </li>
@@ -2763,10 +2790,30 @@
     설정
   </a>
   
+    <nav class="md-nav" aria-label="설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    유저 서비스
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    터미널 종료시에도 서비스 유지
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     제어
   </a>
   
@@ -2774,36 +2821,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     로드
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     시작
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     상태
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     정지
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     부팅시 자동 시작
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    시작 실패한 서비스 제거
   </a>
   
 </li>
@@ -2830,6 +2884,7 @@
 
 <h1 id="ubuntu-python-user-service-with-gunicorn">우분투 파이썬 사용자 서비스 거니콘 (Ubuntu Python User Service with gunicorn)<a class="headerlink" href="#ubuntu-python-user-service-with-gunicorn" title="Permanent link">&para;</a></h1>
 <h2 id="_1">설정<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">유저 서비스<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code><span class="err">$</span><span class="w"> </span><span class="n">vim</span><span class="w"> </span><span class="o">~/</span><span class="p">.</span><span class="n">config</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="k">user</span><span class="o">/</span><span class="err">{</span><span class="n">name</span><span class="err">}</span><span class="p">.</span><span class="n">service</span><span class="w"></span>
 
 <span class="o">[</span><span class="n">Unit</span><span class="o">]</span><span class="w"></span>
@@ -2845,25 +2900,33 @@
 <span class="n">WantedBy</span><span class="o">=</span><span class="k">default</span><span class="p">.</span><span class="n">target</span><span class="w"></span>
 </code></pre></div>
 
-<h2 id="_2">제어<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">로드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">터미널 종료시에도 서비스 유지<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>$ sudo loginctl enable-linger <span class="nv">$USER</span>
+</code></pre></div>
+
+<h2 id="_4">제어<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">로드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">sytemctl</span><span class="w"> </span><span class="o">--</span><span class="n">user</span><span class="w"> </span><span class="n">daemon</span><span class="o">-</span><span class="n">reload</span><span class="w"></span>
 </code></pre></div>
 
-<h3 id="_4">시작<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_6">시작<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>$ sytemctl --user start <span class="o">{</span>name<span class="o">}</span>.service
 </code></pre></div>
 
-<h3 id="_5">상태<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_7">상태<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>$ sytemctl --user status <span class="o">{</span>name<span class="o">}</span>.service
 </code></pre></div>
 
-<h3 id="_6">정지<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_8">정지<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>$ sytemctl --user start <span class="o">{</span>name<span class="o">}</span>.service
 </code></pre></div>
 
-<h3 id="_7">부팅시 자동 시작<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_9">부팅시 자동 시작<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>$ sytemctl --user <span class="nb">enable</span> <span class="o">{</span>name<span class="o">}</span>.service
+</code></pre></div>
+
+<h3 id="_10">시작 실패한 서비스 제거<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>systemctl --user reset-failed
 </code></pre></div>
 
 
